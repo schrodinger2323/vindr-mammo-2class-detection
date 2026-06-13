@@ -66,19 +66,19 @@ Veri setinin resmi görselleştirme/EDA scripti:
 veri setinin annotasyon dağılımına bakıldı
 (`dataset/eda_full_dataset/`):
 
-**BI-RADS dağılımı** (breast-level, 20.000 göğüs):
+**BI-RADS dağılımı** (breast-level):
 
 | BI-RADS | 1 | 2 | 3 | 4 | 5 |
 |---|---|---|---|---|---|
 | Adet | 13.406 | 4.676 | 930 | 762 | 226 |
 
-**Meme yoğunluğu (breast density) dağılımı:**
+**Yoğunluk (breast density) dağılımı:**
 
 | Density | A | B | C | D |
 |---|---|---|---|---|
 | Adet | 100 | 1.908 | 15.292 | 2.700 |
 
-**Resmi split (PhysioNet, `breast-level_annotations.csv` → `split` kolonu):**
+**Resmi split:**
 training = 16.000, test = 4.000. *(Not: bu, PhysioNet'in kendi train/test
 ayrımıdır — bizim alt kümemiz için kullandığımız study-level
 train/val/test (seed=42) split'inden farklıdır, bkz. §1.3.)*
@@ -103,18 +103,12 @@ train/val/test (seed=42) split'inden farklıdır, bkz. §1.3.)*
 | Global Asymmetry | 26 |
 | Skin Retraction | 18 |
 
-**Neden Mass + Suspicious Calcification?** Bu ikisi, "No Finding" dışındaki
-en sık görülen iki patolojik bulgu kategorisi — diğer tüm kategorilerin
-(Focal Asymmetry ve altı) toplamından bile **daha fazla** örneğe sahipler.
-Ayrıca literatürde (Ribli et al. 2018, Karaca Aydemir et al. 2025, Abdikenov
-et al. 2025) mamografi lezyon tespitinde en çok çalışılan/karşılaştırılan iki
-sınıf da bunlar — bu seçim, sonuçlarımızı literatürle anlamlı şekilde
-kıyaslamamıza imkan veriyor.
+**Neden Mass + Suspicious Calcification?** Gerçekleştirilen EDA sonucunda Mass ve Suspicious Calcification, VinDr-Mammo veri setinde No Finding dışındaki en fazla anotasyona sahip iki bulgu kategorisi olarak belirlenmiştir. Bu durum, daha az örnek içeren sınıflara kıyasla model eğitimi ve sınıf bazlı değerlendirme için daha yeterli bir örneklem sağlamaktadır. Ayrıca iki sınıf farklı tespit zorluklarını temsil etmektedir: kitleler daha geniş ve bölgesel yapılar oluştururken, şüpheli kalsifikasyonlar çoğunlukla küçük ve ince ayrıntılar biçiminde görülür. Bu nedenle bu iki sınıfın birlikte kullanılması, nesne tespit modellerinin farklı boyut ve görsel özelliklere sahip mamografik bulgular üzerindeki performansını karşılaştırmaya imkân vermektedir.
 
 ### 1.3 Çalışma alt kümesi: `target2class_subset_v2_medium_balanced`
 
 20.000 görüntülük tam veri setinin DICOM'larını indirip işlemek hem zaman hem
-depolama açısından bu projenin kapsamı dışında olduğu için, hedeflenen 2 sınıfı
+depolama açısından bu proje kapsamında mümkün olmamıştır, bu nedenle hedeflenen 2 sınıfı
 (Mass, Suspicious Calcification) içeren çalışmalar + zor negatifler (başka
 bulgu içeren ama hedef sınıf olmayan) + normal negatifler (No Finding) içeren
 dengeli bir alt küme seçildi:
@@ -127,7 +121,7 @@ dengeli bir alt küme seçildi:
   [`FINAL_DOWNLOAD_REPORT.md`](dataset/subsets/target2class_subset_v2_medium_balanced/subset_audit/reports/target2class_subset_v2_medium_balanced_FINAL_DOWNLOAD_REPORT.md)
 
 **Etiketleme kuralı:** Aynı kutu hem Mass hem Suspicious Calcification
-içeriyorsa birincil etiket Mass olur (`class_mapping.json`).
+içeriyorsa birincil etiket Mass olacak şekilde düzenlenmiştir (`class_mapping.json`).
 
 | Split | Görüntü | Pozitif | Negatif | Mass kutusu | Susp. Calc. kutusu |
 |---|---|---|---|---|---|
@@ -144,7 +138,7 @@ PNG dönüşümü ve EDA detayları:
 ## 2. Uçtan Uca İşlem Hattı (Pipeline)
 
 Pipeline 4 ana adımdan oluşuyor; her adımın çıktısı bir sonrakinin girdisi.
-Tüm adımlar Google Colab'da, Google Drive'a mount edilmiş bir `vindr_mammo`
+Tüm adımlar Google Colab'da, `vindr_mammo`
 proje klasörü üzerinde çalıştırıldı (bkz. [§4](#4-kurulum-ve-çalıştırma-google-colab)).
 
 ```
@@ -230,11 +224,11 @@ açıklanıyor:
 | Faster R-CNN ResNet50-FPN (ablasyon) | crop_clahe_2class | ~800px | COCO | aynı metodoloji, sadece veri seti değişti (`scripts/train_fasterrcnn_crop_clahe.py`) |
 
 Tüm modeller için ortak kurallar: seed=42, yatay flip (p=0.5) augmentasyonu,
-final metrikler **hiç görülmemiş test split** (308 görüntü) üzerinde
+final metrikler **hiç görülmemiş test kümesi** (308 görüntü) üzerinde
 hesaplandı, çıktılar `runs/<model>/{train/, test_eval/, test_metrics.csv,
 summary.json}` altında toplandı.
 
-**Model seçim gerekçeleri (özet):**
+**Model seçim gerekçeleri**
 
 - **YOLOv8s** — görev tanımının izin verdiği YOLO ailesinden, Ultralytics ile
   Colab'da hızlı kurulum/eğitim; Karaca Aydemir et al. (2025) ve Abdikenov et
@@ -272,7 +266,7 @@ pip install -r requirements.txt
 
 **Çalıştırma sırası:**
 
-0. [`vindr_mammo_2class_subset_download_2 (1).ipynb`](vindr_mammo_2class_subset_download_2%20%281%29.ipynb)
+0. [`vindr_mammo_2class_subset_download_2.ipynb`](vindr_mammo_2class_subset_download_2%20%281%29.ipynb)
    → PhysioNet'ten alt küme DICOM'larını indirir, `subset_manifest.csv` ve
    split tablolarını üretir. *(PhysioNet DUA kimlik bilgisi gerektirir.)*
 1. `train_yolov8_raw_baseline.py` → `runs/yolov8s_raw_baseline/`
