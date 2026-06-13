@@ -1,0 +1,45 @@
+# ---------------------------------------------------------------------------
+# VinDr-Mammo 2-Class Lesion Detection — .gitignore
+#
+# Dahil edilenler: kod (scripts/*.py, notebook), dokümantasyon (docs/, README),
+# annotasyon CSV/JSON dosyaları, EDA tabloları/figürleri, sonuç metrikleri ve
+# grafikleri (results.png, confusion matrix, PR/F1 eğrileri, comparison/*).
+#
+# Hariç tutulanlar: model ağırlıkları (büyük .pt/.pth dosyaları), ham
+# DICOM/PNG görüntü klasörleri (zaten PhysioNet DUA nedeniyle bu repoda yok),
+# Python/Jupyter cache dosyaları, Colab/Drive geçici dosyaları.
+# ---------------------------------------------------------------------------
+
+# Model ağırlıkları (her biri 20-160MB) — runs/<model>/train/weights/
+*.pt
+*.pth
+*.onnx
+*.engine
+
+# Ham görüntü klasörleri (DUA nedeniyle repoya dahil edilmiyor)
+**/images/
+**/dicom/
+*.dcm
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.ipynb_checkpoints/
+
+# Jupyter / Colab geçici dosyaları
+.virtual_documents/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Geçici / log dosyaları
+*.log
+*.tmp
+
+# Telif hakkı korumalı referans makaleler (PDF) — repoya dahil edilmiyor,
+# README'deki DOI linkleriyle erişilebilir.
+*.pdf

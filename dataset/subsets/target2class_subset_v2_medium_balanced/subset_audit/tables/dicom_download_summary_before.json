@@ -1,0 +1,9 @@
+{
+    "expected_dicom_count": 2040,
+    "already_available_local_or_drive": 1622,
+    "missing_or_invalid": 418,
+    "drive_available_count": 1622,
+    "local_available_count": 0,
+    "drive_available_size_gb": 28.851,
+    "local_available_size_gb": 0.0
+}

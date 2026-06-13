@@ -1,0 +1,12 @@
+{
+  "model": "YOLOv8s",
+  "dataset_variant": "raw_png_2class",
+  "best_weights": "/content/drive/MyDrive/vindr_mammo/runs/yolov8s_raw_baseline/train/weights/best.pt",
+  "speed_ms": {
+    "preprocess": 3.575024603886451,
+    "inference": 8.70794709740866,
+    "loss": 0.0007877402562631427,
+    "postprocess": 2.9119865129826383
+  },
+  "fitness": 0.11338482743080255
+}

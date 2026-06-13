@@ -1,0 +1,10 @@
+# Google Colab ortamında torch/torchvision/opencv/pandas/matplotlib genelde
+# hazır gelir; eksik olanlar için:
+ultralytics>=8.1.0
+pycocotools
+torchmetrics
+opencv-python
+pandas
+matplotlib
+pydicom
+numpy

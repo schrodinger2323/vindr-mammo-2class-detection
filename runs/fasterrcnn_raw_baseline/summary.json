@@ -1,0 +1,9 @@
+{
+  "model": "FasterRCNN-ResNet50-FPN",
+  "dataset_variant": "raw_png_2class",
+  "best_weights": "/content/drive/MyDrive/vindr_mammo/runs/fasterrcnn_raw_baseline/train/weights/best.pt",
+  "epochs_trained": 19,
+  "best_val_mAP50": 0.36980703473091125,
+  "conf_threshold_for_pr_f1": 0.5,
+  "iou_threshold_for_pr_f1": 0.5
+}

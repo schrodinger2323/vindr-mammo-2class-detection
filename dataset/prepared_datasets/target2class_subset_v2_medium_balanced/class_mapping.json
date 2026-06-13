@@ -1,0 +1,15 @@
+{
+    "class_to_id": {
+        "Mass": 0,
+        "Suspicious Calcification": 1
+    },
+    "id_to_class": {
+        "0": "Mass",
+        "1": "Suspicious Calcification"
+    },
+    "primary_priority": [
+        "Mass",
+        "Suspicious Calcification"
+    ],
+    "same_box_multilabel_rule": "Mass priority if same bbox has Mass and Suspicious Calcification"
+}

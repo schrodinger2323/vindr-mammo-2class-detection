@@ -1,0 +1,4 @@
+dataset,split,image_count,positive_images,negative_images,positive_image_rate,empty_label_files,box_count,Mass_boxes,Suspicious_Calcification_boxes
+raw_png_2class,train,1418,486,932,0.3427362482369535,932,664,346,318
+raw_png_2class,val,306,103,203,0.3366013071895425,203,131,77,54
+raw_png_2class,test,308,95,213,0.30844155844155846,213,130,69,61

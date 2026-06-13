@@ -1,0 +1,4 @@
+study_type,test,train,val,All
+hard_negative,52,236,52,340
+normal_negative,52,236,52,340
+target_positive,204,952,204,1360

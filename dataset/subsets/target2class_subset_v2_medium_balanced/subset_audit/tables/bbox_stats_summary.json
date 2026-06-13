@@ -1,0 +1,13 @@
+{
+    "n_target_bbox_labels_exploded": 1013,
+    "n_unique_target_bboxes": 927,
+    "min_bbox_width": 24.219970703200033,
+    "median_bbox_width": 221.92993164070003,
+    "mean_bbox_width": 267.7791637111676,
+    "min_bbox_height": 16.21997070309999,
+    "median_bbox_height": 233.64703369138,
+    "mean_bbox_height": 286.53221038963244,
+    "min_bbox_area": 526.3372573236206,
+    "median_bbox_area": 51448.02937747879,
+    "mean_bbox_area": 111950.30946493207
+}

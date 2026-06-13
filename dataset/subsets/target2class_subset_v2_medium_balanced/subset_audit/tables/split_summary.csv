@@ -1,0 +1,4 @@
+subset_split,study_count,image_count,positive_target_images,mass_positive_images,calc_positive_images,negative_images,positive_image_rate
+test,77,308,95,59,59,213,0.3084
+train,356,1424,487,311,299,937,0.342
+val,77,308,104,69,63,204,0.3377

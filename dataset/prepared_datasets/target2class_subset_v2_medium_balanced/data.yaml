@@ -1,0 +1,8 @@
+path: /content/vindr_prepared_datasets/target2class_subset_v2_medium_balanced_raw_png_2class
+train: images/train
+val: images/val
+test: images/test
+nc: 2
+names:
+  0: Mass
+  1: Suspicious Calcification

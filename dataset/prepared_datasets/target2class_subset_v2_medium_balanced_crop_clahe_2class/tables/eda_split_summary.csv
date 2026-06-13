@@ -1,0 +1,4 @@
+dataset,split,image_count,positive_images,negative_images,positive_image_rate,empty_label_files,box_count,Mass_boxes,Suspicious_Calcification_boxes
+crop_clahe_2class,train,1418,484,934,0.34132581100141046,934,661,346,315
+crop_clahe_2class,val,306,103,203,0.3366013071895425,203,131,77,54
+crop_clahe_2class,test,308,93,215,0.30194805194805197,215,127,69,58

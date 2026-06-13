@@ -1,0 +1,6 @@
+stratify_label,test,train,val,All
+hard_negative,52,236,52,340
+normal_negative,52,236,52,340
+target_both,60,284,64,408
+target_calc_only,64,304,64,432
+target_mass_only,80,364,76,520

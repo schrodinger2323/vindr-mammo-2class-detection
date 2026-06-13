@@ -1,0 +1,4562 @@
+{
+  "images": [
+    {
+      "id": 1,
+      "file_name": "images/test/63d3f4fe3f265d310a1023bcf8336a49.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "008b8e61390fcb4c0873258c15b0a53a",
+      "original_image_id": "63d3f4fe3f265d310a1023bcf8336a49"
+    },
+    {
+      "id": 2,
+      "file_name": "images/test/b25443ab817d5590d25b733c1e59192d.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "008b8e61390fcb4c0873258c15b0a53a",
+      "original_image_id": "b25443ab817d5590d25b733c1e59192d"
+    },
+    {
+      "id": 3,
+      "file_name": "images/test/e13c80239d7714e3d964b5f3e37bcff6.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "008b8e61390fcb4c0873258c15b0a53a",
+      "original_image_id": "e13c80239d7714e3d964b5f3e37bcff6"
+    },
+    {
+      "id": 4,
+      "file_name": "images/test/f1f79501410a98782c0a03b48e66df83.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "008b8e61390fcb4c0873258c15b0a53a",
+      "original_image_id": "f1f79501410a98782c0a03b48e66df83"
+    },
+    {
+      "id": 5,
+      "file_name": "images/test/6fbd1ca678eb143c893b5cf07b844d09.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "00fff3f5e68727ee9a2cceeefee31bb9",
+      "original_image_id": "6fbd1ca678eb143c893b5cf07b844d09"
+    },
+    {
+      "id": 6,
+      "file_name": "images/test/81919f88215ae0efaa74ae2c494c4f73.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "00fff3f5e68727ee9a2cceeefee31bb9",
+      "original_image_id": "81919f88215ae0efaa74ae2c494c4f73"
+    },
+    {
+      "id": 7,
+      "file_name": "images/test/bfc5a7b2eda1db5cb794779d75de0b12.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "00fff3f5e68727ee9a2cceeefee31bb9",
+      "original_image_id": "bfc5a7b2eda1db5cb794779d75de0b12"
+    },
+    {
+      "id": 8,
+      "file_name": "images/test/e92f99ecdf4166ed6203897443df6b2b.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "00fff3f5e68727ee9a2cceeefee31bb9",
+      "original_image_id": "e92f99ecdf4166ed6203897443df6b2b"
+    },
+    {
+      "id": 9,
+      "file_name": "images/test/0dbc1663eceef924f0f339604af18364.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "0246c6050121c176d2e8fcf91f22f926",
+      "original_image_id": "0dbc1663eceef924f0f339604af18364"
+    },
+    {
+      "id": 10,
+      "file_name": "images/test/1dfccf26f76424a9eaf4ea6b7cb27f72.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "0246c6050121c176d2e8fcf91f22f926",
+      "original_image_id": "1dfccf26f76424a9eaf4ea6b7cb27f72"
+    },
+    {
+      "id": 11,
+      "file_name": "images/test/561f6d752441850e03afcc954b8def7f.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "0246c6050121c176d2e8fcf91f22f926",
+      "original_image_id": "561f6d752441850e03afcc954b8def7f"
+    },
+    {
+      "id": 12,
+      "file_name": "images/test/b5b4758224e6a66a587182fcdc5f1f1d.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "0246c6050121c176d2e8fcf91f22f926",
+      "original_image_id": "b5b4758224e6a66a587182fcdc5f1f1d"
+    },
+    {
+      "id": 13,
+      "file_name": "images/test/3c1e5520b98544e6d4456f3e935ff0c7.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "07889ee9b57d18e83cfd940b160965b6",
+      "original_image_id": "3c1e5520b98544e6d4456f3e935ff0c7"
+    },
+    {
+      "id": 14,
+      "file_name": "images/test/8992c148694c07d13f2e0ae1c80a15f8.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "07889ee9b57d18e83cfd940b160965b6",
+      "original_image_id": "8992c148694c07d13f2e0ae1c80a15f8"
+    },
+    {
+      "id": 15,
+      "file_name": "images/test/9faf9e04c92982aee3556e2db6737898.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "07889ee9b57d18e83cfd940b160965b6",
+      "original_image_id": "9faf9e04c92982aee3556e2db6737898"
+    },
+    {
+      "id": 16,
+      "file_name": "images/test/f9df9aaf6164afe0042016487f29ca42.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "07889ee9b57d18e83cfd940b160965b6",
+      "original_image_id": "f9df9aaf6164afe0042016487f29ca42"
+    },
+    {
+      "id": 17,
+      "file_name": "images/test/2c5cdab790d50af38bfa8ec7718784dd.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "0a1dc220382dfae8af7f04d91fc99cfb",
+      "original_image_id": "2c5cdab790d50af38bfa8ec7718784dd"
+    },
+    {
+      "id": 18,
+      "file_name": "images/test/42b7cc3c5815868327568035e624c631.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "0a1dc220382dfae8af7f04d91fc99cfb",
+      "original_image_id": "42b7cc3c5815868327568035e624c631"
+    },
+    {
+      "id": 19,
+      "file_name": "images/test/62ad1a54eff120cd5396b70ee1d5f1dd.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "0a1dc220382dfae8af7f04d91fc99cfb",
+      "original_image_id": "62ad1a54eff120cd5396b70ee1d5f1dd"
+    },
+    {
+      "id": 20,
+      "file_name": "images/test/ce725f1550ddca094b950905a7d901f8.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "0a1dc220382dfae8af7f04d91fc99cfb",
+      "original_image_id": "ce725f1550ddca094b950905a7d901f8"
+    },
+    {
+      "id": 21,
+      "file_name": "images/test/15988057d6e70ed0751384b82dd7f2d4.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "0c74dbdbe72ae034c4a429da7b60f55d",
+      "original_image_id": "15988057d6e70ed0751384b82dd7f2d4"
+    },
+    {
+      "id": 22,
+      "file_name": "images/test/43c836b3eebae01fe2347b6d4fba0752.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "0c74dbdbe72ae034c4a429da7b60f55d",
+      "original_image_id": "43c836b3eebae01fe2347b6d4fba0752"
+    },
+    {
+      "id": 23,
+      "file_name": "images/test/74e93280051b7717a44e90641e92d463.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "0c74dbdbe72ae034c4a429da7b60f55d",
+      "original_image_id": "74e93280051b7717a44e90641e92d463"
+    },
+    {
+      "id": 24,
+      "file_name": "images/test/adc67f8ec079103df62216cad195d13e.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "0c74dbdbe72ae034c4a429da7b60f55d",
+      "original_image_id": "adc67f8ec079103df62216cad195d13e"
+    },
+    {
+      "id": 25,
+      "file_name": "images/test/011542ad9bcacf3ab23b07d9f61be440.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "0d61c6431481b6c679347e5add1e62cb",
+      "original_image_id": "011542ad9bcacf3ab23b07d9f61be440"
+    },
+    {
+      "id": 26,
+      "file_name": "images/test/372a2f7d2cf1d3226e912f4535f4e1a2.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "0d61c6431481b6c679347e5add1e62cb",
+      "original_image_id": "372a2f7d2cf1d3226e912f4535f4e1a2"
+    },
+    {
+      "id": 27,
+      "file_name": "images/test/599d4b7d4789dfbbab057220c1380d41.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "0d61c6431481b6c679347e5add1e62cb",
+      "original_image_id": "599d4b7d4789dfbbab057220c1380d41"
+    },
+    {
+      "id": 28,
+      "file_name": "images/test/b4180258ea958c9a145fa01f898a85bc.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "0d61c6431481b6c679347e5add1e62cb",
+      "original_image_id": "b4180258ea958c9a145fa01f898a85bc"
+    },
+    {
+      "id": 29,
+      "file_name": "images/test/2cdaf7cffadd4275836b8e68f74636cd.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "0da7201157257d33fbdbb784a6a6521e",
+      "original_image_id": "2cdaf7cffadd4275836b8e68f74636cd"
+    },
+    {
+      "id": 30,
+      "file_name": "images/test/91e6da7cb97216fc732bc777b9f5a4c0.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "0da7201157257d33fbdbb784a6a6521e",
+      "original_image_id": "91e6da7cb97216fc732bc777b9f5a4c0"
+    },
+    {
+      "id": 31,
+      "file_name": "images/test/af48e02c78989b65eca55a2a77e5c889.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "0da7201157257d33fbdbb784a6a6521e",
+      "original_image_id": "af48e02c78989b65eca55a2a77e5c889"
+    },
+    {
+      "id": 32,
+      "file_name": "images/test/cce8b3e4acb074432312af5e32338f99.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "0da7201157257d33fbdbb784a6a6521e",
+      "original_image_id": "cce8b3e4acb074432312af5e32338f99"
+    },
+    {
+      "id": 33,
+      "file_name": "images/test/18b6303a3ede8d3556f87dada8d64c49.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "0f73f59df0d9355ebe1d6024753a9e1b",
+      "original_image_id": "18b6303a3ede8d3556f87dada8d64c49"
+    },
+    {
+      "id": 34,
+      "file_name": "images/test/3eae7b8d68e4d8fb47b248e640d3e699.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "0f73f59df0d9355ebe1d6024753a9e1b",
+      "original_image_id": "3eae7b8d68e4d8fb47b248e640d3e699"
+    },
+    {
+      "id": 35,
+      "file_name": "images/test/ac45bb3c5656ff2f623ac376a9b594c0.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "0f73f59df0d9355ebe1d6024753a9e1b",
+      "original_image_id": "ac45bb3c5656ff2f623ac376a9b594c0"
+    },
+    {
+      "id": 36,
+      "file_name": "images/test/c0cd071eeccaa65eeeb32ad9c62ee959.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "0f73f59df0d9355ebe1d6024753a9e1b",
+      "original_image_id": "c0cd071eeccaa65eeeb32ad9c62ee959"
+    },
+    {
+      "id": 37,
+      "file_name": "images/test/5b126555eee46fa2ceb2492fe3b4ad7a.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "12b0db966e11c6476cf9134f254fb1b1",
+      "original_image_id": "5b126555eee46fa2ceb2492fe3b4ad7a"
+    },
+    {
+      "id": 38,
+      "file_name": "images/test/632648b87efcae974030e8e9062dcaa5.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "12b0db966e11c6476cf9134f254fb1b1",
+      "original_image_id": "632648b87efcae974030e8e9062dcaa5"
+    },
+    {
+      "id": 39,
+      "file_name": "images/test/7d03b93fcb583f2102614cf3973b2d09.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "12b0db966e11c6476cf9134f254fb1b1",
+      "original_image_id": "7d03b93fcb583f2102614cf3973b2d09"
+    },
+    {
+      "id": 40,
+      "file_name": "images/test/9ccbdc3148ab9ef203d25d26053cabf1.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "12b0db966e11c6476cf9134f254fb1b1",
+      "original_image_id": "9ccbdc3148ab9ef203d25d26053cabf1"
+    },
+    {
+      "id": 41,
+      "file_name": "images/test/031592807c30b54e2fb4bd2400e634e8.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "175f10693af82fdf9bdf9e711697ec13",
+      "original_image_id": "031592807c30b54e2fb4bd2400e634e8"
+    },
+    {
+      "id": 42,
+      "file_name": "images/test/30caea823462601262e5d393e6d0312a.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "175f10693af82fdf9bdf9e711697ec13",
+      "original_image_id": "30caea823462601262e5d393e6d0312a"
+    },
+    {
+      "id": 43,
+      "file_name": "images/test/8d26641339b55a0b7baee70e4653197c.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "175f10693af82fdf9bdf9e711697ec13",
+      "original_image_id": "8d26641339b55a0b7baee70e4653197c"
+    },
+    {
+      "id": 44,
+      "file_name": "images/test/a84d04f4abe98ed9629dc7f4629cc2b2.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "175f10693af82fdf9bdf9e711697ec13",
+      "original_image_id": "a84d04f4abe98ed9629dc7f4629cc2b2"
+    },
+    {
+      "id": 45,
+      "file_name": "images/test/148081c84b96e878ac1b59ad91e89a5f.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "1889846b24ee710ca76492ee53922397",
+      "original_image_id": "148081c84b96e878ac1b59ad91e89a5f"
+    },
+    {
+      "id": 46,
+      "file_name": "images/test/2d489228909a82586874fbe239456149.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "1889846b24ee710ca76492ee53922397",
+      "original_image_id": "2d489228909a82586874fbe239456149"
+    },
+    {
+      "id": 47,
+      "file_name": "images/test/e147a90ddb39c49edba2a730b4f76e49.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "1889846b24ee710ca76492ee53922397",
+      "original_image_id": "e147a90ddb39c49edba2a730b4f76e49"
+    },
+    {
+      "id": 48,
+      "file_name": "images/test/f09073564905c2f98bef3f7a967de6bb.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "1889846b24ee710ca76492ee53922397",
+      "original_image_id": "f09073564905c2f98bef3f7a967de6bb"
+    },
+    {
+      "id": 49,
+      "file_name": "images/test/298bd294e8ca43bcf3c66574a66682c6.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "1b43d2adcf3f300c550d3030b16c861f",
+      "original_image_id": "298bd294e8ca43bcf3c66574a66682c6"
+    },
+    {
+      "id": 50,
+      "file_name": "images/test/4d59a1f3bc1183b998c28b18f531fb9d.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "1b43d2adcf3f300c550d3030b16c861f",
+      "original_image_id": "4d59a1f3bc1183b998c28b18f531fb9d"
+    },
+    {
+      "id": 51,
+      "file_name": "images/test/5fb79402e56f9fe17bb7adafe792cb07.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "1b43d2adcf3f300c550d3030b16c861f",
+      "original_image_id": "5fb79402e56f9fe17bb7adafe792cb07"
+    },
+    {
+      "id": 52,
+      "file_name": "images/test/db72a9a3c5827c1982b9b6d953c3dc04.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "1b43d2adcf3f300c550d3030b16c861f",
+      "original_image_id": "db72a9a3c5827c1982b9b6d953c3dc04"
+    },
+    {
+      "id": 53,
+      "file_name": "images/test/22fba1258f27256a9f1d090b0ddca9c7.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "1e2b0ce2c5a93c643834c98803e6ac2d",
+      "original_image_id": "22fba1258f27256a9f1d090b0ddca9c7"
+    },
+    {
+      "id": 54,
+      "file_name": "images/test/7c616bb264b7a725e0bb420854a01537.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "1e2b0ce2c5a93c643834c98803e6ac2d",
+      "original_image_id": "7c616bb264b7a725e0bb420854a01537"
+    },
+    {
+      "id": 55,
+      "file_name": "images/test/da7b44b1079d80029a432be9d521f946.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "1e2b0ce2c5a93c643834c98803e6ac2d",
+      "original_image_id": "da7b44b1079d80029a432be9d521f946"
+    },
+    {
+      "id": 56,
+      "file_name": "images/test/f2ebfa37e63f0aa3306b4cfdd4c7a18c.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "1e2b0ce2c5a93c643834c98803e6ac2d",
+      "original_image_id": "f2ebfa37e63f0aa3306b4cfdd4c7a18c"
+    },
+    {
+      "id": 57,
+      "file_name": "images/test/3bc7e72f901d8bc5fee1d557cf4a44f0.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "2098dd6314883eeb2192270dd3d3f530",
+      "original_image_id": "3bc7e72f901d8bc5fee1d557cf4a44f0"
+    },
+    {
+      "id": 58,
+      "file_name": "images/test/71a855e6de5407bf637d038553336147.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "2098dd6314883eeb2192270dd3d3f530",
+      "original_image_id": "71a855e6de5407bf637d038553336147"
+    },
+    {
+      "id": 59,
+      "file_name": "images/test/87fcbc76093232aad3ae6e16725b0937.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "2098dd6314883eeb2192270dd3d3f530",
+      "original_image_id": "87fcbc76093232aad3ae6e16725b0937"
+    },
+    {
+      "id": 60,
+      "file_name": "images/test/b17ae24508b2824349b471ea7b7ac3f1.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "2098dd6314883eeb2192270dd3d3f530",
+      "original_image_id": "b17ae24508b2824349b471ea7b7ac3f1"
+    },
+    {
+      "id": 61,
+      "file_name": "images/test/3a6cdfd8d229da664e70f62e0b9b9a66.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "24f98ac8cc135d3c62c5415b235534de",
+      "original_image_id": "3a6cdfd8d229da664e70f62e0b9b9a66"
+    },
+    {
+      "id": 62,
+      "file_name": "images/test/3d399749ff4e7127b9b59b7bc59357a2.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "24f98ac8cc135d3c62c5415b235534de",
+      "original_image_id": "3d399749ff4e7127b9b59b7bc59357a2"
+    },
+    {
+      "id": 63,
+      "file_name": "images/test/92822f55b4e5dd81f78d3544eee96174.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "24f98ac8cc135d3c62c5415b235534de",
+      "original_image_id": "92822f55b4e5dd81f78d3544eee96174"
+    },
+    {
+      "id": 64,
+      "file_name": "images/test/d3f2ec809eddcadb8d458ea80eeadc87.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "24f98ac8cc135d3c62c5415b235534de",
+      "original_image_id": "d3f2ec809eddcadb8d458ea80eeadc87"
+    },
+    {
+      "id": 65,
+      "file_name": "images/test/0734a9dc7d6d89e8c91458545afeef9d.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "268bbbd1932753cedf8846fe716c669b",
+      "original_image_id": "0734a9dc7d6d89e8c91458545afeef9d"
+    },
+    {
+      "id": 66,
+      "file_name": "images/test/6b4c95e855a752c8c033030c6937b6a0.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "268bbbd1932753cedf8846fe716c669b",
+      "original_image_id": "6b4c95e855a752c8c033030c6937b6a0"
+    },
+    {
+      "id": 67,
+      "file_name": "images/test/a6dd7304c675c6696afdcc41c58a95fd.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "268bbbd1932753cedf8846fe716c669b",
+      "original_image_id": "a6dd7304c675c6696afdcc41c58a95fd"
+    },
+    {
+      "id": 68,
+      "file_name": "images/test/ceb58e034ec7b2856bad9b73c98fba74.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "268bbbd1932753cedf8846fe716c669b",
+      "original_image_id": "ceb58e034ec7b2856bad9b73c98fba74"
+    },
+    {
+      "id": 69,
+      "file_name": "images/test/1115225b7f3464dbee690e17941e051e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "29bfec1e3b5a67751abc3dbf46df3e62",
+      "original_image_id": "1115225b7f3464dbee690e17941e051e"
+    },
+    {
+      "id": 70,
+      "file_name": "images/test/1399570f25c09f046761cd7603c655aa.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "29bfec1e3b5a67751abc3dbf46df3e62",
+      "original_image_id": "1399570f25c09f046761cd7603c655aa"
+    },
+    {
+      "id": 71,
+      "file_name": "images/test/ac931a4197a261179856c898dd2a943f.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "29bfec1e3b5a67751abc3dbf46df3e62",
+      "original_image_id": "ac931a4197a261179856c898dd2a943f"
+    },
+    {
+      "id": 72,
+      "file_name": "images/test/d9e90ddbfbf7172461e93a0e4e97b880.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "29bfec1e3b5a67751abc3dbf46df3e62",
+      "original_image_id": "d9e90ddbfbf7172461e93a0e4e97b880"
+    },
+    {
+      "id": 73,
+      "file_name": "images/test/56474fcca4e16fe650128f15a4dd0835.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "2d2bb6d7e02db98049f2f598bb8c889c",
+      "original_image_id": "56474fcca4e16fe650128f15a4dd0835"
+    },
+    {
+      "id": 74,
+      "file_name": "images/test/afd0356d4d6d067e19788f47a73845db.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "2d2bb6d7e02db98049f2f598bb8c889c",
+      "original_image_id": "afd0356d4d6d067e19788f47a73845db"
+    },
+    {
+      "id": 75,
+      "file_name": "images/test/db027e3a4df4857b0e389aa3663c7bae.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "2d2bb6d7e02db98049f2f598bb8c889c",
+      "original_image_id": "db027e3a4df4857b0e389aa3663c7bae"
+    },
+    {
+      "id": 76,
+      "file_name": "images/test/e07cf8ec5f1048ca51adfedb641aae47.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "2d2bb6d7e02db98049f2f598bb8c889c",
+      "original_image_id": "e07cf8ec5f1048ca51adfedb641aae47"
+    },
+    {
+      "id": 77,
+      "file_name": "images/test/24b3529f050a56afb384b30520bc8482.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "2d3f722896d9c562017546fde5d8dcc4",
+      "original_image_id": "24b3529f050a56afb384b30520bc8482"
+    },
+    {
+      "id": 78,
+      "file_name": "images/test/33599e83b483eb421f745acf18d6dbba.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "2d3f722896d9c562017546fde5d8dcc4",
+      "original_image_id": "33599e83b483eb421f745acf18d6dbba"
+    },
+    {
+      "id": 79,
+      "file_name": "images/test/9b708e4e8de5b70e5896a9c4384157d3.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "2d3f722896d9c562017546fde5d8dcc4",
+      "original_image_id": "9b708e4e8de5b70e5896a9c4384157d3"
+    },
+    {
+      "id": 80,
+      "file_name": "images/test/eee68a195e1bca0721597bdd923edb3e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "2d3f722896d9c562017546fde5d8dcc4",
+      "original_image_id": "eee68a195e1bca0721597bdd923edb3e"
+    },
+    {
+      "id": 81,
+      "file_name": "images/test/0bb148da1406b21011529bb886c17e79.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "2eddff9a90428070b98f85f4c4b6c758",
+      "original_image_id": "0bb148da1406b21011529bb886c17e79"
+    },
+    {
+      "id": 82,
+      "file_name": "images/test/495ce169f8b69d07d00f88d0b35af1d8.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "2eddff9a90428070b98f85f4c4b6c758",
+      "original_image_id": "495ce169f8b69d07d00f88d0b35af1d8"
+    },
+    {
+      "id": 83,
+      "file_name": "images/test/94e4d888c947abda8f191f8f74e5d7bc.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "2eddff9a90428070b98f85f4c4b6c758",
+      "original_image_id": "94e4d888c947abda8f191f8f74e5d7bc"
+    },
+    {
+      "id": 84,
+      "file_name": "images/test/cde03e41e070aca46a92c1dac2e8cfb0.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "2eddff9a90428070b98f85f4c4b6c758",
+      "original_image_id": "cde03e41e070aca46a92c1dac2e8cfb0"
+    },
+    {
+      "id": 85,
+      "file_name": "images/test/0c0c1942f66661c005990003f3ed34b4.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "364557b79eaa8946cdb38dcb25763308",
+      "original_image_id": "0c0c1942f66661c005990003f3ed34b4"
+    },
+    {
+      "id": 86,
+      "file_name": "images/test/15601d95373173f512a26f60751dc858.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "364557b79eaa8946cdb38dcb25763308",
+      "original_image_id": "15601d95373173f512a26f60751dc858"
+    },
+    {
+      "id": 87,
+      "file_name": "images/test/ac534902d69dcdcf0f3d27a4e80e15ed.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "364557b79eaa8946cdb38dcb25763308",
+      "original_image_id": "ac534902d69dcdcf0f3d27a4e80e15ed"
+    },
+    {
+      "id": 88,
+      "file_name": "images/test/ed7b3119cd93fd7c8b5bf3662822dfe5.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "364557b79eaa8946cdb38dcb25763308",
+      "original_image_id": "ed7b3119cd93fd7c8b5bf3662822dfe5"
+    },
+    {
+      "id": 89,
+      "file_name": "images/test/061bf98fabad5f9d99fb1919346a3a76.png",
+      "width": 1491,
+      "height": 2048,
+      "study_id": "3ede3de12fc4c4bb837f7422a3a16380",
+      "original_image_id": "061bf98fabad5f9d99fb1919346a3a76"
+    },
+    {
+      "id": 90,
+      "file_name": "images/test/7611f0ce13bdb27a47d820d24481808c.png",
+      "width": 1491,
+      "height": 2048,
+      "study_id": "3ede3de12fc4c4bb837f7422a3a16380",
+      "original_image_id": "7611f0ce13bdb27a47d820d24481808c"
+    },
+    {
+      "id": 91,
+      "file_name": "images/test/a25f7709f657945b8433a71712f74600.png",
+      "width": 1518,
+      "height": 2048,
+      "study_id": "3ede3de12fc4c4bb837f7422a3a16380",
+      "original_image_id": "a25f7709f657945b8433a71712f74600"
+    },
+    {
+      "id": 92,
+      "file_name": "images/test/adb001c2aa189526561abc1ceb82810b.png",
+      "width": 1527,
+      "height": 2048,
+      "study_id": "3ede3de12fc4c4bb837f7422a3a16380",
+      "original_image_id": "adb001c2aa189526561abc1ceb82810b"
+    },
+    {
+      "id": 93,
+      "file_name": "images/test/1f030fe447137f3c604db6f24481a662.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "43420741f222a73d6d1c99ef63f79698",
+      "original_image_id": "1f030fe447137f3c604db6f24481a662"
+    },
+    {
+      "id": 94,
+      "file_name": "images/test/37797e8ccb0614c811acea9f8f6ace7b.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "43420741f222a73d6d1c99ef63f79698",
+      "original_image_id": "37797e8ccb0614c811acea9f8f6ace7b"
+    },
+    {
+      "id": 95,
+      "file_name": "images/test/e489d6435e6a66399598ff28e8df3384.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "43420741f222a73d6d1c99ef63f79698",
+      "original_image_id": "e489d6435e6a66399598ff28e8df3384"
+    },
+    {
+      "id": 96,
+      "file_name": "images/test/ffac8bc2803630da2fb467c566d1f136.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "43420741f222a73d6d1c99ef63f79698",
+      "original_image_id": "ffac8bc2803630da2fb467c566d1f136"
+    },
+    {
+      "id": 97,
+      "file_name": "images/test/52092e69278ec47bbcdb01cb7d4ac51e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "4571acaa221cdca2853428052e59985b",
+      "original_image_id": "52092e69278ec47bbcdb01cb7d4ac51e"
+    },
+    {
+      "id": 98,
+      "file_name": "images/test/a35a25dd798e16c04753fdf6248c8168.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "4571acaa221cdca2853428052e59985b",
+      "original_image_id": "a35a25dd798e16c04753fdf6248c8168"
+    },
+    {
+      "id": 99,
+      "file_name": "images/test/b5bf2aafb96321b9ed5c2c12e9d590f0.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "4571acaa221cdca2853428052e59985b",
+      "original_image_id": "b5bf2aafb96321b9ed5c2c12e9d590f0"
+    },
+    {
+      "id": 100,
+      "file_name": "images/test/f661a37a572d7da24684439046ccc850.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "4571acaa221cdca2853428052e59985b",
+      "original_image_id": "f661a37a572d7da24684439046ccc850"
+    },
+    {
+      "id": 101,
+      "file_name": "images/test/2dab1877a9f577cc30d1421525b5d97d.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "4fc011ee4b49040648fdd2d3dcf883c3",
+      "original_image_id": "2dab1877a9f577cc30d1421525b5d97d"
+    },
+    {
+      "id": 102,
+      "file_name": "images/test/31ead46d39ccc859103af327aef5e192.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "4fc011ee4b49040648fdd2d3dcf883c3",
+      "original_image_id": "31ead46d39ccc859103af327aef5e192"
+    },
+    {
+      "id": 103,
+      "file_name": "images/test/a9c839293c5d12e8ccccd20281ffb692.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "4fc011ee4b49040648fdd2d3dcf883c3",
+      "original_image_id": "a9c839293c5d12e8ccccd20281ffb692"
+    },
+    {
+      "id": 104,
+      "file_name": "images/test/f0e839f095171073b5348bb756afb32f.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "4fc011ee4b49040648fdd2d3dcf883c3",
+      "original_image_id": "f0e839f095171073b5348bb756afb32f"
+    },
+    {
+      "id": 105,
+      "file_name": "images/test/0cc9394905ef9d2527799723b4e87c72.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "50aed32dc3b9d108a1c0966d13991511",
+      "original_image_id": "0cc9394905ef9d2527799723b4e87c72"
+    },
+    {
+      "id": 106,
+      "file_name": "images/test/20ef0abde078ddde96b03ddb3608e3ec.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "50aed32dc3b9d108a1c0966d13991511",
+      "original_image_id": "20ef0abde078ddde96b03ddb3608e3ec"
+    },
+    {
+      "id": 107,
+      "file_name": "images/test/6596e18d9661562789235813aab6ef00.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "50aed32dc3b9d108a1c0966d13991511",
+      "original_image_id": "6596e18d9661562789235813aab6ef00"
+    },
+    {
+      "id": 108,
+      "file_name": "images/test/8114a9e13ec53085eed9619691523c59.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "50aed32dc3b9d108a1c0966d13991511",
+      "original_image_id": "8114a9e13ec53085eed9619691523c59"
+    },
+    {
+      "id": 109,
+      "file_name": "images/test/0bc4de293c8632352519d9aa87245e96.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "543f67d7c06bc174ebfea8531ea9416c",
+      "original_image_id": "0bc4de293c8632352519d9aa87245e96"
+    },
+    {
+      "id": 110,
+      "file_name": "images/test/73fb935853a4c56c41e9b83fb05caf84.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "543f67d7c06bc174ebfea8531ea9416c",
+      "original_image_id": "73fb935853a4c56c41e9b83fb05caf84"
+    },
+    {
+      "id": 111,
+      "file_name": "images/test/bd5bb3313334648c13e505efc11b55f3.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "543f67d7c06bc174ebfea8531ea9416c",
+      "original_image_id": "bd5bb3313334648c13e505efc11b55f3"
+    },
+    {
+      "id": 112,
+      "file_name": "images/test/d180e924950922d508935fd81d843643.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "543f67d7c06bc174ebfea8531ea9416c",
+      "original_image_id": "d180e924950922d508935fd81d843643"
+    },
+    {
+      "id": 113,
+      "file_name": "images/test/73d9a9cb6d8d2685271440b9bd0bfc4b.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "563643e06302bcd7216c2ca8de3157e5",
+      "original_image_id": "73d9a9cb6d8d2685271440b9bd0bfc4b"
+    },
+    {
+      "id": 114,
+      "file_name": "images/test/9ebd169de1990f18295bd173e655e698.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "563643e06302bcd7216c2ca8de3157e5",
+      "original_image_id": "9ebd169de1990f18295bd173e655e698"
+    },
+    {
+      "id": 115,
+      "file_name": "images/test/b852a6dcb7570e50863daf1d299da1e4.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "563643e06302bcd7216c2ca8de3157e5",
+      "original_image_id": "b852a6dcb7570e50863daf1d299da1e4"
+    },
+    {
+      "id": 116,
+      "file_name": "images/test/fde50065b6d598d0bb62a08a0f0d97b7.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "563643e06302bcd7216c2ca8de3157e5",
+      "original_image_id": "fde50065b6d598d0bb62a08a0f0d97b7"
+    },
+    {
+      "id": 117,
+      "file_name": "images/test/2424a42cd4c30fdb50d63a044055b1ee.png",
+      "width": 1509,
+      "height": 2048,
+      "study_id": "5f6e4829dd69b3643277057fc8640aa3",
+      "original_image_id": "2424a42cd4c30fdb50d63a044055b1ee"
+    },
+    {
+      "id": 118,
+      "file_name": "images/test/40bf312ce7f5a9291ccc0dfbe53ba48d.png",
+      "width": 1491,
+      "height": 2048,
+      "study_id": "5f6e4829dd69b3643277057fc8640aa3",
+      "original_image_id": "40bf312ce7f5a9291ccc0dfbe53ba48d"
+    },
+    {
+      "id": 119,
+      "file_name": "images/test/509310f050909df752c2f63c4ab4f750.png",
+      "width": 1491,
+      "height": 2048,
+      "study_id": "5f6e4829dd69b3643277057fc8640aa3",
+      "original_image_id": "509310f050909df752c2f63c4ab4f750"
+    },
+    {
+      "id": 120,
+      "file_name": "images/test/bbe1310b92727a2313d8202042140e01.png",
+      "width": 1491,
+      "height": 2048,
+      "study_id": "5f6e4829dd69b3643277057fc8640aa3",
+      "original_image_id": "bbe1310b92727a2313d8202042140e01"
+    },
+    {
+      "id": 121,
+      "file_name": "images/test/0924b5266ec6057c8d9977fb32267987.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "695d09e0fdad29a27dff29500d352008",
+      "original_image_id": "0924b5266ec6057c8d9977fb32267987"
+    },
+    {
+      "id": 122,
+      "file_name": "images/test/84e552d2e538d3413048be2e2094a509.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "695d09e0fdad29a27dff29500d352008",
+      "original_image_id": "84e552d2e538d3413048be2e2094a509"
+    },
+    {
+      "id": 123,
+      "file_name": "images/test/904f3bd576821c96273ece83ac017f1f.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "695d09e0fdad29a27dff29500d352008",
+      "original_image_id": "904f3bd576821c96273ece83ac017f1f"
+    },
+    {
+      "id": 124,
+      "file_name": "images/test/9bfaf5daec30606b515d2c005f29f0dc.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "695d09e0fdad29a27dff29500d352008",
+      "original_image_id": "9bfaf5daec30606b515d2c005f29f0dc"
+    },
+    {
+      "id": 125,
+      "file_name": "images/test/0a93caa224aaaae956302116ca60a5e5.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "6bd2e4a33c58df8a6b88e057a3d4f570",
+      "original_image_id": "0a93caa224aaaae956302116ca60a5e5"
+    },
+    {
+      "id": 126,
+      "file_name": "images/test/1273b140695163fed8976f3473cdf420.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "6bd2e4a33c58df8a6b88e057a3d4f570",
+      "original_image_id": "1273b140695163fed8976f3473cdf420"
+    },
+    {
+      "id": 127,
+      "file_name": "images/test/476c58f6b184e72aa27c8ffc88cc7b8e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "6bd2e4a33c58df8a6b88e057a3d4f570",
+      "original_image_id": "476c58f6b184e72aa27c8ffc88cc7b8e"
+    },
+    {
+      "id": 128,
+      "file_name": "images/test/d69b715aa17c2cd6b7ade3db5d6cac2b.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "6bd2e4a33c58df8a6b88e057a3d4f570",
+      "original_image_id": "d69b715aa17c2cd6b7ade3db5d6cac2b"
+    },
+    {
+      "id": 129,
+      "file_name": "images/test/1a89e1a41d82efe8826ffe15c41db3f4.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "6d75446a6406fc669f3464543b8f7893",
+      "original_image_id": "1a89e1a41d82efe8826ffe15c41db3f4"
+    },
+    {
+      "id": 130,
+      "file_name": "images/test/8cf6ce9707a45986000b816af94d3087.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "6d75446a6406fc669f3464543b8f7893",
+      "original_image_id": "8cf6ce9707a45986000b816af94d3087"
+    },
+    {
+      "id": 131,
+      "file_name": "images/test/b288f4a39aa31eaf186b276c1da89086.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "6d75446a6406fc669f3464543b8f7893",
+      "original_image_id": "b288f4a39aa31eaf186b276c1da89086"
+    },
+    {
+      "id": 132,
+      "file_name": "images/test/b3289c8c13622b3d9ad10a36318a0549.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "6d75446a6406fc669f3464543b8f7893",
+      "original_image_id": "b3289c8c13622b3d9ad10a36318a0549"
+    },
+    {
+      "id": 133,
+      "file_name": "images/test/060cb42475c02acae1f736523af0c0c6.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "6db648c3e684230add2cb3189b3e7f82",
+      "original_image_id": "060cb42475c02acae1f736523af0c0c6"
+    },
+    {
+      "id": 134,
+      "file_name": "images/test/9f57b616c50edb4a67ef9711917e86e5.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "6db648c3e684230add2cb3189b3e7f82",
+      "original_image_id": "9f57b616c50edb4a67ef9711917e86e5"
+    },
+    {
+      "id": 135,
+      "file_name": "images/test/b2871c5e854d0ac640a4fdcb5fcc2e6e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "6db648c3e684230add2cb3189b3e7f82",
+      "original_image_id": "b2871c5e854d0ac640a4fdcb5fcc2e6e"
+    },
+    {
+      "id": 136,
+      "file_name": "images/test/dd64701a05729fd607264eb3a6872111.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "6db648c3e684230add2cb3189b3e7f82",
+      "original_image_id": "dd64701a05729fd607264eb3a6872111"
+    },
+    {
+      "id": 137,
+      "file_name": "images/test/0db093a35cca466e17abdad0e7ba53d7.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "6df82a6f79312d3cd74ffa5c5122ab2f",
+      "original_image_id": "0db093a35cca466e17abdad0e7ba53d7"
+    },
+    {
+      "id": 138,
+      "file_name": "images/test/0f40cfc60045ad556b15ea6c7c7d37dd.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "6df82a6f79312d3cd74ffa5c5122ab2f",
+      "original_image_id": "0f40cfc60045ad556b15ea6c7c7d37dd"
+    },
+    {
+      "id": 139,
+      "file_name": "images/test/3e729a30436a228341dea9e62a628ae9.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "6df82a6f79312d3cd74ffa5c5122ab2f",
+      "original_image_id": "3e729a30436a228341dea9e62a628ae9"
+    },
+    {
+      "id": 140,
+      "file_name": "images/test/6355a5376026950515a7c280b8000c38.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "6df82a6f79312d3cd74ffa5c5122ab2f",
+      "original_image_id": "6355a5376026950515a7c280b8000c38"
+    },
+    {
+      "id": 141,
+      "file_name": "images/test/03234e390d3f2c9c07889e1687eafbb8.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "72d177eae7c6b34a411341368f32ca5a",
+      "original_image_id": "03234e390d3f2c9c07889e1687eafbb8"
+    },
+    {
+      "id": 142,
+      "file_name": "images/test/5070efa435c6661ef1d0ecddfbb174eb.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "72d177eae7c6b34a411341368f32ca5a",
+      "original_image_id": "5070efa435c6661ef1d0ecddfbb174eb"
+    },
+    {
+      "id": 143,
+      "file_name": "images/test/b559926c7196a373fc1c8eff555044dc.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "72d177eae7c6b34a411341368f32ca5a",
+      "original_image_id": "b559926c7196a373fc1c8eff555044dc"
+    },
+    {
+      "id": 144,
+      "file_name": "images/test/c171fed7a869e9cb41c9a10e7ee6f4f9.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "72d177eae7c6b34a411341368f32ca5a",
+      "original_image_id": "c171fed7a869e9cb41c9a10e7ee6f4f9"
+    },
+    {
+      "id": 145,
+      "file_name": "images/test/735851f234a657318773c4cbbe4969cf.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "7ad3e804b8985abc9b72ee0bd4c4a8a3",
+      "original_image_id": "735851f234a657318773c4cbbe4969cf"
+    },
+    {
+      "id": 146,
+      "file_name": "images/test/90b0c7b7b17c0f74c30b9e142a59b2ea.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "7ad3e804b8985abc9b72ee0bd4c4a8a3",
+      "original_image_id": "90b0c7b7b17c0f74c30b9e142a59b2ea"
+    },
+    {
+      "id": 147,
+      "file_name": "images/test/93acc4ef27f7febe3fcc850246873b29.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "7ad3e804b8985abc9b72ee0bd4c4a8a3",
+      "original_image_id": "93acc4ef27f7febe3fcc850246873b29"
+    },
+    {
+      "id": 148,
+      "file_name": "images/test/952db864c34b4f02eeabc1559fda2058.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "7ad3e804b8985abc9b72ee0bd4c4a8a3",
+      "original_image_id": "952db864c34b4f02eeabc1559fda2058"
+    },
+    {
+      "id": 149,
+      "file_name": "images/test/0b0f0267ddfed609b645314fd6edecd7.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8087671bc3e243bdcf933ff651df0b1d",
+      "original_image_id": "0b0f0267ddfed609b645314fd6edecd7"
+    },
+    {
+      "id": 150,
+      "file_name": "images/test/8582623d6d67e0fa198e3cc83b6ae4c5.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8087671bc3e243bdcf933ff651df0b1d",
+      "original_image_id": "8582623d6d67e0fa198e3cc83b6ae4c5"
+    },
+    {
+      "id": 151,
+      "file_name": "images/test/917eb2a5ade30f76921a19064b61377c.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8087671bc3e243bdcf933ff651df0b1d",
+      "original_image_id": "917eb2a5ade30f76921a19064b61377c"
+    },
+    {
+      "id": 152,
+      "file_name": "images/test/fbcbfdd198a898b5b8ea480688dd295e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8087671bc3e243bdcf933ff651df0b1d",
+      "original_image_id": "fbcbfdd198a898b5b8ea480688dd295e"
+    },
+    {
+      "id": 153,
+      "file_name": "images/test/6e0cfd8cdae637f4613868dbbc34b453.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "81885e37a9a42bd351516b83bc3f6d66",
+      "original_image_id": "6e0cfd8cdae637f4613868dbbc34b453"
+    },
+    {
+      "id": 154,
+      "file_name": "images/test/b245b5394e517f3950c4268471e92d20.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "81885e37a9a42bd351516b83bc3f6d66",
+      "original_image_id": "b245b5394e517f3950c4268471e92d20"
+    },
+    {
+      "id": 155,
+      "file_name": "images/test/b2c3e51207d752c424ec1d00e12f39cf.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "81885e37a9a42bd351516b83bc3f6d66",
+      "original_image_id": "b2c3e51207d752c424ec1d00e12f39cf"
+    },
+    {
+      "id": 156,
+      "file_name": "images/test/f3f7753468997b03b3d8707edd9bef37.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "81885e37a9a42bd351516b83bc3f6d66",
+      "original_image_id": "f3f7753468997b03b3d8707edd9bef37"
+    },
+    {
+      "id": 157,
+      "file_name": "images/test/0a783b57dbe25acd10a1a2cfdba1e7a9.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "851e387e17df214ec4a50bcc713a078a",
+      "original_image_id": "0a783b57dbe25acd10a1a2cfdba1e7a9"
+    },
+    {
+      "id": 158,
+      "file_name": "images/test/1d8ac472dffd74039fcb996f21036d50.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "851e387e17df214ec4a50bcc713a078a",
+      "original_image_id": "1d8ac472dffd74039fcb996f21036d50"
+    },
+    {
+      "id": 159,
+      "file_name": "images/test/40ed09234040d4f119a5f24bd19c9e93.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "851e387e17df214ec4a50bcc713a078a",
+      "original_image_id": "40ed09234040d4f119a5f24bd19c9e93"
+    },
+    {
+      "id": 160,
+      "file_name": "images/test/60c71201e36784352a5a8a5c5b56e7b4.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "851e387e17df214ec4a50bcc713a078a",
+      "original_image_id": "60c71201e36784352a5a8a5c5b56e7b4"
+    },
+    {
+      "id": 161,
+      "file_name": "images/test/493067c8a57ad91b88464e480125954c.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "85d26c72e12b6139a6d26b54c3706c30",
+      "original_image_id": "493067c8a57ad91b88464e480125954c"
+    },
+    {
+      "id": 162,
+      "file_name": "images/test/5c1900311cc60d72c0efa83bc2250417.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "85d26c72e12b6139a6d26b54c3706c30",
+      "original_image_id": "5c1900311cc60d72c0efa83bc2250417"
+    },
+    {
+      "id": 163,
+      "file_name": "images/test/6c5ba6a34d007bceeccba36666c74ab0.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "85d26c72e12b6139a6d26b54c3706c30",
+      "original_image_id": "6c5ba6a34d007bceeccba36666c74ab0"
+    },
+    {
+      "id": 164,
+      "file_name": "images/test/ca0d26213dee21e7f9293cf24c5fd8e1.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "85d26c72e12b6139a6d26b54c3706c30",
+      "original_image_id": "ca0d26213dee21e7f9293cf24c5fd8e1"
+    },
+    {
+      "id": 165,
+      "file_name": "images/test/51164f392aaf8ecee271ad538954d0b0.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "86a98170d7f434e56f89168f8b7c3c8c",
+      "original_image_id": "51164f392aaf8ecee271ad538954d0b0"
+    },
+    {
+      "id": 166,
+      "file_name": "images/test/68485c632936e965249b2aee946aec2d.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "86a98170d7f434e56f89168f8b7c3c8c",
+      "original_image_id": "68485c632936e965249b2aee946aec2d"
+    },
+    {
+      "id": 167,
+      "file_name": "images/test/b14d40b0221fc76cf05acbec7d89a223.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "86a98170d7f434e56f89168f8b7c3c8c",
+      "original_image_id": "b14d40b0221fc76cf05acbec7d89a223"
+    },
+    {
+      "id": 168,
+      "file_name": "images/test/ea9f4ab4ccd06765abe0241fa03ffe69.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "86a98170d7f434e56f89168f8b7c3c8c",
+      "original_image_id": "ea9f4ab4ccd06765abe0241fa03ffe69"
+    },
+    {
+      "id": 169,
+      "file_name": "images/test/1edafb4bb142562da9c6d0ebba585b83.png",
+      "width": 1573,
+      "height": 2048,
+      "study_id": "8bf4f9d531f68299f8d8f9d033bfa5b3",
+      "original_image_id": "1edafb4bb142562da9c6d0ebba585b83"
+    },
+    {
+      "id": 170,
+      "file_name": "images/test/693ad1d74e31fd0ed5a5bcf79cb1f307.png",
+      "width": 1564,
+      "height": 2048,
+      "study_id": "8bf4f9d531f68299f8d8f9d033bfa5b3",
+      "original_image_id": "693ad1d74e31fd0ed5a5bcf79cb1f307"
+    },
+    {
+      "id": 171,
+      "file_name": "images/test/735a467ee2c8673392fff2e0d3126277.png",
+      "width": 1582,
+      "height": 2048,
+      "study_id": "8bf4f9d531f68299f8d8f9d033bfa5b3",
+      "original_image_id": "735a467ee2c8673392fff2e0d3126277"
+    },
+    {
+      "id": 172,
+      "file_name": "images/test/73f26353ddd5e31dc2926143a99c9d58.png",
+      "width": 1582,
+      "height": 2048,
+      "study_id": "8bf4f9d531f68299f8d8f9d033bfa5b3",
+      "original_image_id": "73f26353ddd5e31dc2926143a99c9d58"
+    },
+    {
+      "id": 173,
+      "file_name": "images/test/4d1d2cd40d8db9f452bd1b01771c1f9a.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8c3a72bc005d1638babd62ba02d56126",
+      "original_image_id": "4d1d2cd40d8db9f452bd1b01771c1f9a"
+    },
+    {
+      "id": 174,
+      "file_name": "images/test/4e0a4f7f59e380c1124675b69610e998.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8c3a72bc005d1638babd62ba02d56126",
+      "original_image_id": "4e0a4f7f59e380c1124675b69610e998"
+    },
+    {
+      "id": 175,
+      "file_name": "images/test/56fe870f46d9f4862df7cb81de2ddd17.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8c3a72bc005d1638babd62ba02d56126",
+      "original_image_id": "56fe870f46d9f4862df7cb81de2ddd17"
+    },
+    {
+      "id": 176,
+      "file_name": "images/test/c3bb338966696288811221ea1ed80a8a.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8c3a72bc005d1638babd62ba02d56126",
+      "original_image_id": "c3bb338966696288811221ea1ed80a8a"
+    },
+    {
+      "id": 177,
+      "file_name": "images/test/36c08b1a89a0a9b5de5036b6b2b2e10d.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8dd986e8174fc84c2a984e66a416ff9f",
+      "original_image_id": "36c08b1a89a0a9b5de5036b6b2b2e10d"
+    },
+    {
+      "id": 178,
+      "file_name": "images/test/6a8ea59036175422f3f8253b21b3230e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8dd986e8174fc84c2a984e66a416ff9f",
+      "original_image_id": "6a8ea59036175422f3f8253b21b3230e"
+    },
+    {
+      "id": 179,
+      "file_name": "images/test/6c89a90416411eecf56e5ea1fff2a1e2.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8dd986e8174fc84c2a984e66a416ff9f",
+      "original_image_id": "6c89a90416411eecf56e5ea1fff2a1e2"
+    },
+    {
+      "id": 180,
+      "file_name": "images/test/982d001cfe856c3bd4eeb6e3a82f342a.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8dd986e8174fc84c2a984e66a416ff9f",
+      "original_image_id": "982d001cfe856c3bd4eeb6e3a82f342a"
+    },
+    {
+      "id": 181,
+      "file_name": "images/test/3bb816e6cf7dc6b2bfbb442a18fbc643.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8f447c29a7aa0c5aa2b8e8a852b01560",
+      "original_image_id": "3bb816e6cf7dc6b2bfbb442a18fbc643"
+    },
+    {
+      "id": 182,
+      "file_name": "images/test/59302684b3ec124d146c8098e6925c83.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8f447c29a7aa0c5aa2b8e8a852b01560",
+      "original_image_id": "59302684b3ec124d146c8098e6925c83"
+    },
+    {
+      "id": 183,
+      "file_name": "images/test/623e9b9473cf02690b2458ea54f85a33.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8f447c29a7aa0c5aa2b8e8a852b01560",
+      "original_image_id": "623e9b9473cf02690b2458ea54f85a33"
+    },
+    {
+      "id": 184,
+      "file_name": "images/test/c96ae2f4018c70a342e5828f3ae8bc27.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "8f447c29a7aa0c5aa2b8e8a852b01560",
+      "original_image_id": "c96ae2f4018c70a342e5828f3ae8bc27"
+    },
+    {
+      "id": 185,
+      "file_name": "images/test/04ddd99e0fad1aeca36740eaacdf5607.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "964da212cbe653df7dd875533409a892",
+      "original_image_id": "04ddd99e0fad1aeca36740eaacdf5607"
+    },
+    {
+      "id": 186,
+      "file_name": "images/test/5ba24c0cbea875bb4aa17c1ecae7e0f1.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "964da212cbe653df7dd875533409a892",
+      "original_image_id": "5ba24c0cbea875bb4aa17c1ecae7e0f1"
+    },
+    {
+      "id": 187,
+      "file_name": "images/test/8f7fd0f4de145e54493df9bd64af3bfd.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "964da212cbe653df7dd875533409a892",
+      "original_image_id": "8f7fd0f4de145e54493df9bd64af3bfd"
+    },
+    {
+      "id": 188,
+      "file_name": "images/test/d5b3ef01ab168e381a6222bcac5ae14e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "964da212cbe653df7dd875533409a892",
+      "original_image_id": "d5b3ef01ab168e381a6222bcac5ae14e"
+    },
+    {
+      "id": 189,
+      "file_name": "images/test/2a3e213d2c7e72a55182ab3cd2e1897c.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "a235482f737d9a3baa8313c8f4db16d6",
+      "original_image_id": "2a3e213d2c7e72a55182ab3cd2e1897c"
+    },
+    {
+      "id": 190,
+      "file_name": "images/test/328eedacd3e604d5134801aa78f1340c.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "a235482f737d9a3baa8313c8f4db16d6",
+      "original_image_id": "328eedacd3e604d5134801aa78f1340c"
+    },
+    {
+      "id": 191,
+      "file_name": "images/test/6334ea4f303af58784d84f399dae396c.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "a235482f737d9a3baa8313c8f4db16d6",
+      "original_image_id": "6334ea4f303af58784d84f399dae396c"
+    },
+    {
+      "id": 192,
+      "file_name": "images/test/7e2ac68b81c14f458e7323f2f8951cf2.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "a235482f737d9a3baa8313c8f4db16d6",
+      "original_image_id": "7e2ac68b81c14f458e7323f2f8951cf2"
+    },
+    {
+      "id": 193,
+      "file_name": "images/test/664b12ccff1d1acfe8f965d87615ae3d.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "a739f537d66fb48c49eca89a0991088f",
+      "original_image_id": "664b12ccff1d1acfe8f965d87615ae3d"
+    },
+    {
+      "id": 194,
+      "file_name": "images/test/77515a0b7dd2b27ac9ab18e0720849c6.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "a739f537d66fb48c49eca89a0991088f",
+      "original_image_id": "77515a0b7dd2b27ac9ab18e0720849c6"
+    },
+    {
+      "id": 195,
+      "file_name": "images/test/a93f1732181e8dc316aaa1dcb2625d37.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "a739f537d66fb48c49eca89a0991088f",
+      "original_image_id": "a93f1732181e8dc316aaa1dcb2625d37"
+    },
+    {
+      "id": 196,
+      "file_name": "images/test/c51dfc8ce4e4ddf17454c51ffc120f7d.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "a739f537d66fb48c49eca89a0991088f",
+      "original_image_id": "c51dfc8ce4e4ddf17454c51ffc120f7d"
+    },
+    {
+      "id": 197,
+      "file_name": "images/test/0a1dfa3cc1714e83df8d5679705f897b.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "aa500e7685bcb0f515e3d47cdf2bac33",
+      "original_image_id": "0a1dfa3cc1714e83df8d5679705f897b"
+    },
+    {
+      "id": 198,
+      "file_name": "images/test/5aef5e99cfab9291bcd1f06662dab81a.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "aa500e7685bcb0f515e3d47cdf2bac33",
+      "original_image_id": "5aef5e99cfab9291bcd1f06662dab81a"
+    },
+    {
+      "id": 199,
+      "file_name": "images/test/6f858d4db04378848c0f4f4dd9527004.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "aa500e7685bcb0f515e3d47cdf2bac33",
+      "original_image_id": "6f858d4db04378848c0f4f4dd9527004"
+    },
+    {
+      "id": 200,
+      "file_name": "images/test/fd2b28b5ca6c54c48ca547afad6855bd.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "aa500e7685bcb0f515e3d47cdf2bac33",
+      "original_image_id": "fd2b28b5ca6c54c48ca547afad6855bd"
+    },
+    {
+      "id": 201,
+      "file_name": "images/test/93651b27b036a8e6f7316ea11a37b99d.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "b103f1f8b0587e655e3d2ef172d77aec",
+      "original_image_id": "93651b27b036a8e6f7316ea11a37b99d"
+    },
+    {
+      "id": 202,
+      "file_name": "images/test/a4e1902203b851213146380f19a6891e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "b103f1f8b0587e655e3d2ef172d77aec",
+      "original_image_id": "a4e1902203b851213146380f19a6891e"
+    },
+    {
+      "id": 203,
+      "file_name": "images/test/afa5da296256066dd1d2701eb3d37634.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "b103f1f8b0587e655e3d2ef172d77aec",
+      "original_image_id": "afa5da296256066dd1d2701eb3d37634"
+    },
+    {
+      "id": 204,
+      "file_name": "images/test/efcb0eafdd9b5125468295d63e6ce173.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "b103f1f8b0587e655e3d2ef172d77aec",
+      "original_image_id": "efcb0eafdd9b5125468295d63e6ce173"
+    },
+    {
+      "id": 205,
+      "file_name": "images/test/18cc292c6f06556cbc245fba50202aeb.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "b123bcd385130b5d089f3fc9a7d24a11",
+      "original_image_id": "18cc292c6f06556cbc245fba50202aeb"
+    },
+    {
+      "id": 206,
+      "file_name": "images/test/54b2fd916363b3e07667e3f1d65f085f.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "b123bcd385130b5d089f3fc9a7d24a11",
+      "original_image_id": "54b2fd916363b3e07667e3f1d65f085f"
+    },
+    {
+      "id": 207,
+      "file_name": "images/test/d52161ca0d73ced5fde02dc6cb04918e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "b123bcd385130b5d089f3fc9a7d24a11",
+      "original_image_id": "d52161ca0d73ced5fde02dc6cb04918e"
+    },
+    {
+      "id": 208,
+      "file_name": "images/test/ea6315e2609ae718347fb9f603ba0953.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "b123bcd385130b5d089f3fc9a7d24a11",
+      "original_image_id": "ea6315e2609ae718347fb9f603ba0953"
+    },
+    {
+      "id": 209,
+      "file_name": "images/test/2b75d0f22beed0d331687870cadb8217.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "b637bc3a2d5aa8842b92b7b4d7cab620",
+      "original_image_id": "2b75d0f22beed0d331687870cadb8217"
+    },
+    {
+      "id": 210,
+      "file_name": "images/test/8c90a9536079688965102363c77df077.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "b637bc3a2d5aa8842b92b7b4d7cab620",
+      "original_image_id": "8c90a9536079688965102363c77df077"
+    },
+    {
+      "id": 211,
+      "file_name": "images/test/8d9552b0949ee990570328d0410557ff.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "b637bc3a2d5aa8842b92b7b4d7cab620",
+      "original_image_id": "8d9552b0949ee990570328d0410557ff"
+    },
+    {
+      "id": 212,
+      "file_name": "images/test/97f860638ac6f9067f623b9dfee81205.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "b637bc3a2d5aa8842b92b7b4d7cab620",
+      "original_image_id": "97f860638ac6f9067f623b9dfee81205"
+    },
+    {
+      "id": 213,
+      "file_name": "images/test/2bc1c6df1d38102593cdbc50610d2010.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "b66ed0c50a305ce5e2a942eb5d3c5d12",
+      "original_image_id": "2bc1c6df1d38102593cdbc50610d2010"
+    },
+    {
+      "id": 214,
+      "file_name": "images/test/a7cb04776b07e733884385be85d07370.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "b66ed0c50a305ce5e2a942eb5d3c5d12",
+      "original_image_id": "a7cb04776b07e733884385be85d07370"
+    },
+    {
+      "id": 215,
+      "file_name": "images/test/b7e56b7480ec9c0243f0d552c416288b.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "b66ed0c50a305ce5e2a942eb5d3c5d12",
+      "original_image_id": "b7e56b7480ec9c0243f0d552c416288b"
+    },
+    {
+      "id": 216,
+      "file_name": "images/test/fdf0d3e10e97da679f5ae87f417fc254.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "b66ed0c50a305ce5e2a942eb5d3c5d12",
+      "original_image_id": "fdf0d3e10e97da679f5ae87f417fc254"
+    },
+    {
+      "id": 217,
+      "file_name": "images/test/45471cbb4e03feaf00cc030d9ebbf205.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "b9a94c8d69c1c7c5433cbe035fafaf50",
+      "original_image_id": "45471cbb4e03feaf00cc030d9ebbf205"
+    },
+    {
+      "id": 218,
+      "file_name": "images/test/a0fdff91676e8e3cee89af8a2d0eea82.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "b9a94c8d69c1c7c5433cbe035fafaf50",
+      "original_image_id": "a0fdff91676e8e3cee89af8a2d0eea82"
+    },
+    {
+      "id": 219,
+      "file_name": "images/test/cd32e7249b6a2b2ef3d1a488c9388b38.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "b9a94c8d69c1c7c5433cbe035fafaf50",
+      "original_image_id": "cd32e7249b6a2b2ef3d1a488c9388b38"
+    },
+    {
+      "id": 220,
+      "file_name": "images/test/e97550e9877faea678557c5e3d52438b.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "b9a94c8d69c1c7c5433cbe035fafaf50",
+      "original_image_id": "e97550e9877faea678557c5e3d52438b"
+    },
+    {
+      "id": 221,
+      "file_name": "images/test/25b07f288fa98bb223088f7a323add2e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "bba470c7ae302b5e4bfd2ed1a4515661",
+      "original_image_id": "25b07f288fa98bb223088f7a323add2e"
+    },
+    {
+      "id": 222,
+      "file_name": "images/test/27f066be252acf8b8be0e058e30b3a1a.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "bba470c7ae302b5e4bfd2ed1a4515661",
+      "original_image_id": "27f066be252acf8b8be0e058e30b3a1a"
+    },
+    {
+      "id": 223,
+      "file_name": "images/test/43361e8af5bd4f6a17194ad97b57c4f9.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "bba470c7ae302b5e4bfd2ed1a4515661",
+      "original_image_id": "43361e8af5bd4f6a17194ad97b57c4f9"
+    },
+    {
+      "id": 224,
+      "file_name": "images/test/9ff0722967d7c0d42b6a5e29814abcaa.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "bba470c7ae302b5e4bfd2ed1a4515661",
+      "original_image_id": "9ff0722967d7c0d42b6a5e29814abcaa"
+    },
+    {
+      "id": 225,
+      "file_name": "images/test/2364f2aae3dc2a4466affb0b644b5487.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "bc01d2c4f5fe5e6be83ef636d5f3403c",
+      "original_image_id": "2364f2aae3dc2a4466affb0b644b5487"
+    },
+    {
+      "id": 226,
+      "file_name": "images/test/4357dd021af15d2a9f28228f9561b372.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "bc01d2c4f5fe5e6be83ef636d5f3403c",
+      "original_image_id": "4357dd021af15d2a9f28228f9561b372"
+    },
+    {
+      "id": 227,
+      "file_name": "images/test/a6f2c04678dba416587a08a4a68558f4.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "bc01d2c4f5fe5e6be83ef636d5f3403c",
+      "original_image_id": "a6f2c04678dba416587a08a4a68558f4"
+    },
+    {
+      "id": 228,
+      "file_name": "images/test/b945abc59af0d7ee09cde14365a66567.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "bc01d2c4f5fe5e6be83ef636d5f3403c",
+      "original_image_id": "b945abc59af0d7ee09cde14365a66567"
+    },
+    {
+      "id": 229,
+      "file_name": "images/test/5b9ac8d9776038bb653080ddd9629b7f.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "c0333dc9b980ca7d06c482db00d86228",
+      "original_image_id": "5b9ac8d9776038bb653080ddd9629b7f"
+    },
+    {
+      "id": 230,
+      "file_name": "images/test/6873f334fdbb7493ee2d54a96e3137ff.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "c0333dc9b980ca7d06c482db00d86228",
+      "original_image_id": "6873f334fdbb7493ee2d54a96e3137ff"
+    },
+    {
+      "id": 231,
+      "file_name": "images/test/a1f0f0e20e493400524bb9979ee7ad5f.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "c0333dc9b980ca7d06c482db00d86228",
+      "original_image_id": "a1f0f0e20e493400524bb9979ee7ad5f"
+    },
+    {
+      "id": 232,
+      "file_name": "images/test/c8b9adfa55a8404e29a949f43103948e.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "c0333dc9b980ca7d06c482db00d86228",
+      "original_image_id": "c8b9adfa55a8404e29a949f43103948e"
+    },
+    {
+      "id": 233,
+      "file_name": "images/test/7ac7cad604cfebfa020d065f545037d4.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "c14eedb0f8cbb157d335e35844360567",
+      "original_image_id": "7ac7cad604cfebfa020d065f545037d4"
+    },
+    {
+      "id": 234,
+      "file_name": "images/test/87f4d302403d14c77d17a9127e2a972f.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "c14eedb0f8cbb157d335e35844360567",
+      "original_image_id": "87f4d302403d14c77d17a9127e2a972f"
+    },
+    {
+      "id": 235,
+      "file_name": "images/test/aeac1f7ba555dd75e6d37ada31e3acfa.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "c14eedb0f8cbb157d335e35844360567",
+      "original_image_id": "aeac1f7ba555dd75e6d37ada31e3acfa"
+    },
+    {
+      "id": 236,
+      "file_name": "images/test/d78648752dbf4173119530bb6866129a.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "c14eedb0f8cbb157d335e35844360567",
+      "original_image_id": "d78648752dbf4173119530bb6866129a"
+    },
+    {
+      "id": 237,
+      "file_name": "images/test/169c8335e0b21879f753f863a938bf3f.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "c674c9bd388b8831dfe29d4a70428846",
+      "original_image_id": "169c8335e0b21879f753f863a938bf3f"
+    },
+    {
+      "id": 238,
+      "file_name": "images/test/53af812e66f81377b64201800d886c57.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "c674c9bd388b8831dfe29d4a70428846",
+      "original_image_id": "53af812e66f81377b64201800d886c57"
+    },
+    {
+      "id": 239,
+      "file_name": "images/test/8826e2de26c204431fddb8516a6e2c53.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "c674c9bd388b8831dfe29d4a70428846",
+      "original_image_id": "8826e2de26c204431fddb8516a6e2c53"
+    },
+    {
+      "id": 240,
+      "file_name": "images/test/f74209e0b792f7be310a81aff5fdc042.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "c674c9bd388b8831dfe29d4a70428846",
+      "original_image_id": "f74209e0b792f7be310a81aff5fdc042"
+    },
+    {
+      "id": 241,
+      "file_name": "images/test/2de7aab8e5906ed64cfc31186bfd8124.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "d4248770c30564e08edf4ccceb0c9872",
+      "original_image_id": "2de7aab8e5906ed64cfc31186bfd8124"
+    },
+    {
+      "id": 242,
+      "file_name": "images/test/7523652bd0fe2a7845b62c0fad9a12c9.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "d4248770c30564e08edf4ccceb0c9872",
+      "original_image_id": "7523652bd0fe2a7845b62c0fad9a12c9"
+    },
+    {
+      "id": 243,
+      "file_name": "images/test/af034ffd23c13bc76188df701d276d1b.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "d4248770c30564e08edf4ccceb0c9872",
+      "original_image_id": "af034ffd23c13bc76188df701d276d1b"
+    },
+    {
+      "id": 244,
+      "file_name": "images/test/d1e3311a877adc417170cd4f04e3834b.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "d4248770c30564e08edf4ccceb0c9872",
+      "original_image_id": "d1e3311a877adc417170cd4f04e3834b"
+    },
+    {
+      "id": 245,
+      "file_name": "images/test/5d8f97b7a25a0f7c9d12c466130651af.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "d6751693a8f2c11a67fbaed260449abd",
+      "original_image_id": "5d8f97b7a25a0f7c9d12c466130651af"
+    },
+    {
+      "id": 246,
+      "file_name": "images/test/a3e787ded9ca91b8281beba75f6ed60a.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "d6751693a8f2c11a67fbaed260449abd",
+      "original_image_id": "a3e787ded9ca91b8281beba75f6ed60a"
+    },
+    {
+      "id": 247,
+      "file_name": "images/test/b9bbc66abf98202f5b621d55bd59b599.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "d6751693a8f2c11a67fbaed260449abd",
+      "original_image_id": "b9bbc66abf98202f5b621d55bd59b599"
+    },
+    {
+      "id": 248,
+      "file_name": "images/test/ee5211ee8d365c4d1c4242a0df775c9c.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "d6751693a8f2c11a67fbaed260449abd",
+      "original_image_id": "ee5211ee8d365c4d1c4242a0df775c9c"
+    },
+    {
+      "id": 249,
+      "file_name": "images/test/0297d8ce7bf4a47ab8b813d38e02b227.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "da7ee8db725a99f5de65a45f91a2827a",
+      "original_image_id": "0297d8ce7bf4a47ab8b813d38e02b227"
+    },
+    {
+      "id": 250,
+      "file_name": "images/test/2f0b2326c2f683baa25cb96d8e05ea64.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "da7ee8db725a99f5de65a45f91a2827a",
+      "original_image_id": "2f0b2326c2f683baa25cb96d8e05ea64"
+    },
+    {
+      "id": 251,
+      "file_name": "images/test/4f48e40a18772bc74164f3d915474114.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "da7ee8db725a99f5de65a45f91a2827a",
+      "original_image_id": "4f48e40a18772bc74164f3d915474114"
+    },
+    {
+      "id": 252,
+      "file_name": "images/test/af3d61ce6402575ebb8f6bf8cd3e5caf.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "da7ee8db725a99f5de65a45f91a2827a",
+      "original_image_id": "af3d61ce6402575ebb8f6bf8cd3e5caf"
+    },
+    {
+      "id": 253,
+      "file_name": "images/test/06a407691cadae64cea5de8e8634a4ac.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "dc8eca8e41cb72804147da33e91917bb",
+      "original_image_id": "06a407691cadae64cea5de8e8634a4ac"
+    },
+    {
+      "id": 254,
+      "file_name": "images/test/264d5e05c5774d9770eaf74c0483bd50.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "dc8eca8e41cb72804147da33e91917bb",
+      "original_image_id": "264d5e05c5774d9770eaf74c0483bd50"
+    },
+    {
+      "id": 255,
+      "file_name": "images/test/785cd499aced691ab0fbf3a2c1d0645e.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "dc8eca8e41cb72804147da33e91917bb",
+      "original_image_id": "785cd499aced691ab0fbf3a2c1d0645e"
+    },
+    {
+      "id": 256,
+      "file_name": "images/test/c7480df2a3e11ca4154ac955d356a5a8.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "dc8eca8e41cb72804147da33e91917bb",
+      "original_image_id": "c7480df2a3e11ca4154ac955d356a5a8"
+    },
+    {
+      "id": 257,
+      "file_name": "images/test/3cf853c27cc192bcea8ee89b27eb70f2.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "dd6333df02b3131120f721d732b3e1ee",
+      "original_image_id": "3cf853c27cc192bcea8ee89b27eb70f2"
+    },
+    {
+      "id": 258,
+      "file_name": "images/test/54aaa4056ae423929bd0100ccfaa86f3.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "dd6333df02b3131120f721d732b3e1ee",
+      "original_image_id": "54aaa4056ae423929bd0100ccfaa86f3"
+    },
+    {
+      "id": 259,
+      "file_name": "images/test/9e8efd5d79c5e66abee2aeb0b2360e9c.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "dd6333df02b3131120f721d732b3e1ee",
+      "original_image_id": "9e8efd5d79c5e66abee2aeb0b2360e9c"
+    },
+    {
+      "id": 260,
+      "file_name": "images/test/bad7f3502dbbe04dccafa396afe08f49.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "dd6333df02b3131120f721d732b3e1ee",
+      "original_image_id": "bad7f3502dbbe04dccafa396afe08f49"
+    },
+    {
+      "id": 261,
+      "file_name": "images/test/426c29495642038d7340796542d932d1.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "e1314fcdd554aa328145271d19db6929",
+      "original_image_id": "426c29495642038d7340796542d932d1"
+    },
+    {
+      "id": 262,
+      "file_name": "images/test/86176a5feecb57e582b70cfb87699929.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "e1314fcdd554aa328145271d19db6929",
+      "original_image_id": "86176a5feecb57e582b70cfb87699929"
+    },
+    {
+      "id": 263,
+      "file_name": "images/test/c4b0a4d1c8412cae999e25fc2a2ea8fb.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "e1314fcdd554aa328145271d19db6929",
+      "original_image_id": "c4b0a4d1c8412cae999e25fc2a2ea8fb"
+    },
+    {
+      "id": 264,
+      "file_name": "images/test/eaaa97be35ad0c3aade194f5d21457b6.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "e1314fcdd554aa328145271d19db6929",
+      "original_image_id": "eaaa97be35ad0c3aade194f5d21457b6"
+    },
+    {
+      "id": 265,
+      "file_name": "images/test/2d1b218403ad6216507dfcf3e9205285.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "e87560369603db94ed6ed5606fe595d0",
+      "original_image_id": "2d1b218403ad6216507dfcf3e9205285"
+    },
+    {
+      "id": 266,
+      "file_name": "images/test/b7aab83cdd9f122ad864ef9a1a8f6979.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "e87560369603db94ed6ed5606fe595d0",
+      "original_image_id": "b7aab83cdd9f122ad864ef9a1a8f6979"
+    },
+    {
+      "id": 267,
+      "file_name": "images/test/bccead060b49d9a6034fb98165cf925c.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "e87560369603db94ed6ed5606fe595d0",
+      "original_image_id": "bccead060b49d9a6034fb98165cf925c"
+    },
+    {
+      "id": 268,
+      "file_name": "images/test/c5b62e4448e99cec840521983a104410.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "e87560369603db94ed6ed5606fe595d0",
+      "original_image_id": "c5b62e4448e99cec840521983a104410"
+    },
+    {
+      "id": 269,
+      "file_name": "images/test/0397ba6ec759c836c0fde966b5b9c369.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "ea0b5e3d2a1cc02476a94c841a272d7a",
+      "original_image_id": "0397ba6ec759c836c0fde966b5b9c369"
+    },
+    {
+      "id": 270,
+      "file_name": "images/test/15206c1ba3b120b11296ea2967afd6c0.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "ea0b5e3d2a1cc02476a94c841a272d7a",
+      "original_image_id": "15206c1ba3b120b11296ea2967afd6c0"
+    },
+    {
+      "id": 271,
+      "file_name": "images/test/65fad026dd4d0e34daace1341b004b45.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "ea0b5e3d2a1cc02476a94c841a272d7a",
+      "original_image_id": "65fad026dd4d0e34daace1341b004b45"
+    },
+    {
+      "id": 272,
+      "file_name": "images/test/c8f6d4876fa771042d6ad4be5197f01e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "ea0b5e3d2a1cc02476a94c841a272d7a",
+      "original_image_id": "c8f6d4876fa771042d6ad4be5197f01e"
+    },
+    {
+      "id": 273,
+      "file_name": "images/test/5ec2ce49fdbbb9b426bd155c95fef35d.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "ecd281761b3bcd696cb6ef2684162d1a",
+      "original_image_id": "5ec2ce49fdbbb9b426bd155c95fef35d"
+    },
+    {
+      "id": 274,
+      "file_name": "images/test/64971d2e39c9231694926961b7a216b9.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "ecd281761b3bcd696cb6ef2684162d1a",
+      "original_image_id": "64971d2e39c9231694926961b7a216b9"
+    },
+    {
+      "id": 275,
+      "file_name": "images/test/8e584ce1935cac6708d5032cd3f01dcb.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "ecd281761b3bcd696cb6ef2684162d1a",
+      "original_image_id": "8e584ce1935cac6708d5032cd3f01dcb"
+    },
+    {
+      "id": 276,
+      "file_name": "images/test/dd40fd5a8e0c19c41067251af0e73311.png",
+      "width": 1465,
+      "height": 2048,
+      "study_id": "ecd281761b3bcd696cb6ef2684162d1a",
+      "original_image_id": "dd40fd5a8e0c19c41067251af0e73311"
+    },
+    {
+      "id": 277,
+      "file_name": "images/test/4494c6e2c08435784d5b1f25ac7b5869.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "eeb18c719cadabcc5ec397a53be529db",
+      "original_image_id": "4494c6e2c08435784d5b1f25ac7b5869"
+    },
+    {
+      "id": 278,
+      "file_name": "images/test/5497b57c2343f631bffdaea2672a1704.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "eeb18c719cadabcc5ec397a53be529db",
+      "original_image_id": "5497b57c2343f631bffdaea2672a1704"
+    },
+    {
+      "id": 279,
+      "file_name": "images/test/5fd515ea4eaec3493943c4eef796b41e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "eeb18c719cadabcc5ec397a53be529db",
+      "original_image_id": "5fd515ea4eaec3493943c4eef796b41e"
+    },
+    {
+      "id": 280,
+      "file_name": "images/test/ea159a51ec41b349595b83e7b76e9736.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "eeb18c719cadabcc5ec397a53be529db",
+      "original_image_id": "ea159a51ec41b349595b83e7b76e9736"
+    },
+    {
+      "id": 281,
+      "file_name": "images/test/53924522f3619cf92ab4d7e4546ada25.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "ef9bcee35f3e5d4bca8d5bb5c6f09450",
+      "original_image_id": "53924522f3619cf92ab4d7e4546ada25"
+    },
+    {
+      "id": 282,
+      "file_name": "images/test/5ee433ab74fcbaba910a095e559b4dcd.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "ef9bcee35f3e5d4bca8d5bb5c6f09450",
+      "original_image_id": "5ee433ab74fcbaba910a095e559b4dcd"
+    },
+    {
+      "id": 283,
+      "file_name": "images/test/e86ee7c6d128444a1cd1307b158a7e67.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "ef9bcee35f3e5d4bca8d5bb5c6f09450",
+      "original_image_id": "e86ee7c6d128444a1cd1307b158a7e67"
+    },
+    {
+      "id": 284,
+      "file_name": "images/test/f5f3ccc0b7e731df08c1768258aa1efd.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "ef9bcee35f3e5d4bca8d5bb5c6f09450",
+      "original_image_id": "f5f3ccc0b7e731df08c1768258aa1efd"
+    },
+    {
+      "id": 285,
+      "file_name": "images/test/18786e0d26d8a2ef9746de711e419306.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "f3c855dd2fc8d2169ac1af3316429209",
+      "original_image_id": "18786e0d26d8a2ef9746de711e419306"
+    },
+    {
+      "id": 286,
+      "file_name": "images/test/2404342eb1fa2d118560812e6aca82ee.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "f3c855dd2fc8d2169ac1af3316429209",
+      "original_image_id": "2404342eb1fa2d118560812e6aca82ee"
+    },
+    {
+      "id": 287,
+      "file_name": "images/test/a8390f8b0e09fe8bfe97110ef47480ed.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "f3c855dd2fc8d2169ac1af3316429209",
+      "original_image_id": "a8390f8b0e09fe8bfe97110ef47480ed"
+    },
+    {
+      "id": 288,
+      "file_name": "images/test/b9d99b6404393a9e23ebf953b786ca6d.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "f3c855dd2fc8d2169ac1af3316429209",
+      "original_image_id": "b9d99b6404393a9e23ebf953b786ca6d"
+    },
+    {
+      "id": 289,
+      "file_name": "images/test/1d6b1ecad5291480384fb5e2af8b7fbc.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "f6f28f20df610b84e652c8ac8d64d99c",
+      "original_image_id": "1d6b1ecad5291480384fb5e2af8b7fbc"
+    },
+    {
+      "id": 290,
+      "file_name": "images/test/5e2abd624c758a9ad40aa47db8d68ad0.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "f6f28f20df610b84e652c8ac8d64d99c",
+      "original_image_id": "5e2abd624c758a9ad40aa47db8d68ad0"
+    },
+    {
+      "id": 291,
+      "file_name": "images/test/999789d67115ed53b926e74213c19e1b.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "f6f28f20df610b84e652c8ac8d64d99c",
+      "original_image_id": "999789d67115ed53b926e74213c19e1b"
+    },
+    {
+      "id": 292,
+      "file_name": "images/test/cadb654c855b9f948a193219a21712f3.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "f6f28f20df610b84e652c8ac8d64d99c",
+      "original_image_id": "cadb654c855b9f948a193219a21712f3"
+    },
+    {
+      "id": 293,
+      "file_name": "images/test/9c43c2db65642680c9dbe608d4127428.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "fbdc572b430c0b423d0a88e8684233b0",
+      "original_image_id": "9c43c2db65642680c9dbe608d4127428"
+    },
+    {
+      "id": 294,
+      "file_name": "images/test/b4199ebb8667d80b6884654b88c15a4e.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "fbdc572b430c0b423d0a88e8684233b0",
+      "original_image_id": "b4199ebb8667d80b6884654b88c15a4e"
+    },
+    {
+      "id": 295,
+      "file_name": "images/test/b5ea45e740ac58e54618ab79642c7a48.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "fbdc572b430c0b423d0a88e8684233b0",
+      "original_image_id": "b5ea45e740ac58e54618ab79642c7a48"
+    },
+    {
+      "id": 296,
+      "file_name": "images/test/f2504628e2a4c5e04bb39655b4776f57.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "fbdc572b430c0b423d0a88e8684233b0",
+      "original_image_id": "f2504628e2a4c5e04bb39655b4776f57"
+    },
+    {
+      "id": 297,
+      "file_name": "images/test/8f4e013b4dbc8e5cdc1f56a8212ff5d2.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "fcfdac68cdf5c9515a810d8adf71e2cc",
+      "original_image_id": "8f4e013b4dbc8e5cdc1f56a8212ff5d2"
+    },
+    {
+      "id": 298,
+      "file_name": "images/test/9ca728553d6b22dbce7e5af4eb380424.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "fcfdac68cdf5c9515a810d8adf71e2cc",
+      "original_image_id": "9ca728553d6b22dbce7e5af4eb380424"
+    },
+    {
+      "id": 299,
+      "file_name": "images/test/dedfb81e153d26380398a5fae3e9faad.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "fcfdac68cdf5c9515a810d8adf71e2cc",
+      "original_image_id": "dedfb81e153d26380398a5fae3e9faad"
+    },
+    {
+      "id": 300,
+      "file_name": "images/test/ef6de186b088a97f92bdfe0713924215.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "fcfdac68cdf5c9515a810d8adf71e2cc",
+      "original_image_id": "ef6de186b088a97f92bdfe0713924215"
+    },
+    {
+      "id": 301,
+      "file_name": "images/test/09b20d9ef71a6c11ae6f440475d6db56.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "fd2fccc2650d1857a5669c28441300b2",
+      "original_image_id": "09b20d9ef71a6c11ae6f440475d6db56"
+    },
+    {
+      "id": 302,
+      "file_name": "images/test/2ad344496bc6f2d91c27f501be133971.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "fd2fccc2650d1857a5669c28441300b2",
+      "original_image_id": "2ad344496bc6f2d91c27f501be133971"
+    },
+    {
+      "id": 303,
+      "file_name": "images/test/489c42cfa58d9cccc8a1fb2eda54d6e1.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "fd2fccc2650d1857a5669c28441300b2",
+      "original_image_id": "489c42cfa58d9cccc8a1fb2eda54d6e1"
+    },
+    {
+      "id": 304,
+      "file_name": "images/test/cbd30d8f2d8eb4dd4278a86381f38a3d.png",
+      "width": 1630,
+      "height": 2048,
+      "study_id": "fd2fccc2650d1857a5669c28441300b2",
+      "original_image_id": "cbd30d8f2d8eb4dd4278a86381f38a3d"
+    },
+    {
+      "id": 305,
+      "file_name": "images/test/11ae77d09d90780bb56ed52bcefb4272.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "ff5c656fb6757b708d64d2ebdd33c421",
+      "original_image_id": "11ae77d09d90780bb56ed52bcefb4272"
+    },
+    {
+      "id": 306,
+      "file_name": "images/test/4a06e41e38450e4c6e743b8e8da1ec60.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "ff5c656fb6757b708d64d2ebdd33c421",
+      "original_image_id": "4a06e41e38450e4c6e743b8e8da1ec60"
+    },
+    {
+      "id": 307,
+      "file_name": "images/test/5c7c3eab43acdb5f4b8ba8b7cdfd5c27.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "ff5c656fb6757b708d64d2ebdd33c421",
+      "original_image_id": "5c7c3eab43acdb5f4b8ba8b7cdfd5c27"
+    },
+    {
+      "id": 308,
+      "file_name": "images/test/6cab0db67458b7c2bf4afade630adee5.png",
+      "width": 1609,
+      "height": 2048,
+      "study_id": "ff5c656fb6757b708d64d2ebdd33c421",
+      "original_image_id": "6cab0db67458b7c2bf4afade630adee5"
+    }
+  ],
+  "annotations": [
+    {
+      "id": 1,
+      "image_id": 3,
+      "category_id": 1,
+      "bbox": [
+        1304.7626412528193,
+        901.2655628197766,
+        236.08806413921548,
+        267.2412592382399
+      ],
+      "area": 63092.47155168228,
+      "iscrowd": 0,
+      "study_id": "008b8e61390fcb4c0873258c15b0a53a",
+      "original_image_id": "e13c80239d7714e3d964b5f3e37bcff6",
+      "class_name": "Mass"
+    },
+    {
+      "id": 2,
+      "image_id": 4,
+      "category_id": 1,
+      "bbox": [
+        1290.4185616629466,
+        572.6430500284238,
+        257.9475568498592,
+        277.45743320069823
+      ],
+      "area": 71569.46702395313,
+      "iscrowd": 0,
+      "study_id": "008b8e61390fcb4c0873258c15b0a53a",
+      "original_image_id": "f1f79501410a98782c0a03b48e66df83",
+      "class_name": "Mass"
+    },
+    {
+      "id": 3,
+      "image_id": 9,
+      "category_id": 1,
+      "bbox": [
+        209.06472097860907,
+        856.0411312849376,
+        132.73905442347487,
+        166.8719273742587
+      ],
+      "area": 22150.42184948187,
+      "iscrowd": 0,
+      "study_id": "0246c6050121c176d2e8fcf91f22f926",
+      "original_image_id": "0dbc1663eceef924f0f339604af18364",
+      "class_name": "Mass"
+    },
+    {
+      "id": 4,
+      "image_id": 9,
+      "category_id": 2,
+      "bbox": [
+        301.96846151555343,
+        754.4248603351668,
+        40.927623808467274,
+        91.19322625699044
+      ],
+      "area": 3732.322058126545,
+      "iscrowd": 0,
+      "study_id": "0246c6050121c176d2e8fcf91f22f926",
+      "original_image_id": "0dbc1663eceef924f0f339604af18364",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 5,
+      "image_id": 9,
+      "category_id": 2,
+      "bbox": [
+        347.30196001858377,
+        1016.2370810055651,
+        36.52293652118374,
+        54.969902234629785
+      ],
+      "area": 2007.6622498910597,
+      "iscrowd": 0,
+      "study_id": "0246c6050121c176d2e8fcf91f22f926",
+      "original_image_id": "0dbc1663eceef924f0f339604af18364",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 6,
+      "image_id": 9,
+      "category_id": 1,
+      "bbox": [
+        352.4070429795172,
+        836.4077513966552,
+        205.39240205203146,
+        298.7963687150552
+      ],
+      "area": 61370.503894809655,
+      "iscrowd": 0,
+      "study_id": "0246c6050121c176d2e8fcf91f22f926",
+      "original_image_id": "0dbc1663eceef924f0f339604af18364",
+      "class_name": "Mass"
+    },
+    {
+      "id": 7,
+      "image_id": 12,
+      "category_id": 1,
+      "bbox": [
+        21.377899415462515,
+        508.48407821229046,
+        173.39864504964905,
+        150.43987430168318
+      ],
+      "area": 26086.07036535138,
+      "iscrowd": 0,
+      "study_id": "0246c6050121c176d2e8fcf91f22f926",
+      "original_image_id": "b5b4758224e6a66a587182fcdc5f1f1d",
+      "class_name": "Mass"
+    },
+    {
+      "id": 8,
+      "image_id": 12,
+      "category_id": 1,
+      "bbox": [
+        68.18852602062043,
+        684.3923882681349,
+        274.28987133248324,
+        216.83058659219307
+      ],
+      "area": 59474.4336973195,
+      "iscrowd": 0,
+      "study_id": "0246c6050121c176d2e8fcf91f22f926",
+      "original_image_id": "b5b4758224e6a66a587182fcdc5f1f1d",
+      "class_name": "Mass"
+    },
+    {
+      "id": 9,
+      "image_id": 12,
+      "category_id": 2,
+      "bbox": [
+        101.76400765852011,
+        549.8721989500859,
+        24.166977048626833,
+        28.51087426563572
+      ],
+      "area": 689.0216440139039,
+      "iscrowd": 0,
+      "study_id": "0246c6050121c176d2e8fcf91f22f926",
+      "original_image_id": "b5b4758224e6a66a587182fcdc5f1f1d",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 10,
+      "image_id": 12,
+      "category_id": 2,
+      "bbox": [
+        144.30933426250334,
+        742.6402932960822,
+        38.69782137159069,
+        70.99923184359682
+      ],
+      "area": 2747.515591403663,
+      "iscrowd": 0,
+      "study_id": "0246c6050121c176d2e8fcf91f22f926",
+      "original_image_id": "b5b4758224e6a66a587182fcdc5f1f1d",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 11,
+      "image_id": 33,
+      "category_id": 1,
+      "bbox": [
+        82.99239807052807,
+        500.6129089615968,
+        182.7259866286032,
+        225.9704391891865
+      ],
+      "area": 41290.671449742884,
+      "iscrowd": 0,
+      "study_id": "0f73f59df0d9355ebe1d6024753a9e1b",
+      "original_image_id": "18b6303a3ede8d3556f87dada8d64c49",
+      "class_name": "Mass"
+    },
+    {
+      "id": 12,
+      "image_id": 38,
+      "category_id": 2,
+      "bbox": [
+        1493.4816728864544,
+        1032.179221148365,
+        57.63796997068857,
+        47.416003411043675
+      ],
+      "area": 2732.962180735802,
+      "iscrowd": 0,
+      "study_id": "12b0db966e11c6476cf9134f254fb1b1",
+      "original_image_id": "632648b87efcae974030e8e9062dcaa5",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 13,
+      "image_id": 40,
+      "category_id": 2,
+      "bbox": [
+        1437.0604326520795,
+        875.9944570778706,
+        49.26668178013392,
+        79.53901364410865
+      ],
+      "area": 3918.623274310031,
+      "iscrowd": 0,
+      "study_id": "12b0db966e11c6476cf9134f254fb1b1",
+      "original_image_id": "9ccbdc3148ab9ef203d25d26053cabf1",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 14,
+      "image_id": 41,
+      "category_id": 1,
+      "bbox": [
+        211.25731201171877,
+        744.0911739624568,
+        232.81873365129528,
+        274.9955230244967
+      ],
+      "area": 64024.10943033894,
+      "iscrowd": 0,
+      "study_id": "175f10693af82fdf9bdf9e711697ec13",
+      "original_image_id": "031592807c30b54e2fb4bd2400e634e8",
+      "class_name": "Mass"
+    },
+    {
+      "id": 15,
+      "image_id": 42,
+      "category_id": 1,
+      "bbox": [
+        313.480446515766,
+        668.0799459920628,
+        215.34744829450193,
+        210.54000852752142
+      ],
+      "area": 45339.253600304415,
+      "iscrowd": 0,
+      "study_id": "175f10693af82fdf9bdf9e711697ec13",
+      "original_image_id": "30caea823462601262e5d393e6d0312a",
+      "class_name": "Mass"
+    },
+    {
+      "id": 16,
+      "image_id": 50,
+      "category_id": 1,
+      "bbox": [
+        35.9956441468591,
+        420.18949934258393,
+        235.38987458454199,
+        195.37580583929815
+      ],
+      "area": 45989.48643336622,
+      "iscrowd": 0,
+      "study_id": "1b43d2adcf3f300c550d3030b16c861f",
+      "original_image_id": "4d59a1f3bc1183b998c28b18f531fb9d",
+      "class_name": "Mass"
+    },
+    {
+      "id": 17,
+      "image_id": 50,
+      "category_id": 2,
+      "bbox": [
+        105.39124396541474,
+        749.053604341971,
+        21.37384474411523,
+        20.536661409244402
+      ],
+      "area": 438.9474125236526,
+      "iscrowd": 0,
+      "study_id": "1b43d2adcf3f300c550d3030b16c861f",
+      "original_image_id": "4d59a1f3bc1183b998c28b18f531fb9d",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 18,
+      "image_id": 50,
+      "category_id": 2,
+      "bbox": [
+        122.04618792186815,
+        644.427640135415,
+        56.904391851215934,
+        56.05953519820764
+      ],
+      "area": 3190.0337579158395,
+      "iscrowd": 0,
+      "study_id": "1b43d2adcf3f300c550d3030b16c861f",
+      "original_image_id": "4d59a1f3bc1183b998c28b18f531fb9d",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 19,
+      "image_id": 52,
+      "category_id": 1,
+      "bbox": [
+        5.732294817479011,
+        626.774295519064,
+        220.81614111771492,
+        192.63597176182202
+      ],
+      "area": 42537.13192490664,
+      "iscrowd": 0,
+      "study_id": "1b43d2adcf3f300c550d3030b16c861f",
+      "original_image_id": "db72a9a3c5827c1982b9b6d953c3dc04",
+      "class_name": "Mass"
+    },
+    {
+      "id": 20,
+      "image_id": 52,
+      "category_id": 2,
+      "bbox": [
+        30.226193920797417,
+        959.3948163804679,
+        22.65246298101631,
+        20.931845799561415
+      ],
+      "area": 474.1578620989067,
+      "iscrowd": 0,
+      "study_id": "1b43d2adcf3f300c550d3030b16c861f",
+      "original_image_id": "db72a9a3c5827c1982b9b6d953c3dc04",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 21,
+      "image_id": 52,
+      "category_id": 2,
+      "bbox": [
+        170.27132005638106,
+        822.2711975545765,
+        31.953955626105596,
+        37.66891527025723
+      ],
+      "area": 1203.670847029331,
+      "iscrowd": 0,
+      "study_id": "1b43d2adcf3f300c550d3030b16c861f",
+      "original_image_id": "db72a9a3c5827c1982b9b6d953c3dc04",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 22,
+      "image_id": 53,
+      "category_id": 1,
+      "bbox": [
+        72.7638244249714,
+        1457.3573968705184,
+        138.47868853013262,
+        144.45252489336895
+      ],
+      "area": 20003.596202100067,
+      "iscrowd": 0,
+      "study_id": "1e2b0ce2c5a93c643834c98803e6ac2d",
+      "original_image_id": "22fba1258f27256a9f1d090b0ddca9c7",
+      "class_name": "Mass"
+    },
+    {
+      "id": 23,
+      "image_id": 53,
+      "category_id": 1,
+      "bbox": [
+        543.3992224993985,
+        945.0077848549187,
+        101.43336724170183,
+        111.60368011323442
+      ],
+      "area": 11320.337070451122,
+      "iscrowd": 0,
+      "study_id": "1e2b0ce2c5a93c643834c98803e6ac2d",
+      "original_image_id": "22fba1258f27256a9f1d090b0ddca9c7",
+      "class_name": "Mass"
+    },
+    {
+      "id": 24,
+      "image_id": 56,
+      "category_id": 1,
+      "bbox": [
+        92.74526232555112,
+        730.4968152866243,
+        113.025752069325,
+        127.54706298655356
+      ],
+      "area": 14416.102718288781,
+      "iscrowd": 0,
+      "study_id": "1e2b0ce2c5a93c643834c98803e6ac2d",
+      "original_image_id": "f2ebfa37e63f0aa3306b4cfdd4c7a18c",
+      "class_name": "Mass"
+    },
+    {
+      "id": 25,
+      "image_id": 56,
+      "category_id": 1,
+      "bbox": [
+        244.89531318810404,
+        486.99787685774953,
+        111.5767039658721,
+        118.8506723283794
+      ],
+      "area": 13260.966282528456,
+      "iscrowd": 0,
+      "study_id": "1e2b0ce2c5a93c643834c98803e6ac2d",
+      "original_image_id": "f2ebfa37e63f0aa3306b4cfdd4c7a18c",
+      "class_name": "Mass"
+    },
+    {
+      "id": 26,
+      "image_id": 63,
+      "category_id": 2,
+      "bbox": [
+        503.8696923392182,
+        1022.0206793632527,
+        31.139952741347543,
+        34.84160034113927
+      ],
+      "area": 1084.9657880559953,
+      "iscrowd": 0,
+      "study_id": "24f98ac8cc135d3c62c5415b235534de",
+      "original_image_id": "92822f55b4e5dd81f78d3544eee96174",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 27,
+      "image_id": 64,
+      "category_id": 2,
+      "bbox": [
+        394.1107142857143,
+        687.06381466741,
+        31.837962777276175,
+        36.16891699828727
+      ],
+      "area": 1151.5446330858617,
+      "iscrowd": 0,
+      "study_id": "24f98ac8cc135d3c62c5415b235534de",
+      "original_image_id": "d3f2ec809eddcadb8d458ea80eeadc87",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 28,
+      "image_id": 65,
+      "category_id": 1,
+      "bbox": [
+        34.0496521677292,
+        585.8747157476057,
+        233.63243543080083,
+        192.28375497440993
+      ],
+      "area": 44923.72196845076,
+      "iscrowd": 0,
+      "study_id": "268bbbd1932753cedf8846fe716c669b",
+      "original_image_id": "0734a9dc7d6d89e8c91458545afeef9d",
+      "class_name": "Mass"
+    },
+    {
+      "id": 29,
+      "image_id": 75,
+      "category_id": 2,
+      "bbox": [
+        497.0369248740971,
+        1129.0729018491813,
+        137.80848799120957,
+        202.08858034375544
+      ],
+      "area": 27849.521697463013,
+      "iscrowd": 0,
+      "study_id": "2d2bb6d7e02db98049f2f598bb8c889c",
+      "original_image_id": "db027e3a4df4857b0e389aa3663c7bae",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 30,
+      "image_id": 76,
+      "category_id": 2,
+      "bbox": [
+        479.08922821105506,
+        492.248310810809,
+        166.06489101887786,
+        194.1485152916065
+      ],
+      "area": 32241.252033377572,
+      "iscrowd": 0,
+      "study_id": "2d2bb6d7e02db98049f2f598bb8c889c",
+      "original_image_id": "e07cf8ec5f1048ca51adfedb641aae47",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 31,
+      "image_id": 77,
+      "category_id": 2,
+      "bbox": [
+        234.24730028424872,
+        1132.0410034110216,
+        42.32527487618367,
+        63.186398521894716
+      ],
+      "area": 2674.3816858752793,
+      "iscrowd": 0,
+      "study_id": "2d3f722896d9c562017546fde5d8dcc4",
+      "original_image_id": "24b3529f050a56afb384b30520bc8482",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 32,
+      "image_id": 80,
+      "category_id": 2,
+      "bbox": [
+        204.46545584542412,
+        871.6108584423258,
+        58.252712685718734,
+        69.35140704945263
+      ],
+      "area": 4039.907589202093,
+      "iscrowd": 0,
+      "study_id": "2d3f722896d9c562017546fde5d8dcc4",
+      "original_image_id": "eee68a195e1bca0721597bdd923edb3e",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 33,
+      "image_id": 81,
+      "category_id": 2,
+      "bbox": [
+        155.9288041940945,
+        1075.9550977653846,
+        93.24704093444703,
+        119.95104748601193
+      ],
+      "area": 11185.080235057954,
+      "iscrowd": 0,
+      "study_id": "2eddff9a90428070b98f85f4c4b6c758",
+      "original_image_id": "0bb148da1406b21011529bb886c17e79",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 34,
+      "image_id": 81,
+      "category_id": 1,
+      "bbox": [
+        260.4165408702845,
+        1042.0258379888123,
+        188.41548145885798,
+        142.45614525142537
+      ],
+      "area": 26840.943194320316,
+      "iscrowd": 0,
+      "study_id": "2eddff9a90428070b98f85f4c4b6c758",
+      "original_image_id": "0bb148da1406b21011529bb886c17e79",
+      "class_name": "Mass"
+    },
+    {
+      "id": 35,
+      "image_id": 83,
+      "category_id": 2,
+      "bbox": [
+        220.07022277050498,
+        610.2868715084085,
+        114.79287771819298,
+        176.01927374298816
+      ],
+      "area": 20205.758966823978,
+      "iscrowd": 0,
+      "study_id": "2eddff9a90428070b98f85f4c4b6c758",
+      "original_image_id": "94e4d888c947abda8f191f8f74e5d7bc",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 36,
+      "image_id": 83,
+      "category_id": 1,
+      "bbox": [
+        344.9742925217941,
+        657.2650139664589,
+        139.1790800135331,
+        149.25796089386904
+      ],
+      "area": 20773.585681904595,
+      "iscrowd": 0,
+      "study_id": "2eddff9a90428070b98f85f4c4b6c758",
+      "original_image_id": "94e4d888c947abda8f191f8f74e5d7bc",
+      "class_name": "Mass"
+    },
+    {
+      "id": 37,
+      "image_id": 89,
+      "category_id": 2,
+      "bbox": [
+        117.57730649419433,
+        642.3454608938332,
+        46.07568353520141,
+        74.86641061453236
+      ],
+      "area": 3449.521042891636,
+      "iscrowd": 0,
+      "study_id": "3ede3de12fc4c4bb837f7422a3a16380",
+      "original_image_id": "061bf98fabad5f9d99fb1919346a3a76",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 38,
+      "image_id": 89,
+      "category_id": 2,
+      "bbox": [
+        244.44431218781793,
+        596.8392648822313,
+        29.598739718482733,
+        24.871768637336004
+      ],
+      "area": 736.1730062348304,
+      "iscrowd": 0,
+      "study_id": "3ede3de12fc4c4bb837f7422a3a16380",
+      "original_image_id": "061bf98fabad5f9d99fb1919346a3a76",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 39,
+      "image_id": 92,
+      "category_id": 2,
+      "bbox": [
+        234.73986575255608,
+        898.4173682575254,
+        57.08523197384986,
+        87.45833380335228
+      ],
+      "area": 4992.579273210759,
+      "iscrowd": 0,
+      "study_id": "3ede3de12fc4c4bb837f7422a3a16380",
+      "original_image_id": "adb001c2aa189526561abc1ceb82810b",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 40,
+      "image_id": 92,
+      "category_id": 2,
+      "bbox": [
+        359.02669992346966,
+        998.8860327093104,
+        17.342348954080876,
+        22.406680561189205
+      ],
+      "area": 388.5844731947639,
+      "iscrowd": 0,
+      "study_id": "3ede3de12fc4c4bb837f7422a3a16380",
+      "original_image_id": "adb001c2aa189526561abc1ceb82810b",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 41,
+      "image_id": 94,
+      "category_id": 2,
+      "bbox": [
+        1198.4131436734442,
+        489.7265712290523,
+        307.1519482804317,
+        706.6716131285039
+      ],
+      "area": 217055.56276689548,
+      "iscrowd": 0,
+      "study_id": "43420741f222a73d6d1c99ef63f79698",
+      "original_image_id": "37797e8ccb0614c811acea9f8f6ace7b",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 42,
+      "image_id": 94,
+      "category_id": 1,
+      "bbox": [
+        1563.9514443192393,
+        541.3315991620133,
+        43.3205288579652,
+        55.59172486034731
+      ],
+      "area": 2408.2629210767373,
+      "iscrowd": 0,
+      "study_id": "43420741f222a73d6d1c99ef63f79698",
+      "original_image_id": "37797e8ccb0614c811acea9f8f6ace7b",
+      "class_name": "Mass"
+    },
+    {
+      "id": 43,
+      "image_id": 96,
+      "category_id": 2,
+      "bbox": [
+        1261.886348805774,
+        645.9208798882466,
+        346.0435876968263,
+        276.60013966484735
+      ],
+      "area": 95715.704687067,
+      "iscrowd": 0,
+      "study_id": "43420741f222a73d6d1c99ef63f79698",
+      "original_image_id": "ffac8bc2803630da2fb467c566d1f136",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 44,
+      "image_id": 103,
+      "category_id": 1,
+      "bbox": [
+        899.142951311384,
+        959.8704519613343,
+        55.69356166294642,
+        78.89866401365862
+      ],
+      "area": 4394.147609368788,
+      "iscrowd": 0,
+      "study_id": "4fc011ee4b49040648fdd2d3dcf883c3",
+      "original_image_id": "a9c839293c5d12e8ccccd20281ffb692",
+      "class_name": "Mass"
+    },
+    {
+      "id": 45,
+      "image_id": 103,
+      "category_id": 1,
+      "bbox": [
+        931.6264801025319,
+        967.8633456509598,
+        66.26536690848206,
+        82.5080301307197
+      ],
+      "area": 5467.424889508235,
+      "iscrowd": 0,
+      "study_id": "4fc011ee4b49040648fdd2d3dcf883c3",
+      "original_image_id": "a9c839293c5d12e8ccccd20281ffb692",
+      "class_name": "Mass"
+    },
+    {
+      "id": 46,
+      "image_id": 104,
+      "category_id": 1,
+      "bbox": [
+        811.111254446869,
+        1409.021603183627,
+        40.70345415387112,
+        66.42907902218644
+      ],
+      "area": 2703.8929724634477,
+      "iscrowd": 0,
+      "study_id": "4fc011ee4b49040648fdd2d3dcf883c3",
+      "original_image_id": "f0e839f095171073b5348bb756afb32f",
+      "class_name": "Mass"
+    },
+    {
+      "id": 47,
+      "image_id": 104,
+      "category_id": 1,
+      "bbox": [
+        850.1846801757522,
+        1419.7623649801023,
+        62.848191179598984,
+        81.73948266061711
+      ],
+      "area": 5137.17863317598,
+      "iscrowd": 0,
+      "study_id": "4fc011ee4b49040648fdd2d3dcf883c3",
+      "original_image_id": "f0e839f095171073b5348bb756afb32f",
+      "class_name": "Mass"
+    },
+    {
+      "id": 48,
+      "image_id": 113,
+      "category_id": 2,
+      "bbox": [
+        1156.5316026959883,
+        891.060474701513,
+        352.64461887908215,
+        379.8870807277225
+      ],
+      "area": 133965.13480031482,
+      "iscrowd": 0,
+      "study_id": "563643e06302bcd7216c2ca8de3157e5",
+      "original_image_id": "73d9a9cb6d8d2685271440b9bd0bfc4b",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 49,
+      "image_id": 116,
+      "category_id": 2,
+      "bbox": [
+        1233.7703482491777,
+        947.1505116543635,
+        350.57805437359025,
+        329.01307561114277
+      ],
+      "area": 115344.76391122537,
+      "iscrowd": 0,
+      "study_id": "563643e06302bcd7216c2ca8de3157e5",
+      "original_image_id": "fde50065b6d598d0bb62a08a0f0d97b7",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 50,
+      "image_id": 117,
+      "category_id": 1,
+      "bbox": [
+        64.01466104711268,
+        999.4869413408035,
+        172.7976570968143,
+        180.22967877094266
+      ],
+      "area": 31143.26623093034,
+      "iscrowd": 0,
+      "study_id": "5f6e4829dd69b3643277057fc8640aa3",
+      "original_image_id": "2424a42cd4c30fdb50d63a044055b1ee",
+      "class_name": "Mass"
+    },
+    {
+      "id": 51,
+      "image_id": 117,
+      "category_id": 1,
+      "bbox": [
+        250.91501697832283,
+        715.3755586592035,
+        149.28630433794658,
+        182.32346368715082
+      ],
+      "area": 27218.39608794855,
+      "iscrowd": 0,
+      "study_id": "5f6e4829dd69b3643277057fc8640aa3",
+      "original_image_id": "2424a42cd4c30fdb50d63a044055b1ee",
+      "class_name": "Mass"
+    },
+    {
+      "id": 52,
+      "image_id": 118,
+      "category_id": 1,
+      "bbox": [
+        1253.8417403835342,
+        1036.9058659218163,
+        211.13728844264347,
+        211.44734636867202
+      ],
+      "area": 44644.41936067384,
+      "iscrowd": 0,
+      "study_id": "5f6e4829dd69b3643277057fc8640aa3",
+      "original_image_id": "40bf312ce7f5a9291ccc0dfbe53ba48d",
+      "class_name": "Mass"
+    },
+    {
+      "id": 53,
+      "image_id": 119,
+      "category_id": 1,
+      "bbox": [
+        1214.2381424102146,
+        915.4159217876808,
+        140.67228730350257,
+        144.3611731843863
+      ],
+      "area": 20307.616429664682,
+      "iscrowd": 0,
+      "study_id": "5f6e4829dd69b3643277057fc8640aa3",
+      "original_image_id": "509310f050909df752c2f63c4ab4f750",
+      "class_name": "Mass"
+    },
+    {
+      "id": 54,
+      "image_id": 119,
+      "category_id": 1,
+      "bbox": [
+        1238.9317068596065,
+        710.021019553094,
+        83.07487613096805,
+        85.53547486030664
+      ],
+      "area": 7105.848978823506,
+      "iscrowd": 0,
+      "study_id": "5f6e4829dd69b3643277057fc8640aa3",
+      "original_image_id": "509310f050909df752c2f63c4ab4f750",
+      "class_name": "Mass"
+    },
+    {
+      "id": 55,
+      "image_id": 120,
+      "category_id": 1,
+      "bbox": [
+        0.0,
+        946.6965782122976,
+        138.77628382040956,
+        187.47206703910604
+      ],
+      "area": 26016.676783817828,
+      "iscrowd": 0,
+      "study_id": "5f6e4829dd69b3643277057fc8640aa3",
+      "original_image_id": "bbe1310b92727a2313d8202042140e01",
+      "class_name": "Mass"
+    },
+    {
+      "id": 56,
+      "image_id": 120,
+      "category_id": 1,
+      "bbox": [
+        114.64337166400587,
+        1078.4836592178913,
+        137.37281974973882,
+        131.78715083798875
+      ],
+      "area": 18103.97251739867,
+      "iscrowd": 0,
+      "study_id": "5f6e4829dd69b3643277057fc8640aa3",
+      "original_image_id": "bbe1310b92727a2313d8202042140e01",
+      "class_name": "Mass"
+    },
+    {
+      "id": 57,
+      "image_id": 122,
+      "category_id": 1,
+      "bbox": [
+        51.82078737531398,
+        755.4721432632468,
+        362.74583140781874,
+        499.36739624785355
+      ],
+      "area": 181143.4413298853,
+      "iscrowd": 0,
+      "study_id": "695d09e0fdad29a27dff29500d352008",
+      "original_image_id": "84e552d2e538d3413048be2e2094a509",
+      "class_name": "Mass"
+    },
+    {
+      "id": 58,
+      "image_id": 124,
+      "category_id": 1,
+      "bbox": [
+        44.884030614580524,
+        995.6493746446698,
+        359.07248031071026,
+        491.36867538377
+      ],
+      "area": 176436.96901703853,
+      "iscrowd": 0,
+      "study_id": "695d09e0fdad29a27dff29500d352008",
+      "original_image_id": "9bfaf5daec30606b515d2c005f29f0dc",
+      "class_name": "Mass"
+    },
+    {
+      "id": 59,
+      "image_id": 129,
+      "category_id": 1,
+      "bbox": [
+        52.16062536296519,
+        1223.141091749617,
+        199.09415097170077,
+        173.49004267425335
+      ],
+      "area": 34540.85274827461,
+      "iscrowd": 0,
+      "study_id": "6d75446a6406fc669f3464543b8f7893",
+      "original_image_id": "1a89e1a41d82efe8826ffe15c41db3f4",
+      "class_name": "Mass"
+    },
+    {
+      "id": 60,
+      "image_id": 130,
+      "category_id": 1,
+      "bbox": [
+        47.933390145273705,
+        837.6626066856604,
+        189.75485378894678,
+        174.81561166424115
+      ],
+      "area": 33172.11083137338,
+      "iscrowd": 0,
+      "study_id": "6d75446a6406fc669f3464543b8f7893",
+      "original_image_id": "8cf6ce9707a45986000b816af94d3087",
+      "class_name": "Mass"
+    },
+    {
+      "id": 61,
+      "image_id": 148,
+      "category_id": 1,
+      "bbox": [
+        1197.7265428784847,
+        1142.7668296089598,
+        224.17858209509313,
+        220.20006983239523
+      ],
+      "area": 49364.13943226686,
+      "iscrowd": 0,
+      "study_id": "7ad3e804b8985abc9b72ee0bd4c4a8a3",
+      "original_image_id": "952db864c34b4f02eeabc1559fda2058",
+      "class_name": "Mass"
+    },
+    {
+      "id": 62,
+      "image_id": 148,
+      "category_id": 2,
+      "bbox": [
+        1267.6252977091617,
+        1166.5018854748387,
+        107.52615473657943,
+        136.26641061453233
+      ],
+      "area": 14652.203153136474,
+      "iscrowd": 0,
+      "study_id": "7ad3e804b8985abc9b72ee0bd4c4a8a3",
+      "original_image_id": "952db864c34b4f02eeabc1559fda2058",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 63,
+      "image_id": 148,
+      "category_id": 1,
+      "bbox": [
+        1291.3255278369218,
+        771.0148044692451,
+        85.2621286318813,
+        126.49546089386195
+      ],
+      "area": 10785.272258081568,
+      "iscrowd": 0,
+      "study_id": "7ad3e804b8985abc9b72ee0bd4c4a8a3",
+      "original_image_id": "952db864c34b4f02eeabc1559fda2058",
+      "class_name": "Mass"
+    },
+    {
+      "id": 64,
+      "image_id": 148,
+      "category_id": 2,
+      "bbox": [
+        1538.1570468430211,
+        203.06263966480302,
+        61.64208341902531,
+        106.82035614525498
+      ],
+      "area": 6584.629304355801,
+      "iscrowd": 0,
+      "study_id": "7ad3e804b8985abc9b72ee0bd4c4a8a3",
+      "original_image_id": "952db864c34b4f02eeabc1559fda2058",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 65,
+      "image_id": 153,
+      "category_id": 1,
+      "bbox": [
+        0.0,
+        529.8393618533236,
+        217.06244953700514,
+        274.2189098919571
+      ],
+      "area": 59522.628290515495,
+      "iscrowd": 0,
+      "study_id": "81885e37a9a42bd351516b83bc3f6d66",
+      "original_image_id": "6e0cfd8cdae637f4613868dbbc34b453",
+      "class_name": "Mass"
+    },
+    {
+      "id": 66,
+      "image_id": 156,
+      "category_id": 1,
+      "bbox": [
+        122.8344701494464,
+        568.2344371802175,
+        252.24425168719011,
+        321.26001989768224
+      ],
+      "area": 81035.99331610266,
+      "iscrowd": 0,
+      "study_id": "81885e37a9a42bd351516b83bc3f6d66",
+      "original_image_id": "f3f7753468997b03b3d8707edd9bef37",
+      "class_name": "Mass"
+    },
+    {
+      "id": 67,
+      "image_id": 159,
+      "category_id": 1,
+      "bbox": [
+        1100.6285465308824,
+        1298.6009957325748,
+        125.6536531543345,
+        116.84957325750429
+      ],
+      "area": 14682.575749330445,
+      "iscrowd": 0,
+      "study_id": "851e387e17df214ec4a50bcc713a078a",
+      "original_image_id": "40ed09234040d4f119a5f24bd19c9e93",
+      "class_name": "Mass"
+    },
+    {
+      "id": 68,
+      "image_id": 163,
+      "category_id": 1,
+      "bbox": [
+        35.747747212707694,
+        1173.8492176386915,
+        301.55394851805954,
+        301.6284672830998
+      ],
+      "area": 90957.25529466908,
+      "iscrowd": 0,
+      "study_id": "85d26c72e12b6139a6d26b54c3706c30",
+      "original_image_id": "6c5ba6a34d007bceeccba36666c74ab0",
+      "class_name": "Mass"
+    },
+    {
+      "id": 69,
+      "image_id": 164,
+      "category_id": 1,
+      "bbox": [
+        111.14600343979352,
+        886.4305154855863,
+        254.66710132765087,
+        268.72475367873994
+      ],
+      "area": 68435.35407435168,
+      "iscrowd": 0,
+      "study_id": "85d26c72e12b6139a6d26b54c3706c30",
+      "original_image_id": "ca0d26213dee21e7f9293cf24c5fd8e1",
+      "class_name": "Mass"
+    },
+    {
+      "id": 70,
+      "image_id": 166,
+      "category_id": 2,
+      "bbox": [
+        1590.0707702636867,
+        1157.9233939738342,
+        38.67185232976999,
+        44.77885162023881
+      ],
+      "area": 1731.681137354557,
+      "iscrowd": 0,
+      "study_id": "86a98170d7f434e56f89168f8b7c3c8c",
+      "original_image_id": "68485c632936e965249b2aee946aec2d",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 71,
+      "image_id": 167,
+      "category_id": 2,
+      "bbox": [
+        1544.983834402902,
+        1301.609437180216,
+        54.034539794936336,
+        49.67467310973598
+      ],
+      "area": 2684.1481009484824,
+      "iscrowd": 0,
+      "study_id": "86a98170d7f434e56f89168f8b7c3c8c",
+      "original_image_id": "b14d40b0221fc76cf05acbec7d89a223",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 72,
+      "image_id": 169,
+      "category_id": 1,
+      "bbox": [
+        43.133260894775475,
+        593.6682960893711,
+        163.0836142272938,
+        178.58219273742304
+      ],
+      "area": 29123.82942825413,
+      "iscrowd": 0,
+      "study_id": "8bf4f9d531f68299f8d8f9d033bfa5b3",
+      "original_image_id": "1edafb4bb142562da9c6d0ebba585b83",
+      "class_name": "Mass"
+    },
+    {
+      "id": 73,
+      "image_id": 173,
+      "category_id": 1,
+      "bbox": [
+        63.78015183040229,
+        1148.3819641842028,
+        136.0089565549581,
+        150.24097498579454
+      ],
+      "area": 20434.118239617477,
+      "iscrowd": 0,
+      "study_id": "8c3a72bc005d1638babd62ba02d56126",
+      "original_image_id": "4d1d2cd40d8db9f452bd1b01771c1f9a",
+      "class_name": "Mass"
+    },
+    {
+      "id": 74,
+      "image_id": 175,
+      "category_id": 1,
+      "bbox": [
+        87.50247770036862,
+        1208.4771176804857,
+        129.6828031267475,
+        136.013359863588
+      ],
+      "area": 17638.593769797142,
+      "iscrowd": 0,
+      "study_id": "8c3a72bc005d1638babd62ba02d56126",
+      "original_image_id": "56fe870f46d9f4862df7cb81de2ddd17",
+      "class_name": "Mass"
+    },
+    {
+      "id": 75,
+      "image_id": 178,
+      "category_id": 1,
+      "bbox": [
+        1122.7148729596747,
+        716.9047754406204,
+        256.4688201904662,
+        305.5758243319558
+      ],
+      "area": 78370.67114514585,
+      "iscrowd": 0,
+      "study_id": "8dd986e8174fc84c2a984e66a416ff9f",
+      "original_image_id": "6a8ea59036175422f3f8253b21b3230e",
+      "class_name": "Mass"
+    },
+    {
+      "id": 76,
+      "image_id": 178,
+      "category_id": 2,
+      "bbox": [
+        1150.325939941377,
+        600.9407333712481,
+        420.83101457871226,
+        394.91237919273044
+      ],
+      "area": 166191.37720536988,
+      "iscrowd": 0,
+      "study_id": "8dd986e8174fc84c2a984e66a416ff9f",
+      "original_image_id": "6a8ea59036175422f3f8253b21b3230e",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 77,
+      "image_id": 179,
+      "category_id": 1,
+      "bbox": [
+        1206.4211460658482,
+        677.7145395110931,
+        268.25728410990405,
+        309.40051165431987
+      ],
+      "area": 82998.94095860256,
+      "iscrowd": 0,
+      "study_id": "8dd986e8174fc84c2a984e66a416ff9f",
+      "original_image_id": "6c89a90416411eecf56e5ea1fff2a1e2",
+      "class_name": "Mass"
+    },
+    {
+      "id": 78,
+      "image_id": 179,
+      "category_id": 2,
+      "bbox": [
+        1267.8605259486608,
+        585.152821205212,
+        351.7133466447958,
+        396.82188032978013
+      ],
+      "area": 139567.55155266763,
+      "iscrowd": 0,
+      "study_id": "8dd986e8174fc84c2a984e66a416ff9f",
+      "original_image_id": "6c89a90416411eecf56e5ea1fff2a1e2",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 79,
+      "image_id": 182,
+      "category_id": 1,
+      "bbox": [
+        7.777778131621468,
+        708.5392978965539,
+        93.42659748963014,
+        97.87670551448969
+      ],
+      "area": 9144.287569713291,
+      "iscrowd": 0,
+      "study_id": "8f447c29a7aa0c5aa2b8e8a852b01560",
+      "original_image_id": "59302684b3ec124d146c8098e6925c83",
+      "class_name": "Mass"
+    },
+    {
+      "id": 80,
+      "image_id": 184,
+      "category_id": 1,
+      "bbox": [
+        406.6943304879318,
+        828.6598919840964,
+        90.4608925955651,
+        84.5338971006181
+      ],
+      "area": 7647.011786303567,
+      "iscrowd": 0,
+      "study_id": "8f447c29a7aa0c5aa2b8e8a852b01560",
+      "original_image_id": "c96ae2f4018c70a342e5828f3ae8bc27",
+      "class_name": "Mass"
+    },
+    {
+      "id": 81,
+      "image_id": 185,
+      "category_id": 1,
+      "bbox": [
+        1390.5354788644265,
+        1189.6330301307269,
+        154.81517944331563,
+        163.61299033546152
+      ],
+      "area": 25329.774458041942,
+      "iscrowd": 0,
+      "study_id": "964da212cbe653df7dd875533409a892",
+      "original_image_id": "04ddd99e0fad1aeca36740eaacdf5607",
+      "class_name": "Mass"
+    },
+    {
+      "id": 82,
+      "image_id": 186,
+      "category_id": 1,
+      "bbox": [
+        1349.1160714285716,
+        1248.138999431466,
+        173.44943586078466,
+        168.27600909610646
+      ],
+      "area": 29187.378846623935,
+      "iscrowd": 0,
+      "study_id": "964da212cbe653df7dd875533409a892",
+      "original_image_id": "5ba24c0cbea875bb4aa17c1ecae7e0f1",
+      "class_name": "Mass"
+    },
+    {
+      "id": 83,
+      "image_id": 191,
+      "category_id": 2,
+      "bbox": [
+        70.3173086610042,
+        241.162206614512,
+        235.62812568178933,
+        327.3821123755298
+      ],
+      "area": 77140.43352079102,
+      "iscrowd": 0,
+      "study_id": "a235482f737d9a3baa8313c8f4db16d6",
+      "original_image_id": "6334ea4f303af58784d84f399dae396c",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 84,
+      "image_id": 191,
+      "category_id": 2,
+      "bbox": [
+        301.3989917611006,
+        694.3441056187758,
+        196.98860229128616,
+        125.04529694171595
+      ],
+      "area": 24632.498267647465,
+      "iscrowd": 0,
+      "study_id": "a235482f737d9a3baa8313c8f4db16d6",
+      "original_image_id": "6334ea4f303af58784d84f399dae396c",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 85,
+      "image_id": 192,
+      "category_id": 2,
+      "bbox": [
+        308.05847698840864,
+        528.1327347083907,
+        157.8719483028641,
+        368.0420519203616
+      ],
+      "area": 58103.515794051345,
+      "iscrowd": 0,
+      "study_id": "a235482f737d9a3baa8313c8f4db16d6",
+      "original_image_id": "7e2ac68b81c14f458e7323f2f8951cf2",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 86,
+      "image_id": 192,
+      "category_id": 2,
+      "bbox": [
+        391.05085839333844,
+        1038.981241109558,
+        112.81811844995025,
+        158.77827169272723
+      ],
+      "area": 17913.065863108484,
+      "iscrowd": 0,
+      "study_id": "a235482f737d9a3baa8313c8f4db16d6",
+      "original_image_id": "7e2ac68b81c14f458e7323f2f8951cf2",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 87,
+      "image_id": 193,
+      "category_id": 2,
+      "bbox": [
+        1528.456861223508,
+        526.1217666287671,
+        46.32683192663285,
+        41.78489198408033
+      ],
+      "area": 1935.7616680189976,
+      "iscrowd": 0,
+      "study_id": "a739f537d66fb48c49eca89a0991088f",
+      "original_image_id": "664b12ccff1d1acfe8f965d87615ae3d",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 88,
+      "image_id": 195,
+      "category_id": 2,
+      "bbox": [
+        1458.058223179394,
+        847.7777146105741,
+        48.70798950199696,
+        51.828666856190125
+      ],
+      "area": 2524.4701611338064,
+      "iscrowd": 0,
+      "study_id": "a739f537d66fb48c49eca89a0991088f",
+      "original_image_id": "a93f1732181e8dc316aaa1dcb2625d37",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 89,
+      "image_id": 199,
+      "category_id": 1,
+      "bbox": [
+        1250.5417759486609,
+        567.8257532689028,
+        118.8387224470157,
+        128.17403354180692
+      ],
+      "area": 15232.038396989274,
+      "iscrowd": 0,
+      "study_id": "aa500e7685bcb0f515e3d47cdf2bac33",
+      "original_image_id": "6f858d4db04378848c0f4f4dd9527004",
+      "class_name": "Mass"
+    },
+    {
+      "id": 90,
+      "image_id": 206,
+      "category_id": 1,
+      "bbox": [
+        146.94798987252554,
+        783.0718447981588,
+        91.63743656703187,
+        81.00021318934853
+      ],
+      "area": 7422.651898054984,
+      "iscrowd": 0,
+      "study_id": "b123bcd385130b5d089f3fc9a7d24a11",
+      "original_image_id": "54b2fd916363b3e07667e3f1d65f085f",
+      "class_name": "Mass"
+    },
+    {
+      "id": 91,
+      "image_id": 207,
+      "category_id": 1,
+      "bbox": [
+        296.995311301097,
+        608.3106878908179,
+        79.39205943516066,
+        83.22988914159407
+      ],
+      "area": 6607.79230551127,
+      "iscrowd": 0,
+      "study_id": "b123bcd385130b5d089f3fc9a7d24a11",
+      "original_image_id": "d52161ca0d73ced5fde02dc6cb04918e",
+      "class_name": "Mass"
+    },
+    {
+      "id": 92,
+      "image_id": 210,
+      "category_id": 2,
+      "bbox": [
+        1311.191969110495,
+        1082.562500000007,
+        270.49165667643615,
+        279.0028631284845
+      ],
+      "area": 75467.94666509274,
+      "iscrowd": 0,
+      "study_id": "b637bc3a2d5aa8842b92b7b4d7cab620",
+      "original_image_id": "8c90a9536079688965102363c77df077",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 93,
+      "image_id": 211,
+      "category_id": 2,
+      "bbox": [
+        1175.0506959917589,
+        1032.3636173184427,
+        359.98793995672963,
+        173.35914804470008
+      ],
+      "area": 62407.20257726529,
+      "iscrowd": 0,
+      "study_id": "b637bc3a2d5aa8842b92b7b4d7cab620",
+      "original_image_id": "8d9552b0949ee990570328d0410557ff",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 94,
+      "image_id": 211,
+      "category_id": 1,
+      "bbox": [
+        1449.4846845168165,
+        787.2042597765577,
+        155.5042537076322,
+        165.93379888265292
+      ],
+      "area": 25803.411560119275,
+      "iscrowd": 0,
+      "study_id": "b637bc3a2d5aa8842b92b7b4d7cab620",
+      "original_image_id": "8d9552b0949ee990570328d0410557ff",
+      "class_name": "Mass"
+    },
+    {
+      "id": 95,
+      "image_id": 213,
+      "category_id": 2,
+      "bbox": [
+        1528.1133457729086,
+        504.90825753268757,
+        99.37175728929788,
+        170.20402217166077
+      ],
+      "area": 16913.472780904547,
+      "iscrowd": 0,
+      "study_id": "b66ed0c50a305ce5e2a942eb5d3c5d12",
+      "original_image_id": "2bc1c6df1d38102593cdbc50610d2010",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 96,
+      "image_id": 215,
+      "category_id": 2,
+      "bbox": [
+        1476.1337873186094,
+        893.7325184764361,
+        151.85784824917755,
+        150.84060545761008
+      ],
+      "area": 22906.329773395813,
+      "iscrowd": 0,
+      "study_id": "b66ed0c50a305ce5e2a942eb5d3c5d12",
+      "original_image_id": "b7e56b7480ec9c0243f0d552c416288b",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 97,
+      "image_id": 218,
+      "category_id": 2,
+      "bbox": [
+        3.497272524871601,
+        1292.9347439544626,
+        88.26255374471096,
+        115.80814366996765
+      ],
+      "area": 10221.522504745728,
+      "iscrowd": 0,
+      "study_id": "b9a94c8d69c1c7c5433cbe035fafaf50",
+      "original_image_id": "a0fdff91676e8e3cee89af8a2d0eea82",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 98,
+      "image_id": 220,
+      "category_id": 1,
+      "bbox": [
+        5.887079068254023,
+        725.2876955903272,
+        242.90807678495955,
+        179.5831258890197
+      ],
+      "area": 43622.19173273305,
+      "iscrowd": 0,
+      "study_id": "b9a94c8d69c1c7c5433cbe035fafaf50",
+      "original_image_id": "e97550e9877faea678557c5e3d52438b",
+      "class_name": "Mass"
+    },
+    {
+      "id": 99,
+      "image_id": 220,
+      "category_id": 2,
+      "bbox": [
+        6.2726245509464045,
+        1084.354818634433,
+        118.87857184732233,
+        140.86193100996638
+      ],
+      "area": 16745.46518612085,
+      "iscrowd": 0,
+      "study_id": "b9a94c8d69c1c7c5433cbe035fafaf50",
+      "original_image_id": "e97550e9877faea678557c5e3d52438b",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 100,
+      "image_id": 220,
+      "category_id": 2,
+      "bbox": [
+        12.927896853232939,
+        909.568367709806,
+        113.82664145342477,
+        82.1602951635573
+      ],
+      "area": 9352.030459289785,
+      "iscrowd": 0,
+      "study_id": "b9a94c8d69c1c7c5433cbe035fafaf50",
+      "original_image_id": "e97550e9877faea678557c5e3d52438b",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 101,
+      "image_id": 222,
+      "category_id": 1,
+      "bbox": [
+        1285.8196899413772,
+        904.9505400795906,
+        227.21621268139074,
+        163.1297612279559
+      ],
+      "area": 37065.72652183571,
+      "iscrowd": 0,
+      "study_id": "bba470c7ae302b5e4bfd2ed1a4515661",
+      "original_image_id": "27f066be252acf8b8be0e058e30b3a1a",
+      "class_name": "Mass"
+    },
+    {
+      "id": 102,
+      "image_id": 223,
+      "category_id": 1,
+      "bbox": [
+        1287.2750470842343,
+        773.8622086412953,
+        228.67156982424785,
+        186.4390278567222
+      ],
+      "area": 42633.30517650334,
+      "iscrowd": 0,
+      "study_id": "bba470c7ae302b5e4bfd2ed1a4515661",
+      "original_image_id": "43361e8af5bd4f6a17194ad97b57c4f9",
+      "class_name": "Mass"
+    },
+    {
+      "id": 103,
+      "image_id": 228,
+      "category_id": 1,
+      "bbox": [
+        1122.476245553131,
+        630.1587549744027,
+        147.54983476912003,
+        156.92410460491828
+      ],
+      "area": 23154.1257057478,
+      "iscrowd": 0,
+      "study_id": "bc01d2c4f5fe5e6be83ef636d5f3403c",
+      "original_image_id": "b945abc59af0d7ee09cde14365a66567",
+      "class_name": "Mass"
+    },
+    {
+      "id": 104,
+      "image_id": 246,
+      "category_id": 2,
+      "bbox": [
+        16.693586656025666,
+        946.2831154064809,
+        27.483897556577496,
+        26.55763217738081
+      ],
+      "area": 729.9072421084003,
+      "iscrowd": 0,
+      "study_id": "d6751693a8f2c11a67fbaed260449abd",
+      "original_image_id": "a3e787ded9ca91b8281beba75f6ed60a",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 105,
+      "image_id": 247,
+      "category_id": 2,
+      "bbox": [
+        26.48360045296831,
+        1223.1299033542075,
+        36.30632847377116,
+        37.6533541784961
+      ],
+      "area": 1367.0550449437233,
+      "iscrowd": 0,
+      "study_id": "d6751693a8f2c11a67fbaed260449abd",
+      "original_image_id": "b9bbc66abf98202f5b621d55bd59b599",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 106,
+      "image_id": 253,
+      "category_id": 2,
+      "bbox": [
+        0.394312196353792,
+        0.0,
+        160.93625936694045,
+        442.5785028449521
+      ],
+      "area": 71226.9287240874,
+      "iscrowd": 0,
+      "study_id": "dc8eca8e41cb72804147da33e91917bb",
+      "original_image_id": "06a407691cadae64cea5de8e8634a4ac",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 107,
+      "image_id": 254,
+      "category_id": 2,
+      "bbox": [
+        8.094634419644336,
+        566.0520536984362,
+        815.8367628534828,
+        642.5083125889129
+      ],
+      "area": 524181.90184899233,
+      "iscrowd": 0,
+      "study_id": "dc8eca8e41cb72804147da33e91917bb",
+      "original_image_id": "264d5e05c5774d9770eaf74c0483bd50",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 108,
+      "image_id": 260,
+      "category_id": 1,
+      "bbox": [
+        123.9265742710644,
+        554.009025014214,
+        266.2203170776404,
+        194.8848777714378
+      ],
+      "area": 51882.313953949364,
+      "iscrowd": 0,
+      "study_id": "dd6333df02b3131120f721d732b3e1ee",
+      "original_image_id": "bad7f3502dbbe04dccafa396afe08f49",
+      "class_name": "Mass"
+    },
+    {
+      "id": 109,
+      "image_id": 261,
+      "category_id": 1,
+      "bbox": [
+        234.15880558361104,
+        523.3002261622884,
+        315.4910888297304,
+        325.81305950565513
+      ],
+      "area": 102791.11689838489,
+      "iscrowd": 0,
+      "study_id": "e1314fcdd554aa328145271d19db6929",
+      "original_image_id": "426c29495642038d7340796542d932d1",
+      "class_name": "Mass"
+    },
+    {
+      "id": 110,
+      "image_id": 262,
+      "category_id": 1,
+      "bbox": [
+        352.01213275462203,
+        1045.9439011379711,
+        294.6120702390831,
+        341.0808143670258
+      ],
+      "area": 100486.52483950187,
+      "iscrowd": 0,
+      "study_id": "e1314fcdd554aa328145271d19db6929",
+      "original_image_id": "86176a5feecb57e582b70cfb87699929",
+      "class_name": "Mass"
+    },
+    {
+      "id": 111,
+      "image_id": 267,
+      "category_id": 1,
+      "bbox": [
+        76.952302060809,
+        376.6952103467894,
+        113.73091098240208,
+        142.82674815235634
+      ],
+      "area": 16243.8161800216,
+      "iscrowd": 0,
+      "study_id": "e87560369603db94ed6ed5606fe595d0",
+      "original_image_id": "bccead060b49d9a6034fb98165cf925c",
+      "class_name": "Mass"
+    },
+    {
+      "id": 112,
+      "image_id": 270,
+      "category_id": 2,
+      "bbox": [
+        1553.2793701171877,
+        977.5270750426305,
+        23.54182303295306,
+        21.912094940343422
+      ],
+      "area": 515.850661366831,
+      "iscrowd": 0,
+      "study_id": "ea0b5e3d2a1cc02476a94c841a272d7a",
+      "original_image_id": "15206c1ba3b120b11296ea2967afd6c0",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 113,
+      "image_id": 272,
+      "category_id": 2,
+      "bbox": [
+        1351.3107613699488,
+        835.4535957930715,
+        20.62528163369325,
+        32.414084707198185
+      ],
+      "area": 668.5496259843519,
+      "iscrowd": 0,
+      "study_id": "ea0b5e3d2a1cc02476a94c841a272d7a",
+      "original_image_id": "c8f6d4876fa771042d6ad4be5197f01e",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 114,
+      "image_id": 277,
+      "category_id": 2,
+      "bbox": [
+        138.36488255092223,
+        1068.6449687322051,
+        106.56881103515624,
+        163.607163160945
+      ],
+      "area": 17435.42085489672,
+      "iscrowd": 0,
+      "study_id": "eeb18c719cadabcc5ec397a53be529db",
+      "original_image_id": "4494c6e2c08435784d5b1f25ac7b5869",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 115,
+      "image_id": 277,
+      "category_id": 2,
+      "bbox": [
+        174.94441026959882,
+        792.6947839681565,
+        43.88425870623092,
+        57.38821773735799
+      ],
+      "area": 2518.4393938757285,
+      "iscrowd": 0,
+      "study_id": "eeb18c719cadabcc5ec397a53be529db",
+      "original_image_id": "4494c6e2c08435784d5b1f25ac7b5869",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 116,
+      "image_id": 279,
+      "category_id": 2,
+      "bbox": [
+        92.33600621904883,
+        700.5230955088045,
+        43.25903429303632,
+        45.28538942581008
+      ],
+      "area": 1959.0022141446227,
+      "iscrowd": 0,
+      "study_id": "eeb18c719cadabcc5ec397a53be529db",
+      "original_image_id": "5fd515ea4eaec3493943c4eef796b41e",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 117,
+      "image_id": 279,
+      "category_id": 2,
+      "bbox": [
+        144.38191026959882,
+        1023.615761796468,
+        81.78583057948924,
+        130.4538089823618
+      ],
+      "area": 10669.273119880494,
+      "iscrowd": 0,
+      "study_id": "eeb18c719cadabcc5ec397a53be529db",
+      "original_image_id": "5fd515ea4eaec3493943c4eef796b41e",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 118,
+      "image_id": 287,
+      "category_id": 1,
+      "bbox": [
+        241.85358439854468,
+        895.9912592382253,
+        51.679142325261466,
+        64.45551449685865
+      ],
+      "area": 3331.0057073311123,
+      "iscrowd": 0,
+      "study_id": "f3c855dd2fc8d2169ac1af3316429209",
+      "original_image_id": "a8390f8b0e09fe8bfe97110ef47480ed",
+      "class_name": "Mass"
+    },
+    {
+      "id": 119,
+      "image_id": 288,
+      "category_id": 1,
+      "bbox": [
+        93.06019385201336,
+        993.8912734508389,
+        76.64958528791266,
+        44.75561398521165
+      ],
+      "area": 3430.499251272377,
+      "iscrowd": 0,
+      "study_id": "f3c855dd2fc8d2169ac1af3316429209",
+      "original_image_id": "b9d99b6404393a9e23ebf953b786ca6d",
+      "class_name": "Mass"
+    },
+    {
+      "id": 120,
+      "image_id": 290,
+      "category_id": 2,
+      "bbox": [
+        1466.9708644322134,
+        888.5106594655908,
+        122.4246712820725,
+        125.42396247869567
+      ],
+      "area": 15354.987377349313,
+      "iscrowd": 0,
+      "study_id": "f6f28f20df610b84e652c8ac8d64d99c",
+      "original_image_id": "5e2abd624c758a9ad40aa47db8d68ad0",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 121,
+      "image_id": 292,
+      "category_id": 2,
+      "bbox": [
+        1511.9996712820725,
+        1028.4243177941794,
+        110.68858032225103,
+        109.33342808416774
+      ],
+      "area": 12101.961936401456,
+      "iscrowd": 0,
+      "study_id": "f6f28f20df610b84e652c8ac8d64d99c",
+      "original_image_id": "cadb654c855b9f948a193219a21712f3",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 122,
+      "image_id": 294,
+      "category_id": 1,
+      "bbox": [
+        236.68763504028576,
+        859.193646958521,
+        62.082618604386454,
+        49.45352472991647
+      ],
+      "area": 3070.2043144499976,
+      "iscrowd": 0,
+      "study_id": "fbdc572b430c0b423d0a88e8684233b0",
+      "original_image_id": "b4199ebb8667d80b6884654b88c15a4e",
+      "class_name": "Mass"
+    },
+    {
+      "id": 123,
+      "image_id": 296,
+      "category_id": 1,
+      "bbox": [
+        216.621756308419,
+        875.7499289368886,
+        70.20351856776463,
+        65.52089255257215
+      ],
+      "area": 4599.797196891011,
+      "iscrowd": 0,
+      "study_id": "fbdc572b430c0b423d0a88e8684233b0",
+      "original_image_id": "f2504628e2a4c5e04bb39655b4776f57",
+      "class_name": "Mass"
+    },
+    {
+      "id": 124,
+      "image_id": 298,
+      "category_id": 1,
+      "bbox": [
+        1.2679400632255906,
+        642.2539106144965,
+        315.51737359322715,
+        358.2226955307477
+      ],
+      "area": 113025.4840553478,
+      "iscrowd": 0,
+      "study_id": "fcfdac68cdf5c9515a810d8adf71e2cc",
+      "original_image_id": "9ca728553d6b22dbce7e5af4eb380424",
+      "class_name": "Mass"
+    },
+    {
+      "id": 125,
+      "image_id": 299,
+      "category_id": 1,
+      "bbox": [
+        0.0,
+        562.7778282122897,
+        188.21409369261025,
+        260.00904329606146
+      ],
+      "area": 48937.36643585087,
+      "iscrowd": 0,
+      "study_id": "fcfdac68cdf5c9515a810d8adf71e2cc",
+      "original_image_id": "dedfb81e153d26380398a5fae3e9faad",
+      "class_name": "Mass"
+    },
+    {
+      "id": 126,
+      "image_id": 302,
+      "category_id": 2,
+      "bbox": [
+        1369.9509870256697,
+        951.6854747015494,
+        28.29788469589971,
+        40.87265491756682
+      ],
+      "area": 1156.609676072604,
+      "iscrowd": 0,
+      "study_id": "fd2fccc2650d1857a5669c28441300b2",
+      "original_image_id": "2ad344496bc6f2d91c27f501be133971",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 127,
+      "image_id": 304,
+      "category_id": 2,
+      "bbox": [
+        1435.1976039341519,
+        845.6004832290928,
+        29.380732945018963,
+        32.53048607162441
+      ],
+      "area": 955.7695238420558,
+      "iscrowd": 0,
+      "study_id": "fd2fccc2650d1857a5669c28441300b2",
+      "original_image_id": "cbd30d8f2d8eb4dd4278a86381f38a3d",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 128,
+      "image_id": 306,
+      "category_id": 2,
+      "bbox": [
+        1184.144147634018,
+        817.0848291146117,
+        369.032902765191,
+        557.6323496563523
+      ],
+      "area": 205784.68466945764,
+      "iscrowd": 0,
+      "study_id": "ff5c656fb6757b708d64d2ebdd33c421",
+      "original_image_id": "4a06e41e38450e4c6e743b8e8da1ec60",
+      "class_name": "Suspicious Calcification"
+    },
+    {
+      "id": 129,
+      "image_id": 306,
+      "category_id": 1,
+      "bbox": [
+        1356.3492074806497,
+        806.2198324022631,
+        115.01604043842462,
+        122.28498603351238
+      ],
+      "area": 14064.734898642651,
+      "iscrowd": 0,
+      "study_id": "ff5c656fb6757b708d64d2ebdd33c421",
+      "original_image_id": "4a06e41e38450e4c6e743b8e8da1ec60",
+      "class_name": "Mass"
+    },
+    {
+      "id": 130,
+      "image_id": 308,
+      "category_id": 2,
+      "bbox": [
+        1162.3308400226083,
+        771.8671787709353,
+        442.4643309684359,
+        591.4391825918507
+      ],
+      "area": 261690.7422340218,
+      "iscrowd": 0,
+      "study_id": "ff5c656fb6757b708d64d2ebdd33c421",
+      "original_image_id": "6cab0db67458b7c2bf4afade630adee5",
+      "class_name": "Suspicious Calcification"
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Mass",
+      "supercategory": "finding"
+    },
+    {
+      "id": 2,
+      "name": "Suspicious Calcification",
+      "supercategory": "finding"
+    }
+  ]
+}
