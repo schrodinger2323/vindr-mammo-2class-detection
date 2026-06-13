@@ -1,8 +1,8 @@
 # VinDr-Mammo — Mass & Suspicious Calcification Tespiti (2 Sınıf)
 
-Bu proje, [VinDr-Mammo](https://physionet.org/content/vindr-mammo/1.0.0/) veri
+Bu projede, [VinDr-Mammo](https://physionet.org/content/vindr-mammo/1.0.0/) veri
 setinden seçilen **2 sınıflı (Mass, Suspicious Calcification)** bir alt küme
-üzerinde mamografi lezyon tespiti (object detection) yapar. Amaç, bir
+üzerinde mamografi lezyon tespiti (object detection) yapılmıştır. Amaç, bir
 tek-aşamalı (YOLOv8) ve bir iki-aşamalı (Faster R-CNN) dedektörü aynı veri ve
 aynı değerlendirme protokolüyle karşılaştırmak, ardından literatürde
 (Abdikenov et al. 2025) önerilen **crop + CLAHE ön işleme** adımının Faster
@@ -41,8 +41,7 @@ annotasyonları sunan büyük ölçekli bir açık veri setidir (Nguyen et al. 2
 
 **Veriye erişim:** Veri seti [PhysioNet](https://physionet.org/content/vindr-mammo/1.0.0/)
 üzerinde barındırılıyor ve **credentialed access** gerektiriyor: PhysioNet
-hesabı açılması, CITI "Data or Specimens Only Research" eğitiminin
-tamamlanması ve veri setine özel **Data Use Agreement (DUA)**'ın
+hesabı açılması, veri setine özel **Data Use Agreement (DUA)**'ın
 imzalanması gerekiyor. Bu nedenle ham DICOM görüntüleri **bu repoda yer
 almıyor** — sadece annotasyon CSV'leri, bizim ürettiğimiz türetilmiş veri
 (PNG / crop+CLAHE etiketleri, istatistikler) ve eğitim/değerlendirme
@@ -156,7 +155,7 @@ PhysioNet (DUA)          Alt küme seçimi        DICOM → PNG          Crop + 
 
 ### 2.1 Adım 1 — Alt küme seçimi ve DICOM indirme
 
-Notebook: [`vindr_mammo_2class_subset_download_2 (1).ipynb`](vindr_mammo_2class_subset_download_2%20%281%29.ipynb)
+Notebook: [`vindr_mammo_2class_subset_download_2.ipynb`](vindr_mammo_2class_subset_download_2%20%281%29.ipynb)
 
 - `breast-level_annotations.csv` + `finding_annotations.csv` üzerinden, en az
   bir hedef bulgu (Mass veya Suspicious Calcification) içeren çalışmalar,
