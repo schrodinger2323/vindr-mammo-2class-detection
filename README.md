@@ -73,7 +73,7 @@ VinDr-Mammo'nun tam annotasyon dosyalarında (`finding_annotations.csv`, 20.486 
 | Skin Retraction | 18 |
 
 <p align="center">
-  <img src= `dataset/eda_full_dataset/figures/finding_category_distribution.png` width="760" alt="Finding category distribution (full VinDr-Mammo)">
+  <img src="dataset/eda_full_dataset/figures/finding_category_distribution.png" width="760" alt="Finding category distribution (full VinDr-Mammo)">
 </p>
 
 **Mass** ve **Suspicious Calcification**, "No Finding" dışında en sık görülen iki patolojik bulgu kategorisidir ve literatürde mamografi lezyon tespiti çalışmalarının (Ribli ve ark. [4], Karaca Aydemir ve ark. [3], Abdikenov ve ark. [2]) odaklandığı sınıflarla örtüşmektedir. Bu nedenle bu iki sınıf, hem yeterli eğitim örneği sunması hem de literatürle karşılaştırılabilirlik sağlaması bakımından bu projenin hedefi olarak seçilmiştir.
