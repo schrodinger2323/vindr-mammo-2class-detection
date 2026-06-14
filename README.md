@@ -1,99 +1,68 @@
-# VinDr-Mammo — Mass & Suspicious Calcification Tespiti (2 Sınıf)
+# VinDr-Mammo İki Sınıflı Lezyon Tespiti
 
-Bu projede, [VinDr-Mammo](https://physionet.org/content/vindr-mammo/1.0.0/) veri
-setinden seçilen **2 sınıflı (Mass, Suspicious Calcification)** bir alt küme
-üzerinde mamografi lezyon tespiti (object detection) yapılmıştır. Amaç, bir
-tek-aşamalı (YOLOv8) ve bir iki-aşamalı (Faster R-CNN) dedektörü aynı veri ve
-aynı değerlendirme protokolüyle karşılaştırmak, ardından literatürde
-(Abdikenov et al. 2025) önerilen **crop + CLAHE ön işleme** adımının Faster
-R-CNN üzerindeki etkisini bir ablasyon deneyiyle ölçmektir.
+**YOLOv8s ve Faster R-CNN ile Mass / Suspicious Calcification tespiti, ham görüntü ve Crop+CLAHE ablasyonu**
 
-Tüm modeller COCO-pretrained ağırlıklardan fine-tune edilmiş, aynı
-study-level train/val/test split (seed=42) kullanılmıştır — sızıntı (data
-leakage) yoktur.
+Bu proje, VinDr-Mammo veri setinden çalışma için oluşturulan kontrollü bir alt küme üzerinde iki mamografi bulgusunun nesne tespiti yaklaşımıyla lokalize edilmesini inceler:
 
-## İçindekiler
+- **Mass**
+- **Suspicious Calcification**
 
-1. [Veri Seti](#1-veri-seti)
-2. [Uçtan Uca İşlem Hattı (Pipeline)](#2-uçtan-uca-işlem-hattı-pipeline)
-3. [Modeller ve Metodoloji](#3-modeller-ve-metodoloji)
-4. [Kurulum ve Çalıştırma](#4-kurulum-ve-çalıştırma-google-colab)
-5. [Sonuçlar](#5-sonuçlar-test-split)
-6. [Qualitative Sonuçlar](#6-qualitative-sonuçlar-gt-vs-tahmin)
-7. [Repo Yapısı](#7-repo-yapısı)
-8. [Lisans](#8-lisans)
-9. [Referanslar](#9-referanslar)
-10. [Sınırlamalar ve Sonraki Adımlar](#10-sınırlamalar-ve-sonraki-adımlar)
+Çalışmanın temel amacı yalnızca bir model eğitmek değil; veri seçimi, DICOM ön işleme, çalışma düzeyinde veri bölme, model karşılaştırması ve ön işleme ablasyonunu tekrarlanabilir bir deney protokolü içinde değerlendirmektir.
+
+> **Kapsam notu:** Bu çalışma araştırma ve eğitim amaçlıdır. Klinik karar desteği veya tanı amacıyla kullanılmamalıdır.
+
+> **Veri erişimi notu:** Bu repo kod, dokümantasyon ve sonuç/figür dosyalarını içerir. VinDr-Mammo'nun DICOM görüntüleri ve bunlardan üretilen PNG/etiket dosyaları PhysioNet Data Use Agreement (DUA) kapsamında olduğu için `.gitignore` ile repo dışında tutulmuştur. Eğitilmiş model ağırlıkları (`.pt`) ve referans makale PDF'leri de aynı nedenle (boyut/telif) repoya dahil edilmemiştir.
 
 ---
 
-## 1. Veri Seti
+## İçindekiler
 
-### 1.1 Kaynak veri seti: VinDr-Mammo
+- [Projenin Amacı](#projenin-amacı)
+- [Veri Seti ve Alt Küme Seçimi](#veri-seti-ve-alt-küme-seçimi)
+- [Train / Validation / Test Bölünmesi](#train--validation--test-bölünmesi)
+- [İşleme Adımları](#işleme-adımları)
+- [Karşılaştırılan Yöntemler](#karşılaştırılan-yöntemler)
+- [Eğitim Protokolü](#eğitim-protokolü)
+- [Değerlendirme Metrikleri](#değerlendirme-metrikleri)
+- [Sonuçlar](#sonuçlar)
+- [Nitel Sonuçlar](#nitel-sonuçlar)
+- [Repo Yapısı](#repo-yapısı)
+- [Çalıştırma](#çalıştırma)
+- [Üretilen Çıktılar](#üretilen-çıktılar)
+- [Sınırlılıklar](#sınırlılıklar)
+- [Referanslar](#referanslar)
+- [Veri Erişimi ve Atıf](#veri-erişimi-ve-atıf)
 
-[VinDr-Mammo](https://physionet.org/content/vindr-mammo/1.0.0/), Vietnam'da
-toplanan, **5000 çalışma (study)** ve her çalışma için 4 standart görüntüden
-(L-CC, L-MLO, R-CC, R-MLO) oluşan toplam **20.000 full-field dijital mamografi
-(FFDM) DICOM görüntüsü** içeren, BI-RADS ve meme yoğunluğu (breast density)
-etiketleriyle birlikte bulgu-seviyesi (finding-level) bounding box
-annotasyonları sunan büyük ölçekli bir açık veri setidir (Nguyen et al. 2023,
-*Scientific Data* — bkz. [Referanslar](#8-referanslar)).
+---
 
-**Veriye erişim:** Veri seti [PhysioNet](https://physionet.org/content/vindr-mammo/1.0.0/)
-üzerinde barındırılıyor ve **credentialed access** gerektiriyor: PhysioNet
-hesabı açılması, veri setine özel **Data Use Agreement (DUA)**'ın
-imzalanması gerekiyor. Bu nedenle ham DICOM görüntüleri **bu repoda yer
-almıyor** — sadece annotasyon CSV'leri, bizim ürettiğimiz türetilmiş veri
-(PNG / crop+CLAHE etiketleri, istatistikler) ve eğitim/değerlendirme
-çıktıları (figürler, metrikler, ağırlık dosyaları hariç) paylaşılıyor.
+## Projenin Amacı
 
-DUA onaylandıktan sonra PhysioNet, veri setinin kök dizininde şu dosyaları
-sunuyor (üçü de bu repoda mevcut, kod referansı ve EDA için):
+Mamografi görüntülerindeki bulguların yalnızca görüntü düzeyinde sınıflandırılması, lezyonun nerede bulunduğunu göstermez. Bu nedenle proje bir **object detection** problemi olarak ele alınmış; modelden hem bulgu sınıfını hem de lezyonu çevreleyen bounding box'ı tahmin etmesi beklenmiştir.
 
-| Dosya | Satır | İçerik |
-|---|---|---|
-| [`breast-level_annotations.csv`](breast-level_annotations.csv) | 20.000 | `study_id, series_id, image_id, laterality, view_position, height, width, breast_birads, breast_density, split` |
-| [`finding_annotations.csv`](finding_annotations.csv) | 20.486 | yukarıdakine ek olarak `finding_categories` (liste), `finding_birads`, `xmin, ymin, xmax, ymax` (bbox) |
-| [`metadata.csv`](metadata.csv) | 20.000 | DICOM header alanları (`Patient's Age`, `Manufacturer`, `Pixel Spacing`, vb., 21 kolon) |
+Çalışma iki araştırma sorusuna odaklanır:
 
-Veri setinin resmi görselleştirme/EDA scripti:
-[vinbigdata-medical/vindr-mammo](https://github.com/vinbigdata-medical/vindr-mammo)
-(bounding box overlay örnekleri için kullanıldı, referans olarak).
+1. **Tek aşamalı YOLOv8s ile iki aşamalı Faster R-CNN arasında bu alt kümede nasıl bir performans farkı vardır?**
+2. **Göğüs bölgesini kırpma ve CLAHE ile yerel kontrastı artırma, Faster R-CNN performansını değiştirir mi?**
 
-### 1.2 Tam veri seti — özet EDA
+İki sınıflı kapsam, sınırlı hesaplama kaynağı altında kontrollü bir model karşılaştırması ve sınıf bazlı hata analizi yapabilmek amacıyla seçilmiştir. Bu seçim, diğer mamografi bulgularının önemsiz olduğu anlamına gelmez.
 
-Çalışmaya başlamadan önce, hedef sınıfları seçmek için tüm 20.000 görüntülük
-veri setinin annotasyon dağılımına bakıldı
-(`dataset/eda_full_dataset/`):
+Bu iki araştırma sorusu, mamografi görüntülerinde nesne tespiti tabanlı CAD sistemleri üzerine yapılan çalışmalarla aynı genel çerçevededir: Ribli ve ark. [4] Faster R-CNN tabanlı bir sistemle mamografi lezyonlarını tespit ve sınıflandırmış, Karaca Aydemir ve ark. [3] YOLO ailesi modelleriyle meme kitlelerini tespit etmiş, Abdikenov ve ark. [2] ise transfer learning ile görüntü ön işlemenin (crop+CLAHE) INbreast, CBIS-DDSM ve VinDr-Mammo veri setlerindeki etkisini incelemiştir. Bu proje, benzer bir karşılaştırma protokolünü VinDr-Mammo'nun kontrollü bir alt kümesi üzerinde uygulamaktadır (bkz. [Referanslar](#referanslar)).
 
-**BI-RADS dağılımı** (breast-level, 20.000 göğüs):
+---
 
-| BI-RADS | 1 | 2 | 3 | 4 | 5 |
-|---|---|---|---|---|---|
-| Adet | 13.406 | 4.676 | 930 | 762 | 226 |
+## Veri Seti ve Alt Küme Seçimi
 
-**Meme yoğunluğu (breast density) dağılımı:**
+Kaynak veri seti: **VinDr-Mammo v1.0.0** [1].
 
-| Density | A | B | C | D |
-|---|---|---|---|---|
-| Adet | 100 | 1.908 | 15.292 | 2.700 |
+### Hedef sınıfların seçim gerekçesi
 
-**Resmi split (PhysioNet, `breast-level_annotations.csv` → `split` kolonu):**
-training = 16.000, test = 4.000. *(Not: bu, PhysioNet'in kendi train/test
-ayrımıdır — bizim alt kümemiz için kullandığımız study-level
-train/val/test (seed=42) split'inden farklıdır, bkz. §1.3.)*
+VinDr-Mammo'nun tam annotasyon dosyalarında (`finding_annotations.csv`, 20.486 bulgu satırı; bir görüntüde birden fazla bulgu olabileceğinden kategori toplamı satır sayısını aşabilir) bulgu kategorilerine göre dağılım aşağıdaki gibidir:
 
-**Bulgu kategorisi (finding_categories) dağılımı** —
-`finding_annotations.csv`'deki 20.486 bulgu satırı, "No Finding" hariç
-(bir görüntüde birden fazla bulgu kategorisi birlikte bulunabilir):
-
-![finding category distribution](dataset/eda_full_dataset/figures/finding_category_distribution.png)
-
-| Kategori | Adet |
-|---|---|
+| Bulgu kategorisi | Adet |
+|---|---:|
 | No Finding | 18.232 |
-| **Mass** | **1.226** |
-| **Suspicious Calcification** | **543** |
+| Mass | 1.226 |
+| Suspicious Calcification | 543 |
 | Focal Asymmetry | 269 |
 | Architectural Distortion | 119 |
 | Asymmetry | 97 |
@@ -103,362 +72,654 @@ train/val/test (seed=42) split'inden farklıdır, bkz. §1.3.)*
 | Global Asymmetry | 26 |
 | Skin Retraction | 18 |
 
-**Neden Mass + Suspicious Calcification?** Bu ikisi, "No Finding" dışındaki
-en sık görülen iki patolojik bulgu kategorisi — diğer tüm kategorilerin
-(Focal Asymmetry ve altı) toplamından bile **daha fazla** örneğe sahipler.
-Ayrıca literatürde (Ribli et al. 2018, Karaca Aydemir et al. 2025, Abdikenov
-et al. 2025) mamografi lezyon tespitinde en çok çalışılan/karşılaştırılan iki
-sınıf da bunlar — bu seçim, sonuçlarımızı literatürle anlamlı şekilde
-kıyaslamamıza imkan veriyor.
+<p align="center">
+  <img src="dataset/eda_full_dataset/figures/finding_category_distribution.png" width="760" alt="Finding category distribution (full VinDr-Mammo)">
+</p>
 
-### 1.3 Çalışma alt kümesi: `target2class_subset_v2_medium_balanced`
+**Mass** ve **Suspicious Calcification**, "No Finding" dışında en sık görülen iki patolojik bulgu kategorisidir ve literatürde mamografi lezyon tespiti çalışmalarının (Ribli ve ark. [4], Karaca Aydemir ve ark. [3], Abdikenov ve ark. [2]) odaklandığı sınıflarla örtüşmektedir. Bu nedenle bu iki sınıf, hem yeterli eğitim örneği sunması hem de literatürle karşılaştırılabilirlik sağlaması bakımından bu projenin hedefi olarak seçilmiştir.
 
-20.000 görüntülük tam veri setinin DICOM'larını indirip işlemek hem zaman hem
-depolama açısından bu projenin kapsamı dışında olduğu için, hedeflenen 2 sınıfı
-(Mass, Suspicious Calcification) içeren çalışmalar + zor negatifler (başka
-bulgu içeren ama hedef sınıf olmayan) + normal negatifler (No Finding) içeren
-dengeli bir alt küme seçildi:
+Alt küme oluşturulurken yalnızca pozitif görüntüler alınmamış; gerçekçi bir tespit senaryosu oluşturmak için negatif görüntüler de korunmuştur.
 
-- **510 çalışma (study), 2040 görüntü**
-- Study-level (hasta-bazlı sızıntı önleyen) train/val/test split:
-  **0.70 / 0.15 / 0.15, seed=42**
-- Seçim ve indirme süreci detayları:
-  [`DATASET_SELECTION_REPORT.md`](dataset/subsets/target2class_subset_v2_medium_balanced/subset_audit/reports/target2class_subset_v2_medium_balanced_DATASET_SELECTION_REPORT.md),
-  [`FINAL_DOWNLOAD_REPORT.md`](dataset/subsets/target2class_subset_v2_medium_balanced/subset_audit/reports/target2class_subset_v2_medium_balanced_FINAL_DOWNLOAD_REPORT.md)
+### Seçilen çalışma türleri
 
-**Etiketleme kuralı:** Aynı kutu hem Mass hem Suspicious Calcification
-içeriyorsa birincil etiket Mass olur (`class_mapping.json`).
+| Çalışma türü | Sayı | Açıklama |
+|---|---:|---|
+| Target-positive study | 340 | En az bir Mass ve/veya Suspicious Calcification anotasyonu içerir |
+| Hard-negative study | 85 | Hedef iki sınıfı içermez; ancak başka mamografi bulguları içerir |
+| Normal-negative study | 85 | Hedef lezyon anotasyonu bulunmayan normal negatif çalışma |
+| **Toplam** | **510** | Study-level olarak seçilen toplam çalışma |
 
-| Split | Görüntü | Pozitif | Negatif | Mass kutusu | Susp. Calc. kutusu |
-|---|---|---|---|---|---|
-| train | 1418 | 486 | 932 | 346 | 318 |
-| val   | 306  | 103 | 203 | 77  | 54  |
-| test  | 308  | 95  | 213 | 69  | 61  |
+Target-positive çalışmalar, iki sınıfın temsili korunacak biçimde aşağıdaki gruplara ayrılarak seçilmiştir:
 
-(Kaynak: `dataset/prepared_datasets/target2class_subset_v2_medium_balanced/tables/eda_split_summary.csv`,
-PNG dönüşümü ve EDA detayları:
-[`PNG_PREPARATION_AND_EDA_REPORT.md`](dataset/subsets/target2class_subset_v2_medium_balanced/prepared_dataset_reports/target2class_subset_v2_medium_balanced_PNG_PREPARATION_AND_EDA_REPORT.md))
+- yalnızca Mass,
+- yalnızca Suspicious Calcification,
+- her iki hedef sınıfı içeren çalışmalar.
+
+Rastgele seçim ve bölme işlemlerinde **seed = 42** kullanılmıştır.
+
+### Anotasyon politikası
+
+VinDr-Mammo bulgu tablosunda aynı bounding box birden fazla bulgu etiketi taşıyabilmektedir. Çalışmada tek etiketli iki sınıflı nesne tespiti formatı kullanıldığı için aynı kutuda hem **Mass** hem de **Suspicious Calcification** bulunması durumunda birincil etiket **Mass** olarak atanmıştır.
+
+Hazırlık öncesindeki hedef anotasyon özeti:
+
+| Açıklama | Sayı |
+|---|---:|
+| Exploded target labels | 1,013 |
+| Unique primary bounding boxes | 927 |
+| Mass primary boxes | 494 |
+| Suspicious Calcification primary boxes | 433 |
+| İki hedef etiketi aynı kutuda taşıyan bbox | 86 |
+
+Görüntü dönüşümü ve bounding box doğrulaması sonrasında deneylerde kullanılan ham veri varyantında **925**, Crop+CLAHE varyantında ise **919** geçerli kutu kalmıştır. Crop işlemi sonrasında görüntü sınırları dışında veya geçersiz hale gelen kutular otomatik olarak çıkarılmıştır.
+
+### Seçim manifesti ve nihai veri
+
+Alt küme seçim manifestinde 2,040 DICOM görüntüsü bulunmaktadır. Eğitim ve değerlendirmede kullanılan son hazırlanmış veri seti ise başarıyla hazırlanmış **2,032 PNG görüntüsünden** oluşmaktadır. Aşağıdaki tüm split ve sonuç tabloları bu nihai veri setine aittir.
 
 ---
 
-## 2. Uçtan Uca İşlem Hattı (Pipeline)
+## Train / Validation / Test Bölünmesi
 
-Pipeline 4 ana adımdan oluşuyor; her adımın çıktısı bir sonrakinin girdisi.
-Tüm adımlar Google Colab'da, Google Drive'a mount edilmiş bir `vindr_mammo`
-proje klasörü üzerinde çalıştırıldı (bkz. [§4](#4-kurulum-ve-çalıştırma-google-colab)).
+Veri bölme işlemi görüntü düzeyinde değil, **study-level** gerçekleştirilmiştir. Böylece aynı hastaya/çalışmaya ait farklı mamografi görünümlerinin train ve test gibi farklı splitlere dağılması engellenmiştir.
 
+Bölme oranı:
+
+- **Train:** %70
+- **Validation:** %15
+- **Test:** %15
+
+Stratification sırasında çalışma türü ve hedef sınıf varlığı birlikte dikkate alınmıştır:
+
+- target_mass_only,
+- target_calc_only,
+- target_both,
+- hard_negative,
+- normal_negative.
+
+### Study-level dağılım
+
+| Split | Study sayısı |
+|---|---:|
+| Train | 356 |
+| Validation | 77 |
+| Test | 77 |
+| **Toplam** | **510** |
+
+### Nihai görüntü ve kutu dağılımı: Raw PNG
+
+| Split | Görüntü | Pozitif görüntü | Negatif görüntü | Toplam bbox | Mass | Suspicious Calcification |
+|---|---:|---:|---:|---:|---:|---:|
+| Train | 1,418 | 486 | 932 | 664 | 346 | 318 |
+| Validation | 306 | 103 | 203 | 131 | 77 | 54 |
+| Test | 308 | 95 | 213 | 130 | 69 | 61 |
+| **Toplam** | **2,032** | **684** | **1,348** | **925** | **492** | **433** |
+
+### Nihai görüntü ve kutu dağılımı: Crop+CLAHE
+
+| Split | Görüntü | Pozitif görüntü | Negatif görüntü | Toplam bbox | Mass | Suspicious Calcification |
+|---|---:|---:|---:|---:|---:|---:|
+| Train | 1,418 | 484 | 934 | 661 | 346 | 315 |
+| Validation | 306 | 103 | 203 | 131 | 77 | 54 |
+| Test | 308 | 93 | 215 | 127 | 69 | 58 |
+| **Toplam** | **2,032** | **680** | **1,352** | **919** | **492** | **427** |
+
+<p align="center">
+  <img src="dataset/prepared_datasets/target2class_subset_v2_medium_balanced_crop_clahe_2class/eda/figures/class_distribution_by_split.png" width="760" alt="Class distribution by split">
+</p>
+
+---
+
+## İşleme Adımları
+
+Projenin uçtan uca işlem akışı aşağıdaki gibidir:
+
+```text
+VinDr-Mammo metadata ve annotation dosyaları
+                    │
+                    ▼
+Mass / Suspicious Calcification hedeflerinin seçimi
+                    │
+                    ▼
+Target-positive + hard-negative + normal-negative study seçimi
+                    │
+                    ▼
+Study-level stratified train / validation / test split
+                    │
+                    ▼
+DICOM indirme ve dosya doğrulama
+                    │
+                    ▼
+DICOM → 8-bit PNG dönüşümü + bbox dönüşümü
+                    │
+          ┌─────────┴─────────┐
+          ▼                   ▼
+      Raw PNG           Breast Crop + CLAHE
+          │                   │
+          └─────────┬─────────┘
+                    ▼
+YOLO ve COCO anotasyonlarının oluşturulması
+                    │
+                    ▼
+EDA + görsel bbox kontrolü
+                    │
+                    ▼
+YOLOv8s / Faster R-CNN eğitimi
+                    │
+                    ▼
+Validation ile model seçimi → bağımsız test değerlendirmesi
 ```
-PhysioNet (DUA)          Alt küme seçimi        DICOM → PNG          Crop + CLAHE        COCO / YOLO
-   DICOM'ları    ─────▶   + indirme      ─────▶  + 2-sınıf    ─────▶  ön işleme   ─────▶  format üretimi  ─────▶ Eğitim
-  (20.000 img)            (2040 img)             etiketleme           (varyant 2)          (varyant 1 & 2)
+
+### 1. DICOM indirme ve doğrulama
+
+- İndirme listesi alt küme manifestinden oluşturuldu (`dataset/subsets/target2class_subset_v2_medium_balanced/selected_dicom_urls.txt`).
+- DICOM dosyaları önce Colab yerel diskine indirildi, ardından Google Drive'a senkronize edildi.
+- Dosya boyutu ve `pydicom` ile okunabilirlik kontrolü yapıldı.
+- Seçilen 2,040 DICOM dosyasının tamamı indirme sonunda erişilebilir durumdaydı (bkz. `dataset/subsets/target2class_subset_v2_medium_balanced/subset_audit/reports/target2class_subset_v2_medium_balanced_FINAL_DOWNLOAD_REPORT.md`).
+
+### 2. DICOM → PNG dönüşümü
+
+Her DICOM görüntüsüne aşağıdaki işlemler uygulandı:
+
+1. Pixel array `pydicom` ile okundu.
+2. Mümkün olduğunda VOI LUT uygulandı.
+3. `MONOCHROME1` görüntüler ters çevrildi.
+4. Yoğunluk değerleri **%0.5–%99.5 percentile clipping** ile sınırlandı.
+5. Görüntü 8-bit `[0, 255]` aralığına normalize edildi.
+6. En uzun kenar en fazla **2,048 piksel** olacak şekilde en-boy oranı korunarak yeniden boyutlandırıldı.
+7. Bounding box koordinatları aynı ölçek oranıyla güncellendi ve görüntü sınırlarına kırpıldı.
+
+2,040 görüntüden **8'inin** (6 train, 2 val) DICOM piksel verisi bozuk olduğu için ("number of bytes of pixel data is less than expected") PNG'ye dönüştürülememiş ve veri setinden çıkarılmıştır — nihai 2,032 görüntü buradan gelmektedir (bkz. `dataset/prepared_datasets/target2class_subset_v2_medium_balanced/logs/raw_png_failed_conversions.csv`).
+
+Detaylı rapor: `dataset/subsets/target2class_subset_v2_medium_balanced/prepared_dataset_reports/target2class_subset_v2_medium_balanced_PNG_PREPARATION_AND_EDA_REPORT.md`
+
+### 3. Raw PNG veri varyantı
+
+Ham varyantta DICOM'dan dönüştürülen görüntüler, yeniden boyutlandırma dışında ek kontrast veya bölge kırpma işlemi uygulanmadan kullanıldı.
+
+### 4. Breast Crop + CLAHE veri varyantı
+
+Crop+CLAHE varyantında aşağıdaki işlem sırası kullanıldı:
+
+1. Gri seviye görüntüye Gaussian blur uygulandı.
+2. Otsu threshold ile meme dokusu için ikili maske üretildi.
+3. Morphological closing ve opening ile maske temizlendi.
+4. En büyük contour meme bölgesi olarak kabul edildi.
+5. Bounding rectangle çevresine görüntü boyutunun **%3.5'i** kadar margin eklendi.
+6. Güvenilir contour bulunamadığında görüntünün tamamı kullanıldı (2,032 görüntüden 7'sinde bu "fallback" uygulanmıştır).
+7. Crop bölgesine **CLAHE** uygulandı:
+   - `clipLimit = 2.0`
+   - `tileGridSize = (8, 8)`
+8. Bounding box koordinatları yeni crop koordinat sistemine taşındı, sınırda kalan kutular kırpıldı ve geçersiz kutular çıkarıldı.
+
+Kırpılan görüntülerin meme bölgesi alanının orijinal görüntüye oranı ortalama **0,306** (medyan **0,285**)'tir. Detaylı rapor: `dataset/subsets/target2class_subset_v2_medium_balanced/prepared_dataset_reports/target2class_subset_v2_medium_balanced_CROP_CLAHE_PREPROCESSING_REPORT.md`
+
+<p align="center">
+  <img src="dataset/prepared_datasets/target2class_subset_v2_medium_balanced_crop_clahe_2class/eda/figures/crop_transform_summary.png" width="900" alt="Crop transform summary">
+</p>
+
+<p align="center">
+  <img src="dataset/prepared_datasets/target2class_subset_v2_medium_balanced_crop_clahe_2class/eda/figures/clahe_histogram_examples.png" width="900" alt="CLAHE examples and intensity histograms">
+</p>
+
+### 5. Anotasyon formatları
+
+Her iki veri varyantı için iki ayrı anotasyon biçimi üretildi:
+
+- **YOLO formatı:** `labels/{train,val,test}/*.txt` + `data.yaml` (`nc: 2`, `names: {0: Mass, 1: Suspicious Calcification}`)
+- **COCO formatı:** `annotations/instances_{train,val,test}.json` (kategori id'leri `1: Mass`, `2: Suspicious Calcification`)
+
+Negatif görüntüler veri setinde tutuldu ve bunlar için boş label dosyaları oluşturuldu.
+
+### 6. EDA ve görsel doğrulama
+
+Hazırlanan veri setinde şu kontroller yapıldı:
+
+- split başına görüntü, pozitif ve negatif örnek sayısı,
+- sınıf başına bbox sayısı,
+- bbox genişliği, yüksekliği ve normalize alan dağılımı,
+- crop öncesi ve sonrası kutu koordinatlarının tutarlılığı,
+- rastgele örneklerde ground-truth kutularının görsel kontrolü.
+
+<p align="center">
+  <img src="dataset/prepared_datasets/target2class_subset_v2_medium_balanced_crop_clahe_2class/eda/figures/bbox_area_norm_distribution.png" width="760" alt="Normalized bbox area distribution">
+</p>
+
+<p align="center">
+  <img src="dataset/prepared_datasets/target2class_subset_v2_medium_balanced_crop_clahe_2class/eda/figures/bbox_width_height_scatter.png" width="760" alt="Normalized bbox width and height">
+</p>
+
+<p align="center">
+  <img src="dataset/prepared_datasets/target2class_subset_v2_medium_balanced_crop_clahe_2class/eda/figures/bbox_area_by_class_boxplot.png" width="760" alt="Bbox area by class">
+</p>
+
+Son grafikte görülebileceği gibi, Suspicious Calcification kutuları Mass kutularına kıyasla sistematik olarak daha küçük bir alana sahiptir; bu durum [Sınırlılıklar](#sınırlılıklar) bölümünde ele alınan düşük calcification tespit performansıyla tutarlıdır.
+
+---
+
+## Karşılaştırılan Yöntemler
+
+Bu repoda tamamlanmış üç deney koşusu karşılaştırılmaktadır.
+
+| Deney | Model | Veri varyantı | Amaç |
+|---|---|---|---|
+| E1 | YOLOv8s | Raw PNG | Tek aşamalı dedektör baseline'ı |
+| E2 | Faster R-CNN ResNet50-FPN | Raw PNG | İki aşamalı dedektör baseline'ı |
+| E3 | Faster R-CNN ResNet50-FPN | Crop+CLAHE | Ön işleme ablasyonu |
+
+### YOLOv8s
+
+YOLOv8s tek aşamalı bir nesne dedektörü olarak kullanılmıştır. Model doğrudan sınıf ve bounding box tahmini üretir. Bu koşu, hız ve basitlik açısından güçlü bir baseline oluşturmak amacıyla ham PNG görüntüler üzerinde eğitilmiştir. Bu yaklaşım, mamografi görüntülerinde YOLO ailesi modellerini kullanan Karaca Aydemir ve ark. [3] ile genel çerçevede örtüşmektedir.
+
+### Faster R-CNN ResNet50-FPN
+
+Faster R-CNN iki aşamalı bir nesne dedektörüdür:
+
+1. Region Proposal Network aday bölgeler üretir.
+2. ROI head bu bölgeleri sınıflandırır ve bounding box koordinatlarını iyileştirir.
+
+ResNet50-FPN backbone, farklı ölçekteki lezyonları temsil edebilmek amacıyla kullanılmıştır. Faster R-CNN'in mamografi lezyon tespitinde kullanımı, Ribli ve ark. [4]'ün çalışmasıyla örtüşen bir yaklaşımdır.
+
+### Raw vs Crop+CLAHE ablasyonu
+
+Faster R-CNN için iki deneyde model mimarisi ve eğitim hiperparametreleri aynı tutulmuştur. Değiştirilen tek temel bileşen giriş veri varyantıdır:
+
+- **Raw PNG**
+- **Breast Crop + CLAHE**
+
+Bu düzenleme sayesinde performans farkının büyük ölçüde ön işleme adımından kaynaklanıp kaynaklanmadığı incelenmiştir.
+
+Bu ablasyonun motivasyonu kısmen literatürden gelmektedir: Abdikenov ve ark. [2], meme bölgesi kırpma + CLAHE ön işlemenin VinDr-Mammo üzerinde mAP50'yi **0,438'den 0,590'a** yükselttiğini (mass tespiti, p=0,008) ve benzer iyileşmelerin INbreast ve CBIS-DDSM veri setlerinde de gözlendiğini raporlamaktadır. Bu proje aynı ön işleme adımını, Faster R-CNN raw baseline'ı ile aynı hiperparametrelerle eğitilen bir model üzerinde tekrarlayarak, bu veri alt kümesi ve mimari için etkisini ölçmektedir; elde edilen sonuçlar (bkz. [Sonuçlar](#sonuçlar)) literatürle aynı yönde ancak daha küçük bir iyileşme göstermektedir — bu fark farklı mimari (Faster R-CNN vs. YOLOv12), farklı veri alt kümesi ve eğitim süresi gibi etkenlerle açıklanabilir ve doğrudan birebir karşılaştırma yapılamaz.
+
+---
+
+## Eğitim Protokolü
+
+Tüm deneyler COCO üzerinde önceden eğitilmiş ağırlıklarla başlatılmış ve Google Colab GPU ortamında fine-tune edilmiştir.
+
+### YOLOv8s ayarları
+
+| Parametre | Değer |
+|---|---|
+| Başlangıç ağırlığı | `yolov8s.pt` |
+| Girdi boyutu | 640 × 640 |
+| Maksimum epoch | 100 |
+| Early stopping patience | 20 |
+| Batch size | 16 |
+| Optimizer | SGD |
+| Random seed | 42 |
+| Model seçim ölçütü | Validation performansı / en iyi checkpoint |
+
+### Faster R-CNN ayarları
+
+| Parametre | Değer |
+|---|---|
+| Mimari | Faster R-CNN ResNet50-FPN |
+| Başlangıç ağırlığı | COCO pretrained |
+| Maksimum epoch | 30 |
+| Early stopping patience | 8 |
+| Batch size | 2 |
+| Optimizer | SGD |
+| Learning rate | 0.005 |
+| Momentum | 0.9 |
+| Weight decay | 0.0005 |
+| LR scheduler | StepLR, step=10, gamma=0.1 |
+| Eğitim augmentasyonu | Horizontal flip, p=0.5 |
+| Random seed | 42 |
+| Model seçim ölçütü | Validation mAP50 |
+
+Faster R-CNN, görüntüleri orijinal hazırlanmış boyutlarında alır; gerekli yeniden ölçekleme `GeneralizedRCNNTransform` tarafından model içinde gerçekleştirilir.
+
+Test spliti eğitim veya hiperparametre seçimi için kullanılmamıştır. Test değerlendirmesi, validation mAP50'ye göre kaydedilen en iyi checkpoint ile yapılmıştır. Pratikte Faster R-CNN raw baseline'ı 19 epoch, Crop+CLAHE koşusu 29 epoch sonunda erken durdurulmuş; YOLOv8s ise tam 100 epoch eğitilmiştir (bkz. `runs/*/summary.json`).
+
+---
+
+## Değerlendirme Metrikleri
+
+Sonuçlar sınıf bazlı ve tüm sınıflar için raporlanmıştır:
+
+- **Precision:** Üretilen pozitif tahminlerin ne kadarının doğru olduğunu ölçer.
+- **Recall:** Gerçek lezyonların ne kadarının yakalandığını ölçer.
+- **F1-score:** Precision ve recall'un harmonik ortalamasıdır.
+- **mAP50:** IoU = 0.50 eşiğindeki ortalama AP.
+- **mAP50-95:** IoU = 0.50–0.95 aralığındaki COCO-style ortalama AP.
+
+Faster R-CNN için Precision, Recall ve F1 hesaplarında:
+
+- confidence threshold = **0.50**,
+- IoU threshold = **0.50**
+
+kullanılmıştır.
+
+> **Karşılaştırılabilirlik notu:** Ultralytics YOLO ve Faster R-CNN kodlarında Precision/Recall/F1 için kullanılan eşik seçme prosedürleri aynı değildir. Bu nedenle modeller arası ana karşılaştırmada **mAP50 ve mAP50-95** daha güvenilir ölçütler olarak ele alınmalıdır. Tamamen aynı değerlendirme protokolü gereken sonraki çalışmalarda tüm model tahminleri ortak bir evaluator ile tekrar hesaplanmalıdır.
+
+---
+
+## Sonuçlar
+
+### Genel test sonuçları
+
+| Model | Veri | Precision | Recall | mAP50 | mAP50-95 | F1 |
+|---|---|---:|---:|---:|---:|---:|
+| **Faster R-CNN ResNet50-FPN** | **Crop+CLAHE** | 0.516 | **0.378** | **0.346** | **0.163** | **0.436** |
+| Faster R-CNN ResNet50-FPN | Raw PNG | 0.442 | 0.354 | 0.328 | 0.144 | 0.393 |
+| YOLOv8s | Raw PNG | **0.524** | 0.244 | 0.225 | 0.113 | 0.300 |
+
+Bu deney protokolünde en yüksek genel mAP50, mAP50-95 ve F1 değerleri **Faster R-CNN + Crop+CLAHE** koşusunda elde edilmiştir.
+
+Ham Faster R-CNN'e göre Crop+CLAHE:
+
+- genel precision değerini **+0.074**,
+- recall değerini **+0.024**,
+- mAP50 değerini **+0.018**,
+- mAP50-95 değerini **+0.020**,
+- F1 değerini **+0.043**
+
+artırmıştır.
+
+<p align="center">
+  <img src="runs/comparison/comparison_precision.png" width="800" alt="Model comparison precision">
+</p>
+
+<p align="center">
+  <img src="runs/comparison/comparison_recall.png" width="800" alt="Model comparison recall">
+</p>
+
+<p align="center">
+  <img src="runs/comparison/comparison_mAP50.png" width="800" alt="Model comparison mAP50">
+</p>
+
+<p align="center">
+  <img src="runs/comparison/comparison_mAP50-95.png" width="800" alt="Model comparison mAP50-95">
+</p>
+
+<p align="center">
+  <img src="runs/comparison/comparison_f1.png" width="800" alt="Model comparison F1">
+</p>
+
+### Sınıf bazlı test sonuçları
+
+| Model | Veri | Sınıf | Precision | Recall | mAP50 | mAP50-95 | F1 |
+|---|---|---|---:|---:|---:|---:|---:|
+| Faster R-CNN | Crop+CLAHE | Mass | 0.544 | 0.449 | 0.438 | 0.219 | 0.492 |
+| Faster R-CNN | Crop+CLAHE | Suspicious Calcification | 0.472 | 0.293 | 0.253 | 0.108 | 0.362 |
+| Faster R-CNN | Raw PNG | Mass | 0.453 | **0.493** | 0.434 | 0.209 | 0.472 |
+| Faster R-CNN | Raw PNG | Suspicious Calcification | 0.414 | 0.197 | 0.221 | 0.079 | 0.267 |
+| YOLOv8s | Raw PNG | Mass | 0.526 | 0.406 | 0.368 | 0.183 | 0.458 |
+| YOLOv8s | Raw PNG | Suspicious Calcification | **0.523** | 0.082 | 0.081 | 0.044 | 0.142 |
+
+### Sonuçların yorumu
+
+- Faster R-CNN, ham görüntüler üzerinde YOLOv8s'e göre daha yüksek genel recall, mAP ve F1 üretmiştir.
+- YOLOv8s'in Suspicious Calcification precision değeri yüksek görünmesine rağmen recall değeri çok düşüktür; model az sayıda fakat daha seçici tahmin üretmiştir.
+- Crop+CLAHE, özellikle Suspicious Calcification için Faster R-CNN recall değerini **0.197'den 0.293'e**, F1 değerini **0.267'den 0.362'ye** yükseltmiştir.
+- Mass sınıfında Crop+CLAHE precision'ı artırmış, ancak recall'u bir miktar azaltmıştır. Bu durum ön işlemenin tüm sınıflar üzerinde aynı yönde etki göstermediğini ortaya koymaktadır.
+- Sonuçlar yalnızca bu alt küme ve deney protokolü için geçerlidir; tam VinDr-Mammo veya farklı veri setleri için doğrudan genellenmemelidir.
+
+### Faster R-CNN Raw vs Crop+CLAHE ablasyonu
+
+<p align="center">
+  <img src="runs/comparison/ablation_fasterrcnn_crop_clahe.png" width="1000" alt="Faster R-CNN raw versus crop CLAHE ablation">
+</p>
+
+---
+
+## Nitel Sonuçlar
+
+Aşağıdaki görselde ground-truth kutuları ile YOLOv8s, Faster R-CNN Raw ve Faster R-CNN Crop+CLAHE tahminleri yan yana karşılaştırılmıştır.
+
+<p align="center">
+  <img src="runs/comparison/qualitative_detections.png" width="1000" alt="Qualitative detection comparison">
+</p>
+
+Nitel örnekler şu hata türlerini incelemek için kullanılmıştır:
+
+- doğru lokalizasyon,
+- kaçırılan lezyonlar,
+- yanlış pozitif kutular,
+- aynı bölgede birden fazla tahmin,
+- sınıf karışıklığı,
+- küçük calcification bölgelerinde düşük güvenli tahminler,
+- crop ve kontrast iyileştirmenin görünür etkisi.
+
+<p align="center">
+  <img src="dataset/prepared_datasets/target2class_subset_v2_medium_balanced_crop_clahe_2class/eda/figures/before_after_bbox_examples.png" width="760" alt="Raw and crop CLAHE bbox examples">
+</p>
+
+---
+
+## Repo Yapısı
+
+Repodaki gerçek klasör yapısı:
+
+```text
+.
+├── README.md
+├── LICENSE                                                                  # Kod için MIT
+├── DATA_LICENSE.txt                                                         # Veri için PhysioNet Restricted Health Data License
+├── requirements.txt
+├── breast-level_annotations.csv, finding_annotations.csv, metadata.csv     # VinDr-Mammo resmi annotasyonları
+├── vindr_mammo_2class_subset_download_2.ipynb                              # Alt küme seçimi + indirme + ön işleme notebook'u
+├── dataset/
+│   ├── eda_full_dataset/figures/                                           # Tam veri seti EDA görselleri
+│   ├── subsets/target2class_subset_v2_medium_balanced/                     # Alt küme seçim/indirme raporları ve tabloları
+│   └── prepared_datasets/
+│       ├── target2class_subset_v2_medium_balanced/                         # Raw PNG: YOLO + COCO etiketleri, EDA, raporlar
+│       └── target2class_subset_v2_medium_balanced_crop_clahe_2class/        # Crop+CLAHE: YOLO + COCO etiketleri, EDA
+├── docs/
+│   ├── YOLOV8_BASELINE_METHODOLOGY.md
+│   ├── YOLOV8_RAW_BASELINE_RESULTS.md
+│   └── FASTERRCNN_BASELINE_METHODOLOGY.md
+├── scripts/
+│   ├── train_yolov8_raw_baseline.py
+│   ├── train_fasterrcnn_raw_baseline.py
+│   ├── train_fasterrcnn_crop_clahe.py
+│   ├── evaluate_fasterrcnn.py
+│   ├── compare_models.py
+│   ├── visualize_crop_clahe_before_after.py
+│   └── visualize_qualitative_detections.py
+└── runs/
+    ├── yolov8s_raw_baseline/                                                # Eğitim çıktıları, test_metrics.csv, summary.json
+    ├── fasterrcnn_raw_baseline/
+    ├── fasterrcnn_crop_clahe/
+    └── comparison/                                                          # all_models_test_metrics.csv ve karşılaştırma grafikleri
 ```
 
-### 2.1 Adım 1 — Alt küme seçimi ve DICOM indirme
-
-Notebook: [`vindr_mammo_2class_subset_download_2.ipynb`](vindr_mammo_2class_subset_download_2%20%281%29.ipynb)
-
-- `breast-level_annotations.csv` + `finding_annotations.csv` üzerinden, en az
-  bir hedef bulgu (Mass veya Suspicious Calcification) içeren çalışmalar,
-  zor negatifler ve normal negatifler seçildi → `subset_manifest.csv`
-  (510 çalışma, 2040 görüntü) ve `selected_dicom_urls.txt` üretildi.
-- Study-level train/val/test split (0.70/0.15/0.15, seed=42) uygulandı,
-  sınıf/density/BI-RADS dağılımlarının split'ler arasında dengeli olduğu
-  doğrulandı (`subset_audit/tables/`, `subset_audit/figures/`).
-- Seçilen DICOM dosyaları PhysioNet'ten (DUA kimlik bilgileriyle `wget`)
-  indirildi; indirme durumu ve eksik dosya kontrolü
-  `subset_audit/tables/dicom_download_status_*.csv` içinde raporlandı.
-- Çıktı raporları: `DATASET_SELECTION_REPORT.md`, `FINAL_DOWNLOAD_REPORT.md`.
-
-### 2.2 Adım 2 — DICOM → PNG dönüşümü ve 2-sınıf etiketleme
-
-- Her DICOM görüntüsünün piksel verisi (`pydicom`) okunup, VOI LUT /
-  windowing uygulanarak 8-bit gri tonlamalı **PNG**'ye dönüştürüldü
-  (`dataset/prepared_datasets/target2class_subset_v2_medium_balanced/`,
-  varyant adı: **`raw_png_2class`**).
-- `finding_annotations.csv`'deki `xmin, ymin, xmax, ymax` bbox'ları, sadece
-  Mass ve Suspicious Calcification kategorileri tutularak, hem **YOLO-txt**
-  (`labels/<split>/*.txt`, normalize `class xc yc w h`) hem de **COCO JSON**
-  (`annotations/instances_{train,val,test}.json`, piksel `bbox=[x,y,w,h]`,
-  `category_id`: 1=Mass, 2=Suspicious Calcification) formatına çevrildi.
-- Aynı kutu her iki kategoriyi de içeriyorsa, birincil etiket **Mass** olarak
-  belirlendi (`class_mapping.json` → `same_box_multilabel_rule`).
-- Split bazlı görüntü/kutu sayıları, BI-RADS/density dağılımları EDA olarak
-  raporlandı: [`PNG_PREPARATION_AND_EDA_REPORT.md`](dataset/subsets/target2class_subset_v2_medium_balanced/prepared_dataset_reports/target2class_subset_v2_medium_balanced_PNG_PREPARATION_AND_EDA_REPORT.md)
-
-### 2.3 Adım 3 — Crop + CLAHE ön işleme (2. veri seti varyantı)
-
-Abdikenov et al. (2025)'in önerdiği ön işleme adımına dayanarak, `raw_png_2class`'tan
-ikinci bir varyant (**`crop_clahe_2class`**) üretildi:
-
-1. **Otsu eşikleme + kontur tabanlı meme bölgesi crop'u** — görüntüdeki siyah
-   arka plan/etiket alanları kırpılıp sadece meme dokusu bırakıldı (kenarlara
-   %3.5 margin eklendi). Bounding box koordinatları crop'a göre yeniden
-   hesaplandı.
-2. **CLAHE** (`clipLimit=2.0`, `tileGridSize=(8,8)`) ile kontrast
-   iyileştirmesi uygulandı — özellikle küçük/düşük kontrastlı
-   kalsifikasyonların görünürlüğünü artırmak amacıyla.
-
-Algoritma detayları ve önce/sonra istatistikleri:
-[`CROP_CLAHE_PREPROCESSING_REPORT.md`](dataset/subsets/target2class_subset_v2_medium_balanced/prepared_dataset_reports/target2class_subset_v2_medium_balanced_CROP_CLAHE_PREPROCESSING_REPORT.md)
-
-**Örnek (before/after, bbox overlay):**
-
-![before/after crop+CLAHE](dataset/prepared_datasets/target2class_subset_v2_medium_balanced_crop_clahe_2class/eda/figures/before_after_bbox_examples.png)
-
-**CLAHE öncesi/sonrası piksel histogramı:**
-
-![CLAHE histogram](dataset/prepared_datasets/target2class_subset_v2_medium_balanced_crop_clahe_2class/eda/figures/clahe_histogram_examples.png)
-
-### 2.4 Adım 4 — COCO / YOLO formatlarının kullanımı
-
-Her iki veri seti varyantı (`raw_png_2class`, `crop_clahe_2class`) için aynı
-iki etiket formatı üretildi; hangi modelin hangi formatı kullandığı §3'te
-açıklanıyor:
-
-- **YOLO-txt + `data.yaml`** → YOLOv8 (Ultralytics'in doğal formatı).
-- **COCO JSON** (`annotations/instances_{train,val,test}.json`) → Faster
-  R-CNN (torchvision'ın doğal formatı, `pycocotools`).
+DICOM dosyaları, ham/işlenmiş PNG görüntü klasörleri, `.pt`/`.pth`/`.onnx` model ağırlıkları ve referans makale PDF'leri `.gitignore` ile repo dışında tutulmuştur. Veri setinin kendisi (DICOM/PNG) boyutu ve DUA koşulları nedeniyle repoya eklenmemiştir; erişim için [Veri Erişimi ve Atıf](#veri-erişimi-ve-atıf) bölümüne bakınız.
 
 ---
 
-## 3. Modeller ve Metodoloji
+## Çalıştırma
 
-| Model | Veri varyantı | Girdi boyutu | Pretrained | Metodoloji notu |
-|---|---|---|---|---|
-| YOLOv8s | raw_png_2class | 640×640 | COCO (`yolov8s.pt`) | [YOLOV8_BASELINE_METHODOLOGY.md](docs/YOLOV8_BASELINE_METHODOLOGY.md) |
-| Faster R-CNN ResNet50-FPN | raw_png_2class | ~800px (orijinal en/boy oranı korunur) | COCO (`fasterrcnn_resnet50_fpn`) | [FASTERRCNN_BASELINE_METHODOLOGY.md](docs/FASTERRCNN_BASELINE_METHODOLOGY.md) |
-| Faster R-CNN ResNet50-FPN (ablasyon) | crop_clahe_2class | ~800px | COCO | aynı metodoloji, sadece veri seti değişti (`scripts/train_fasterrcnn_crop_clahe.py`) |
+### 1. Ortamın hazırlanması
 
-Tüm modeller için ortak kurallar: seed=42, yatay flip (p=0.5) augmentasyonu,
-final metrikler **hiç görülmemiş test split** (308 görüntü) üzerinde
-hesaplandı, çıktılar `runs/<model>/{train/, test_eval/, test_metrics.csv,
-summary.json}` altında toplandı.
+```bash
+pip install torch torchvision torchmetrics pycocotools \
+            ultralytics pydicom opencv-python \
+            pandas numpy matplotlib seaborn \
+            scikit-learn pyyaml tqdm
+```
 
-**Model seçim gerekçeleri (özet):**
-
-- **YOLOv8s** — görev tanımının izin verdiği YOLO ailesinden, Ultralytics ile
-  Colab'da hızlı kurulum/eğitim; Karaca Aydemir et al. (2025) ve Abdikenov et
-  al. (2025) ile doğrudan literatür karşılaştırma noktaları mevcut. Detaylar:
-  [YOLOV8_BASELINE_METHODOLOGY.md](docs/YOLOV8_BASELINE_METHODOLOGY.md).
-- **Faster R-CNN (ResNet50-FPN)** — görev tanımının istediği two-stage
-  alternatif; Ribli et al. (2018) ile aynı aile, FPN ile çok ölçekli
-  özellik çıkarımı (büyük kitleler vs. küçük kalsifikasyonlar). Detaylar:
-  [FASTERRCNN_BASELINE_METHODOLOGY.md](docs/FASTERRCNN_BASELINE_METHODOLOGY.md).
-- **Crop+CLAHE ablasyonu** — Abdikenov et al. (2025)'in raw → crop+CLAHE ile
-  genel mAP50'yi 0.438 → 0.590'a çıkardığını raporlamasından yola çıkarak,
-  aynı iyileşmenin bizim veri setimizde de (özellikle Suspicious
-  Calcification sınıfında) gözlenip gözlenmediği test edildi.
-
-**Önemli kısıtlama:** YOLOv8 P/R/F1 değerleri Ultralytics'in PR eğrisindeki "en
-iyi F1" noktasında (dinamik eşik) raporlanırken, Faster R-CNN için sabit
-`confidence≥0.5, IoU≥0.5` eşiği kullanıldı. Bu nedenle **modeller arası asıl
-karşılaştırma mAP50 / mAP50-95 üzerinden yapılmalıdır** — bu iki metrik her iki
-model için de aynı COCO-style IoU eşleştirme mantığıyla hesaplanıyor.
-
----
-
-## 4. Kurulum ve Çalıştırma (Google Colab)
-
-Tüm `scripts/*.py` dosyaları Google Colab'da (GPU runtime, T4) çalıştırılmak
-üzere yazıldı. Beklenen klasör yapısı, Drive'a mount edilmiş bir
-`vindr_mammo/` proje klasörü altında bu repodaki `dataset/`, `runs/`,
-`scripts/` klasörlerinin aynısıdır.
-
-**Gereksinimler** (Colab'da genelde hazır gelir, eksikse [`requirements.txt`](requirements.txt)):
+Alternatif olarak repo kökündeki `requirements.txt` ile temel bağımlılıklar (`ultralytics`, `pycocotools`, `torchmetrics`, `opencv-python`, `pandas`, `matplotlib`, `pydicom`, `numpy`) kurulabilir:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-**Çalıştırma sırası:**
+`requirements.txt`, `seaborn`, `scikit-learn` ve `tqdm` içermez; bu paketler EDA/notebook adımlarında gerekiyorsa ayrıca kurulmalıdır. PyTorch/torchvision, Google Colab ortamında önceden kurulu gelir.
 
-0. [`vindr_mammo_2class_subset_download_2 (1).ipynb`](vindr_mammo_2class_subset_download_2%20%281%29.ipynb)
-   → PhysioNet'ten alt küme DICOM'larını indirir, `subset_manifest.csv` ve
-   split tablolarını üretir. *(PhysioNet DUA kimlik bilgisi gerektirir.)*
-1. `train_yolov8_raw_baseline.py` → `runs/yolov8s_raw_baseline/`
-2. `train_fasterrcnn_raw_baseline.py` → `runs/fasterrcnn_raw_baseline/`
-3. `evaluate_fasterrcnn.py` → Faster R-CNN confusion matrix + PR eğrisi
-4. `train_fasterrcnn_crop_clahe.py` → `runs/fasterrcnn_crop_clahe/` (ablasyon)
-5. `visualize_crop_clahe_before_after.py` → ön işleme görselleştirmeleri
-6. `compare_models.py` → 3-yönlü karşılaştırma + ablasyon grafikleri (yerel, `runs/*/test_metrics.csv` üzerinden)
-7. `visualize_qualitative_detections.py` → GT vs tahmin bbox overlay
+Google Colab kullanılıyorsa GPU runtime etkinleştirilmelidir.
 
-DICOM → PNG dönüşümü ve crop+CLAHE üretimi adım 0 ile adım 1 arasında, alt
-küme indirildikten sonra ayrı bir hazırlık scriptiyle yapılır (çıktıları
-`dataset/prepared_datasets/` altında zaten bu repoda mevcut).
+### 2. Veri setinin hazırlanması
 
----
+Önce notebook çalıştırılır:
 
-## 5. Sonuçlar (Test Split)
-
-Kaynak: [`runs/comparison/all_models_test_metrics.csv`](runs/comparison/all_models_test_metrics.csv)
-(`scripts/compare_models.py` ile üretildi).
-
-### 5.1 Genel (tüm sınıflar)
-
-| Model | Veri varyantı | Precision | Recall | mAP50 | mAP50-95 | F1 |
-|---|---|---|---|---|---|---|
-| YOLOv8s | raw | 0.524 | 0.244 | 0.225 | 0.113 | 0.300 |
-| Faster R-CNN ResNet50-FPN | raw | 0.442 | 0.354 | 0.328 | 0.144 | 0.393 |
-| Faster R-CNN ResNet50-FPN | crop+CLAHE | 0.516 | 0.378 | **0.346** | **0.163** | **0.436** |
-
-### 5.2 Sınıf bazlı
-
-| Model (varyant) | Sınıf | Precision | Recall | mAP50 | mAP50-95 | F1 |
-|---|---|---|---|---|---|---|
-| YOLOv8s (raw) | Mass | 0.526 | 0.406 | 0.368 | 0.183 | 0.458 |
-| YOLOv8s (raw) | Susp. Calc. | 0.523 | 0.082 | 0.081 | 0.044 | 0.142 |
-| Faster R-CNN (raw) | Mass | 0.453 | 0.493 | 0.434 | 0.209 | 0.472 |
-| Faster R-CNN (raw) | Susp. Calc. | 0.414 | 0.197 | 0.221 | 0.079 | 0.267 |
-| Faster R-CNN (crop+CLAHE) | Mass | 0.544 | 0.449 | 0.438 | 0.219 | 0.492 |
-| Faster R-CNN (crop+CLAHE) | Susp. Calc. | 0.472 | 0.293 | 0.253 | 0.108 | 0.362 |
-
-### 5.3 Karşılaştırma Grafikleri
-
-| mAP50 | mAP50-95 |
-|---|---|
-| ![mAP50](runs/comparison/comparison_mAP50.png) | ![mAP50-95](runs/comparison/comparison_mAP50-95.png) |
-
-| Precision | Recall | F1 |
-|---|---|---|
-| ![Precision](runs/comparison/comparison_precision.png) | ![Recall](runs/comparison/comparison_recall.png) | ![F1](runs/comparison/comparison_f1.png) |
-
-### 5.4 Ablasyon: Faster R-CNN — Raw vs Crop+CLAHE
-
-![ablation](runs/comparison/ablation_fasterrcnn_crop_clahe.png)
-
-Crop+CLAHE, genel mAP50'yi **0.328 → 0.346** ve genel F1'i **0.393 → 0.436**
-artırıyor; iyileşmenin büyük kısmı **Suspicious Calcification** sınıfında
-(mAP50 0.221 → 0.253, F1 0.267 → 0.362) — literatürdeki (Abdikenov et al. 2025)
-beklentiyle tutarlı: crop+CLAHE'nin asıl faydası küçük/düşük kontrastlı
-bulgularda görülüyor.
-
-### 5.5 Eğitim Eğrileri ve Diğer Değerlendirme Grafikleri
-
-Her model için ayrıntılı eğitim eğrileri, confusion matrix ve PR eğrisi
-ilgili `runs/<model>/train/` ve `runs/<model>/test_eval/` klasörlerinde, ve
-yorumları [`docs/YOLOV8_RAW_BASELINE_RESULTS.md`](docs/YOLOV8_RAW_BASELINE_RESULTS.md)
-içinde bulunur.
-
----
-
-## 6. Qualitative Sonuçlar (GT vs Tahmin)
-
-Test split'ten seçilen 5 örnek üzerinde gerçek (GT, yeşil kesikli) kutular ile
-3 modelin tahminlerinin (kırmızı=Mass, turuncu=Suspicious Calcification,
-confidence skorlu) karşılaştırması:
-
-![qualitative detections](runs/comparison/qualitative_detections.png)
-
-Üretim scripti: `scripts/visualize_qualitative_detections.py` (Colab).
-
----
-
-## 7. Repo Yapısı
-
-```
-.
-├── README.md
-├── LICENSE                         # kod için MIT lisansı
-├── DATA_LICENSE.txt                # VinDr-Mammo veri seti için PhysioNet Restricted Health Data License
-├── requirements.txt
-├── .gitignore
-├── breast-level_annotations.csv   # VinDr-Mammo orijinal annotasyon (20.000 satır)
-├── finding_annotations.csv        # VinDr-Mammo orijinal bulgu annotasyonu (20.486 satır)
-├── metadata.csv                   # VinDr-Mammo DICOM metadata (20.000 satır)
-├── vindr_mammo_2class_subset_download_2 (1).ipynb   # Adım 0: alt küme seçimi + DICOM indirme
-├── dataset/
-│   ├── eda_full_dataset/
-│   │   └── figures/finding_category_distribution.png   # tam veri seti EDA grafiği
-│   ├── subsets/.../subset_audit/        # alt küme seçimi, indirme raporları
-│   ├── subsets/.../prepared_dataset_reports/   # PNG dönüşümü + crop/CLAHE raporları
-│   └── prepared_datasets/
-│       ├── target2class_subset_v2_medium_balanced/             # raw_png_2class (annotations, EDA tabloları)
-│       └── target2class_subset_v2_medium_balanced_crop_clahe_2class/  # crop+CLAHE (annotations, EDA, figürler)
-├── docs/
-│   ├── YOLOV8_BASELINE_METHODOLOGY.md
-│   ├── YOLOV8_RAW_BASELINE_RESULTS.md
-│   └── FASTERRCNN_BASELINE_METHODOLOGY.md
-├── runs/
-│   ├── yolov8s_raw_baseline/            # train/, test_eval/, test_metrics.csv, summary.json
-│   ├── fasterrcnn_raw_baseline/
-│   ├── fasterrcnn_crop_clahe/
-│   └── comparison/                      # compare_models.py + qualitative çıktıları
-└── scripts/
-    ├── train_yolov8_raw_baseline.py
-    ├── train_fasterrcnn_raw_baseline.py
-    ├── train_fasterrcnn_crop_clahe.py
-    ├── evaluate_fasterrcnn.py
-    ├── visualize_crop_clahe_before_after.py
-    ├── visualize_qualitative_detections.py
-    └── compare_models.py
+```text
+vindr_mammo_2class_subset_download_2.ipynb
 ```
 
-*Not: Ham DICOM görüntüleri ve büyük PNG klasörleri (PhysioNet DUA nedeniyle),
-model ağırlık dosyaları (`*.pt`, 20-160MB) ve referans makale PDF'leri
-(telif hakkı) `.gitignore` ile bu repodan hariç tutulmuştur — bkz.
-[`.gitignore`](.gitignore).*
+Notebook aşağıdaki adımları gerçekleştirir:
+
+- metadata ve annotation dosyalarını okur,
+- iki sınıflı study subsetini seçer,
+- study-level split üretir,
+- DICOM dosyalarını indirir ve doğrular,
+- Raw PNG ve Crop+CLAHE varyantlarını oluşturur,
+- YOLO ve COCO anotasyonlarını üretir,
+- EDA tabloları ve görselleri oluşturur.
+
+### 3. Yol ayarları
+
+Eğitim scriptleri varsayılan olarak aşağıdaki proje yolunu bekler (Google Drive üzerinde):
+
+```python
+PROJECT_ROOT = Path("/content/drive/MyDrive/vindr_mammo")
+```
+
+Farklı bir klasör yapısı kullanılıyorsa scriptlerdeki `PROJECT_ROOT` değiştirilmelidir.
+
+### 4. YOLOv8s Raw baseline
+
+```bash
+python scripts/train_yolov8_raw_baseline.py
+```
+
+### 5. Faster R-CNN Raw baseline
+
+```bash
+python scripts/train_fasterrcnn_raw_baseline.py
+```
+
+Confusion matrix ve PR eğrisi için ayrıca:
+
+```bash
+python scripts/evaluate_fasterrcnn.py
+```
+
+### 6. Faster R-CNN Crop+CLAHE ablasyonu
+
+```bash
+python scripts/train_fasterrcnn_crop_clahe.py
+```
+
+Bu script, eğitim ve test değerlendirmesinin yanı sıra confusion matrix/PR eğrisini de üretir.
+
+### 7. Karşılaştırma ve görselleştirme
+
+```bash
+python scripts/compare_models.py
+python scripts/visualize_crop_clahe_before_after.py
+python scripts/visualize_qualitative_detections.py
+```
+
+`compare_models.py`, tüm `runs/*/test_metrics.csv` dosyalarını birleştirip `runs/comparison/all_models_test_metrics.csv` ile karşılaştırma grafiklerini üretir.
 
 ---
 
-## 8. Lisans
+## Üretilen Çıktılar
 
-- **Kod** (`scripts/`, notebook, dokümantasyon): [MIT License](LICENSE).
-- **Veri seti** (VinDr-Mammo ve ondan türetilen annotasyonlar):
-  [PhysioNet Restricted Health Data License v1.5.0](DATA_LICENSE.txt) —
-  PhysioNet Data Use Agreement koşullarına tabidir, ham görüntüler bu
-  repoda yer almaz (bkz. [§1.1](#11-kaynak-veri-seti-vindr-mammo)).
+### YOLOv8s
 
----
+```text
+runs/yolov8s_raw_baseline/
+├── train/
+│   ├── results.csv, results.png
+│   ├── BoxP_curve.png, BoxR_curve.png, BoxPR_curve.png, BoxF1_curve.png
+│   ├── confusion_matrix.png, confusion_matrix_normalized.png
+│   ├── labels.jpg, train_batch*.jpg, val_batch*_labels.jpg, val_batch*_pred.jpg
+│   ├── args.yaml
+│   └── weights/best.pt, weights/last.pt   (üretilir; .gitignore ile repo dışında)
+├── test_eval/
+│   ├── BoxP_curve.png, BoxR_curve.png, BoxPR_curve.png, BoxF1_curve.png
+│   ├── confusion_matrix.png, confusion_matrix_normalized.png
+│   └── val_batch*_labels.jpg, val_batch*_pred.jpg
+├── test_metrics.csv
+└── summary.json
+```
 
-## 9. Referanslar
+### Faster R-CNN
 
-- Nguyen, H.T., Nguyen, H.Q., Pham, H.H. et al. (2023). **VinDr-Mammo: A
-  large-scale benchmark dataset for computer-aided diagnosis in full-field
-  digital mammography.** *Scientific Data*, 10, 277.
-  [doi:10.1038/s41597-023-02100-7](https://doi.org/10.1038/s41597-023-02100-7)
-  — kullanılan veri setinin kaynak yayını.
-- Ribli, D., Horváth, A., Unger, Z., Pollner, P., Csabai, I. (2018).
-  **Detecting and classifying lesions in mammograms with Deep Learning.**
-  *Scientific Reports*, 8, 4165.
-  [doi:10.1038/s41598-018-22437-z](https://doi.org/10.1038/s41598-018-22437-z)
-  — Faster R-CNN tabanlı mamografi lezyon tespiti, model seçimine referans.
-- Karaca Aydemir, B.K. et al. (2025). **Detecting and classifying breast
-  masses via YOLO-based deep learning.** *Neural Computing and Applications.*
-  [doi:10.1007/s00521-025-11153-1](https://doi.org/10.1007/s00521-025-11153-1)
-  — YOLO varyant seçimi ve hiperparametre karşılaştırmaları için referans.
-- Abdikenov, B., Rakishev, D., Orazayev, Y., Zhaksylyk, T. (2025).
-  **Enhancing Breast Lesion Detection in Mammograms via Transfer Learning.**
-  *Journal of Imaging*, 11(9), 314.
-  [doi:10.3390/jimaging11090314](https://doi.org/10.3390/jimaging11090314)
-  — crop+CLAHE ön işleme ablasyonu ve hiperparametre/eğitim protokolü için
-  ana referans.
-- Cao, Z., Duan, L., Yang, G., Yue, T., Chen, Q. (2019). **An experimental
-  study on breast lesion detection and classification from ultrasound images
-  using deep learning architectures.** *BMC Medical Imaging*, 19, 51.
-  [doi:10.1186/s12880-019-0349-x](https://doi.org/10.1186/s12880-019-0349-x)
-  — derin öğrenme tabanlı meme lezyon tespiti literatür taraması için
-  incelendi.
-- [vinbigdata-medical/vindr-mammo](https://github.com/vinbigdata-medical/vindr-mammo)
-  — VinDr-Mammo resmi görselleştirme/EDA scriptleri.
-- [delmalih/mias-mammography-obj-detection](https://github.com/delmalih/mias-mammography-obj-detection)
-  — repo yapısı için ilham alınan benzer bir mamografi nesne tespiti projesi.
+```text
+runs/fasterrcnn_raw_baseline/
+├── train/
+│   ├── results.png
+│   ├── train_log.csv
+│   └── weights/best.pt, weights/last.pt   (üretilir; .gitignore ile repo dışında)
+├── test_eval/
+│   ├── per_class_metrics.png
+│   ├── confusion_matrix.png
+│   └── pr_curve.png
+├── test_metrics.csv
+└── summary.json
+```
+
+Crop+CLAHE koşusu benzer yapıyı `runs/fasterrcnn_crop_clahe/` altında oluşturur (aynı `train/`, `test_eval/`, `test_metrics.csv`, `summary.json`).
 
 ---
 
-## 10. Sınırlamalar ve Sonraki Adımlar
+## Sınırlılıklar
 
-- Veri seti boyutu (1418 train görüntüsü), literatürdeki tam VinDr-Mammo
-  çalışmalarına (binlerce görüntü) göre küçük; mutlak mAP değerleri bu
-  nedenle daha düşük çıkıyor — ancak göreli karşılaştırmalar (model vs.
-  model, raw vs. crop+CLAHE) ve literatürle örüntü uyumu anlamlı.
-- YOLOv8 (640px) ve Faster R-CNN (~800px) farklı girdi çözünürlükleriyle
-  çalışıyor — her model kendi standart pratiğiyle değerlendirildi, tam
-  "apples-to-apples" değil.
-- RetinaNet karşılaştırması kapsam dışı bırakıldı (zaman kısıtı).
-- Crop+CLAHE ablasyonu sadece Faster R-CNN üzerinde yapıldı; YOLOv8 +
-  crop+CLAHE kombinasyonu gelecek bir deney olarak not edildi.
-- Suspicious Calcification sınıfı tüm modellerde Mass'a göre daha düşük
-  performans gösteriyor (literatürle tutarlı, küçük/düşük kontrastlı
-  nesnelerin tespiti zor) — yüksek çözünürlüklü patch/tile tabanlı bir
-  yaklaşım gelecekte denenebilir.
+1. **Alt küme kullanımı:** Deneyler tam VinDr-Mammo veri seti yerine kontrollü bir alt küme üzerinde gerçekleştirilmiştir.
+2. **İki sınıflı kapsam:** Diğer mamografi bulguları doğrudan hedef sınıf olarak modellenmemiştir.
+3. **Tek veri seti:** Harici bir mamografi veri setinde external validation yapılmamıştır.
+4. **Multi-label sadeleştirmesi:** Aynı kutuda iki hedef sınıf bulunduğunda tek bir primary label kullanılmıştır.
+5. **Küçük lezyonlar:** Suspicious Calcification örneklerinin bir kısmı görüntü alanına göre çok küçüktür ve tespit performansı bu sınıfta daha düşüktür.
+6. **Preprocessing kaybı:** Crop işlemi sırasında altı Suspicious Calcification kutusu geçersiz hale geldiği için Crop+CLAHE anotasyonlarında yer almamıştır.
+7. **Metrik uygulaması:** YOLO ve Faster R-CNN için P/R/F1 eşik seçimi aynı değildir; ortak evaluator kullanılması daha sıkı bir karşılaştırma sağlayacaktır.
+8. **Tek koşu:** Sonuçlar tek random seed ile elde edilmiştir; çoklu seed deneyleri belirsizliği daha iyi gösterebilir.
+9. **Klinik geçerlilik:** Sonuçlar klinik kullanım veya tanısal güvenilirlik kanıtı değildir.
+
+---
+
+## Referanslar
+
+1. Nguyen, H.T., Nguyen, H.Q., Pham, H.H., Lam, K., Le, L.T., Dao, M., Vu, V. (2023). VinDr-Mammo: A large-scale benchmark dataset for computer-aided diagnosis in full-field digital mammography. *Scientific Data*, 10, 277. https://doi.org/10.1038/s41597-023-02100-7
+2. Abdikenov, B., Rakishev, B., Orazayev, A., Zhaksylyk, A. (2025). Enhancing Breast Lesion Detection in Mammograms via Transfer Learning. *Journal of Imaging*, 11(9), 314. https://doi.org/10.3390/jimaging11090314
+3. Karaca Aydemir, F., Telatar, Z., Güney, S., Dengiz, B. (2025). Detecting and classifying breast masses via YOLO-based deep learning. *Neural Computing and Applications*. https://doi.org/10.1007/s00521-025-11153-1
+4. Ribli, D., Horváth, A., Unger, Z., Pollner, P., Csabai, I. (2018). Detecting and classifying lesions in mammograms with Deep Learning. *Scientific Reports*, 8, 4165. https://doi.org/10.1038/s41598-018-22437-z
+5. Cao, Z., Duan, L., Yang, G., Yue, T., Chen, Q. (2019). An experimental study on breast lesion detection and classification from ultrasound images using deep learning architectures. *BMC Medical Imaging*, 19, 51. https://doi.org/10.1186/s12880-019-0349-x (farklı modalite — ultrason; tek/iki aşamalı dedektör karşılaştırması açısından genel motivasyon kaynağı)
+
+> Referans makalelerin PDF dosyaları telif hakkı nedeniyle bu repoya dahil edilmemiştir (`.gitignore`); yukarıdaki DOI'ler üzerinden erişilebilir.
+
+---
+
+## Veri Erişimi ve Atıf
+
+VinDr-Mammo veri seti PhysioNet üzerinden erişilmektedir:
+
+- Dataset page: <https://physionet.org/content/vindr-mammo/1.0.0/>
+- DOI: <https://doi.org/10.13026/br2v-7517>
+- Dataset paper: <https://doi.org/10.1038/s41597-023-02100-7>
+
+Veri dosyaları bu repoda yeniden dağıtılmamaktadır. Kullanıcıların PhysioNet üzerindeki erişim ve veri kullanım koşullarını kabul ederek veri setini doğrudan kaynağından edinmesi gerekir. Bu repodaki kodun lisansı için `LICENSE`, veri kullanım koşulları için `DATA_LICENSE.txt` dosyalarına bakınız.
+
+Önerilen atıflar:
+
+```bibtex
+@article{physionet_vindr_mammo_2022,
+  author  = {Pham, Hieu Huy and Nguyen Trung, Hieu and Nguyen, Ha Quy},
+  title   = {VinDr-Mammo: A large-scale benchmark dataset for computer-aided detection and diagnosis in full-field digital mammography},
+  journal = {PhysioNet},
+  year    = {2022},
+  note    = {Version 1.0.0},
+  doi     = {10.13026/br2v-7517}
+}
+```
+
+```bibtex
+@article{nguyen2023vindr,
+  title   = {VinDr-Mammo: A large-scale benchmark dataset for computer-aided diagnosis in full-field digital mammography},
+  author  = {Nguyen, Hieu T. and Nguyen, Ha Q. and Pham, Hieu H. and others},
+  journal = {Scientific Data},
+  volume  = {10},
+  pages   = {277},
+  year    = {2023},
+  doi     = {10.1038/s41597-023-02100-7}
+}
+```
+
+---
+
+## Kısa Sonuç
+
+Bu çalışma, study-level veri sızıntısı kontrolü altında YOLOv8s ve Faster R-CNN modellerini karşılaştırmış ve en iyi Faster R-CNN modelinde Crop+CLAHE ön işlemesinin etkisini ablation yaklaşımıyla incelemiştir. Kullanılan alt küme ve protokol kapsamında **Faster R-CNN ResNet50-FPN + Crop+CLAHE**, genel mAP50, mAP50-95 ve F1 açısından en iyi sonucu vermiştir. En belirgin iyileşme Suspicious Calcification sınıfının recall ve F1 değerlerinde görülmüştür.
